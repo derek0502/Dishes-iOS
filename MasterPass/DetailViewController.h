@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GeneralViewController.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : GeneralViewController
 
 @end

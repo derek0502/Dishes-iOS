@@ -200,8 +200,9 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    DetailViewController *dvc = [DetailViewController new];
-    [self presentViewController:dvc animated:YES completion:nil];
+    DetailViewController *dvc = [[DetailViewController alloc]init];
+    [self.navigationController pushViewController:dvc animated:YES];
+    
 }
 
 - (IBAction)cartPressed:(id)sender {
