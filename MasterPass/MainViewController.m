@@ -14,6 +14,8 @@
 #import "MPECommerceManager.h"
 #import "CartViewController.h"
 #import <MapKit/MapKit.h>
+#import <XMLDictionary/XMLDictionary.h>
+#import <AFNetworking/AFNetworking.h>
 
 #define LongCellHeight 245
 #define ShortCellHeight 181
@@ -29,11 +31,15 @@
     float longi;
     float lati;
     
+    IBOutlet UITableView *restaurantTableView;
+    
 }
 @property (strong, nonatomic)  MKMapView *mapView;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSArray *productsData;
 @property (nonatomic, strong) NSArray *fullProductsData;
+@property (nonatomic, strong) NSDictionary *restaurantData;
+@property (nonatomic, strong) NSArray *restaurants;
 @end
 
 @implementation MainViewController
@@ -263,6 +269,32 @@
     
     //Get Lat and Long...;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    AFHTTPRequestSerializer * requestSerializer = [AFHTTPRequestSerializer serializer];
+    AFHTTPResponseSerializer * responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    NSString *ua = @"Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25";
+    [requestSerializer setValue:ua forHTTPHeaderField:@"User-Agent"];
+    //    [requestSerializer setValue:@"application/xml" forHTTPHeaderField:@"Content-type"];
+    responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/xml", nil];
+    manager.responseSerializer = responseSerializer;
+    manager.requestSerializer = requestSerializer;
+    
+    NSString *getReq = [NSString stringWithFormat:@"http://dmartin.org:8021/restaurants/v1/restaurant?Format=XML&PageOffset=0&PageLength=10&Latitude=%f&Longitude=%f",lati, longi];
+    [manager GET:getReq
+       parameters:nil
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              NSData * data = (NSData *)responseObject;
+              self.restaurantData = [[XMLDictionaryParser sharedInstance]dictionaryWithData:data];
+              self.restaurants = [self.restaurantData valueForKey:@"Restaurant"];
+              [restaurantTableView reloadData];
+              [MBProgressHUD hideHUDForView:self.view animated:YES];
+          }
+          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              NSLog(@"Error: %@", error);
+          }];
+    
 }
 
 
@@ -280,4 +312,49 @@
         [heartButton setSelected:NO];
     }
 }
+
+
+#pragma mark - ---table view---
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if(self.restaurantData) {
+        return 5;
+    } else {
+        return 1;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 130;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+
+    UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 375, 130)];
+    switch(indexPath.row) {
+        case 0:
+            [iv setImage:[UIImage imageNamed:@"restaurantF-VeggieSF.png"]];
+            break;
+        case 1:
+            [iv setImage:[UIImage imageNamed:@"restaurantE-PureVeggieHouse.png"]];
+            break;
+        case 2:
+            [iv setImage:[UIImage imageNamed:@"restaurantC-Locofama.png"]];
+            break;
+        case 3:
+            [iv setImage:[UIImage imageNamed:@"restaurantB-Herbivores.png"]];
+            break;
+        case 4:
+            [iv setImage:[UIImage imageNamed:@"restaurantA-Finds.png"]];
+            break;
+    }
+
+    [cell.contentView addSubview:iv];
+    return cell;
+}
+
 @end

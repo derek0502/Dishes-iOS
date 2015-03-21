@@ -14,6 +14,7 @@
                 <outlet property="footerView" destination="vyH-RX-fPo" id="QNp-so-CuR"/>
                 <outlet property="leftCollectionView" destination="vLW-ce-aUv" id="x5I-MK-hSu"/>
                 <outlet property="navView" destination="PtP-br-K2S" id="Zm8-oR-fGl"/>
+                <outlet property="restaurantTableView" destination="67p-GC-eJv" id="NLg-nX-K4Q"/>
                 <outlet property="rightCollectionView" destination="LJg-go-74h" id="ArY-yc-9UP"/>
                 <outlet property="searchButton" destination="Fbt-fY-h8Z" id="bQN-gK-UwM"/>
             </connections>
@@ -159,6 +160,16 @@
         <view contentMode="scaleToFill" id="Yox-OS-KiS" userLabel="dineOutContentView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="67p-GC-eJv">
+                    <rect key="frame" x="0.0" y="200" width="375" height="270"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sJE-rq-sL1"/>
+                        <outlet property="delegate" destination="-1" id="fQO-vu-Acp"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="1382" y="508"/>

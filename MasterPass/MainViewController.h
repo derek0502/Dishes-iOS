@@ -10,7 +10,7 @@
 #import "MPLightboxViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
-@interface MainViewController : GeneralViewController<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, MKMapViewDelegate>
+@interface MainViewController : GeneralViewController<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *dineOutContentView;
 @property (strong, nonatomic) IBOutlet UICollectionView *dineOutCollectionView;

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C43B8C57F4517B33DA6612E5"
+               BlueprintIdentifier = "12F0525F5BA4435C631932F6"
                BuildableName = "libPods-JMGBlockSegue.a"
                BlueprintName = "Pods-JMGBlockSegue"
                ReferencedContainer = "container:Pods.xcodeproj">

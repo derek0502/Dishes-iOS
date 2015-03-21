@@ -69,6 +69,7 @@ PODS:
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
   - UpdateAutoLayoutConstraints (0.2.0)
+  - XMLDictionary (1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -90,6 +91,7 @@ DEPENDENCIES:
   - TPKeyboardAvoiding
   - UIActivityIndicator-for-SDWebImage
   - UpdateAutoLayoutConstraints
+  - XMLDictionary
 
 EXTERNAL SOURCES:
   KLScrollSelect:
@@ -101,6 +103,20 @@ EXTERNAL SOURCES:
     :git: https://github.com/Masonry/Masonry.git
   SIAlertView:
     :branch: mc_setup
+    :git: https://github.com/AnyPresence-Services/SIAlertView.git
+
+CHECKOUT OPTIONS:
+  KLScrollSelect:
+    :commit: 6d51ec9a61d283c8c4487974dcf4206eb43cb6f0
+    :git: https://github.com/DavidBenko/KLScrollSelect.git
+  M13Checkbox:
+    :commit: dc87cace3b03f2b3ca12791476423200149ddd6f
+    :git: https://github.com/Marxon13/M13Checkbox
+  Masonry:
+    :commit: 924b70a94b91d1493bdd56dad3159379ae703208
+    :git: https://github.com/Masonry/Masonry.git
+  SIAlertView:
+    :commit: a71fd484fb0c2bc7922bbeffebdc3c7a7405b770
     :git: https://github.com/AnyPresence-Services/SIAlertView.git
 
 SPEC CHECKSUMS:
@@ -123,5 +139,6 @@ SPEC CHECKSUMS:
   TPKeyboardAvoiding: 0797ad5f2366e2435e605202b01f3b7cff5d82cd
   UIActivityIndicator-for-SDWebImage: 8bd92c15280fbe54816448c6b14674145eee05c7
   UpdateAutoLayoutConstraints: a8976df4ea69f63c08a06c9eabd482a0736540aa
+  XMLDictionary: 735e81b9a043e220b0d24e9d4f16719606f2e0fc
 
 COCOAPODS: 0.35.0
