@@ -8,6 +8,11 @@
 
 #import "MainViewController.h"
 #import "MPManager.h"
+#import "LongFeedCollectionViewCell.h"
+#import "ShortFeedCollectionViewCell.h"
+
+#define LongCellHeight 245
+#define ShortCellHeight 181
 
 @interface MainViewController ()
 
@@ -19,8 +24,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.titleLabel setText:@"Hello"];
-    [self.leftCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
-    [self.rightCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    [self.leftCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"ShortFeedCollectionViewCell"];
+    [self.rightCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"LongFeedCollectionViewCell"];
     
     
     [self.dineOutCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
@@ -48,8 +53,41 @@
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    UICollectionViewCell *cell;
     
-    UICollectionViewCell *cell = (UICollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    if(collectionView == self.rightCollectionView)
+    {
+        NSString *identifier = @"LongFeedCollectionViewCell";
+        
+        static BOOL nibMyCellloaded = NO;
+        
+        if(!nibMyCellloaded)
+        {
+            UINib *nib = [UINib nibWithNibName:@"LongFeedCollectionViewCell" bundle: nil];
+            [collectionView registerNib:nib forCellWithReuseIdentifier:identifier];
+            nibMyCellloaded = YES;
+        }
+        cell = (LongFeedCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"LongFeedCollectionViewCell" forIndexPath:indexPath];
+    }
+    else if(collectionView == self.leftCollectionView)
+    {
+        NSString *identifier = @"ShortFeedCollectionViewCell";
+        
+        static BOOL nibMyCellloaded = NO;
+        
+        if(!nibMyCellloaded)
+        {
+            UINib *nib = [UINib nibWithNibName:@"ShortFeedCollectionViewCell" bundle: nil];
+            [collectionView registerNib:nib forCellWithReuseIdentifier:identifier];
+            nibMyCellloaded = YES;
+        }
+        cell = (ShortFeedCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"ShortFeedCollectionViewCell" forIndexPath:indexPath];
+    }
+    else
+    {
+        cell = (UICollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    }
+        
     cell.backgroundColor = [UIColor whiteColor];
     
     return cell;
@@ -59,11 +97,11 @@
 {
     if(collectionView == self.leftCollectionView)
     {
-        return CGSizeMake(collectionView.frame.size.width-15, 90.f);
+        return CGSizeMake(collectionView.frame.size.width-15, ShortCellHeight);
     }
     else if(collectionView == self.rightCollectionView)
     {
-        return CGSizeMake(collectionView.frame.size.width-15, 120.f);
+        return CGSizeMake(collectionView.frame.size.width-15, LongCellHeight);
     }
     else
     {
@@ -85,6 +123,9 @@
 }
 
 
+
+- (IBAction)checkoutPressed:(id)sender {
+}
 
 - (IBAction)dineInPressed:(id)sender {
     [self.dineInButton setSelected:YES];

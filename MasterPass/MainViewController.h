@@ -20,8 +20,10 @@
 @property (strong, nonatomic) IBOutlet UIButton *dineOutButton;
 @property (strong, nonatomic) IBOutlet UIButton *searchButton;
 
+
 - (IBAction)dineInPressed:(id)sender;
 - (IBAction)dineOutPressed:(id)sender;
 - (IBAction)searchPressed:(id)sender;
+- (IBAction)checkoutPressed:(id)sender;
 
 @end

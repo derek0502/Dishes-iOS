@@ -39,6 +39,10 @@
 		2D10C96D1ABDD2CF0021B95A /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9561ABDD2CF0021B95A /* search.png */; };
 		2D10C96E1ABDD2CF0021B95A /* utensils.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9571ABDD2CF0021B95A /* utensils.png */; };
 		2D10C96F1ABDD2CF0021B95A /* wine-pairing.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9581ABDD2CF0021B95A /* wine-pairing.png */; };
+		2D10C9731ABDD4650021B95A /* LongFeedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10C9711ABDD4650021B95A /* LongFeedCollectionViewCell.m */; };
+		2D10C9741ABDD4650021B95A /* LongFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9721ABDD4650021B95A /* LongFeedCollectionViewCell.xib */; };
+		2D10C9781ABDD49E0021B95A /* ShortFeedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10C9761ABDD49E0021B95A /* ShortFeedCollectionViewCell.m */; };
+		2D10C9791ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9771ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib */; };
 		2D1149911ABD9BEE00A38C45 /* HumanOrPetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */; };
 		2D1149921ABD9BEE00A38C45 /* HumanOrPetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */; };
 		2D5DD0B61ABD93D6003724D1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5DD0B41ABD93D6003724D1 /* MainViewController.m */; };
@@ -211,6 +215,12 @@
 		2D10C9561ABDD2CF0021B95A /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		2D10C9571ABDD2CF0021B95A /* utensils.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = utensils.png; sourceTree = "<group>"; };
 		2D10C9581ABDD2CF0021B95A /* wine-pairing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wine-pairing.png"; sourceTree = "<group>"; };
+		2D10C9701ABDD4650021B95A /* LongFeedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongFeedCollectionViewCell.h; sourceTree = "<group>"; };
+		2D10C9711ABDD4650021B95A /* LongFeedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongFeedCollectionViewCell.m; sourceTree = "<group>"; };
+		2D10C9721ABDD4650021B95A /* LongFeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LongFeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		2D10C9751ABDD49E0021B95A /* ShortFeedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortFeedCollectionViewCell.h; sourceTree = "<group>"; };
+		2D10C9761ABDD49E0021B95A /* ShortFeedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortFeedCollectionViewCell.m; sourceTree = "<group>"; };
+		2D10C9771ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortFeedCollectionViewCell.xib; sourceTree = "<group>"; };
 		2D11498E1ABD9BEE00A38C45 /* HumanOrPetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanOrPetViewController.h; sourceTree = "<group>"; };
 		2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanOrPetViewController.m; sourceTree = "<group>"; };
 		2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanOrPetViewController.xib; sourceTree = "<group>"; };
@@ -508,6 +518,12 @@
 				2D5DD0B31ABD93D6003724D1 /* MainViewController.h */,
 				2D5DD0B41ABD93D6003724D1 /* MainViewController.m */,
 				2D5DD0B51ABD93D6003724D1 /* MainViewController.xib */,
+				2D10C9701ABDD4650021B95A /* LongFeedCollectionViewCell.h */,
+				2D10C9711ABDD4650021B95A /* LongFeedCollectionViewCell.m */,
+				2D10C9721ABDD4650021B95A /* LongFeedCollectionViewCell.xib */,
+				2D10C9751ABDD49E0021B95A /* ShortFeedCollectionViewCell.h */,
+				2D10C9761ABDD49E0021B95A /* ShortFeedCollectionViewCell.m */,
+				2D10C9771ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -1223,6 +1239,7 @@
 				2D10C9611ABDD2CF0021B95A /* description.png in Resources */,
 				C3212D371906BE460072BA80 /* InfoPlist.strings in Resources */,
 				C3BB758019B0B93100A7DE29 /* black_cc_mc@2x.png in Resources */,
+				2D10C9741ABDD4650021B95A /* LongFeedCollectionViewCell.xib in Resources */,
 				C3950ED0193E4D760042437A /* gear-2-bike.jpg in Resources */,
 				C39008161926411F00902B6E /* Icon-72@2x.png in Resources */,
 				2D10C9641ABDD2CF0021B95A /* Ingredients.png in Resources */,
@@ -1260,6 +1277,7 @@
 				C390081F1926411F00902B6E /* iTunesArtwork.png in Resources */,
 				C344559C1A3260C2007941F0 /* amex_blue.png in Resources */,
 				C3950ECE193E4D760042437A /* 0.jpg in Resources */,
+				2D10C9791ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib in Resources */,
 				2D10C9601ABDD2CF0021B95A /* cooking.png in Resources */,
 				C34455A51A3260C2007941F0 /* mastercard_green.png in Resources */,
 				2D10C9651ABDD2CF0021B95A /* lunch-dinner.png in Resources */,
@@ -1356,6 +1374,7 @@
 				C31C83AF192D41B40093751D /* BaseNavigationController.m in Sources */,
 				C390086A192AA37B00902B6E /* ContinueShoppingCell.m in Sources */,
 				C39007E11924EC6600902B6E /* SubtotalTitleItemCell.m in Sources */,
+				2D10C9781ABDD49E0021B95A /* ShortFeedCollectionViewCell.m in Sources */,
 				C3F901971923BE4C00400BF3 /* BaseViewController.m in Sources */,
 				C364DE951A269E090041ACF2 /* Product+NormalizedPrice.m in Sources */,
 				C30FABB81A1FB97A003672B7 /* MPAddress.m in Sources */,
@@ -1371,6 +1390,7 @@
 				C39007EF19252E1500902B6E /* OrderConfirmationViewController.m in Sources */,
 				C39007EB19251B6300902B6E /* ProcessOrderCell.m in Sources */,
 				C38B3AFB1919485700FBB01C /* ProductPreviewCell.m in Sources */,
+				2D10C9731ABDD4650021B95A /* LongFeedCollectionViewCell.m in Sources */,
 				C3B1075B192279710045EBC0 /* ICSDrawerController.m in Sources */,
 				C3900824192645A100902B6E /* TextFieldCell.m in Sources */,
 				C3F7E60E1A26A27500AF5245 /* OrderHeader+NormalizedTotals.m in Sources */,
