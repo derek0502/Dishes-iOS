@@ -161,8 +161,8 @@
 }
 
 -(void)confirmPreCheckout:(NSNotification *)notification{
-    if (self.navigationController.visibleViewController == self) {
-        
+//    if (self.navigationController.visibleViewController == self) {
+    
         // TODO merge with moveToCheckout:
         
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
@@ -194,9 +194,9 @@
             [checkout.containerTable reloadData];
             [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
             
-            [weakSelf.navigationController pushViewController:checkout animated:YES];
+            [weakSelf presentViewController:checkout animated:YES completion:nil];
         }];
-    }
+//    }
 }
 
 #pragma mark - UITableViewDelegate
@@ -274,7 +274,7 @@
                     checkout.walletInfo = walletInfo;
                     
                     [MBProgressHUD hideAllHUDsForView:weakSelf.view animated:YES];
-                    [weakSelf.navigationController pushViewController:checkout animated:YES];
+                    [weakSelf presentViewController:checkout animated:YES completion:nil];
                 }
             }];
         }

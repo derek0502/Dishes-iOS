@@ -227,7 +227,7 @@
         <!--My Cart-->
         <scene sceneID="cZg-6F-vuQ">
             <objects>
-                <viewController id="iCV-na-qFy" customClass="CartViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CartViewController" id="iCV-na-qFy" customClass="CartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i4w-bT-vax"/>
                         <viewControllerLayoutGuide type="bottom" id="tGz-Rh-z8y"/>
@@ -717,6 +717,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wVZ-bD-rCe"/>
+        <segue reference="a71-pe-j2a"/>
     </inferredMetricsTieBreakers>
 </document>

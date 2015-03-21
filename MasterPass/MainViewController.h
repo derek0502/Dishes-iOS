@@ -24,6 +24,6 @@
 - (IBAction)dineInPressed:(id)sender;
 - (IBAction)dineOutPressed:(id)sender;
 - (IBAction)searchPressed:(id)sender;
-- (IBAction)checkoutPressed:(id)sender;
+- (IBAction)cartPressed:(id)sender;
 
 @end

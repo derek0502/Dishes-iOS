@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="cartButton" destination="a7a-pO-ec0" id="dnN-l5-83l"/>
                 <outlet property="contentView" destination="mOC-8a-Ui2" id="33o-0S-7ix"/>
                 <outlet property="dineInButton" destination="WI0-1z-Jwx" id="hWe-Kw-wJh"/>
                 <outlet property="dineOutButton" destination="rVe-lb-Cqk" id="xnu-EZ-5VM"/>
@@ -69,13 +70,13 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7a-pO-ec0" userLabel="checkoutButton">
-                    <rect key="frame" x="516" y="9.5" width="69" height="30"/>
-                    <state key="normal" title="CheckOut">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7a-pO-ec0" userLabel="checkoutButton">
+                    <rect key="frame" x="516" y="10" width="69" height="30"/>
+                    <state key="normal" title="Cart">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="checkoutPressed:" destination="-1" eventType="touchUpInside" id="fcd-xs-znx"/>
+                        <action selector="cartPressed:" destination="-1" eventType="touchUpInside" id="0vt-cz-3uE"/>
                     </connections>
                 </button>
             </subviews>
@@ -103,7 +104,7 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tox-Ln-htF">
-                            <rect key="frame" x="91.5" y="0.0" width="137" height="50"/>
+                            <rect key="frame" x="92" y="0.0" width="137" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI0-1z-Jwx" userLabel="dineInButton">
                                     <rect key="frame" x="0.0" y="10" width="61" height="30"/>

@@ -12,10 +12,14 @@
 #import "ShortFeedCollectionViewCell.h"
 #import "DetailViewController.h"
 #import "MPECommerceManager.h"
+#import "CartViewController.h"
+
 #define LongCellHeight 245
 #define ShortCellHeight 181
 
-@interface MainViewController ()
+@interface MainViewController () {
+    IBOutlet UIButton *cartButton;
+}
 @property (nonatomic, strong) NSArray *productsData;
 @property (nonatomic, strong) NSArray *fullProductsData;
 @end
@@ -24,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [cartButton setHidden:YES];
     // Do any additional setup after loading the view from its nib.
     [self.titleLabel setText:@"Hello"];
     [self.leftCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"ShortFeedCollectionViewCell"];
@@ -37,13 +42,30 @@
     
     [self.dineInButton setSelected:YES];
     
+    __block int callsComplete = 0;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [self fullInventory:^(NSArray *products) {
         self.productsData = [NSArray arrayWithArray:products];
         self.fullProductsData = [NSArray arrayWithArray:products];
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self.leftCollectionView reloadData];
         [self.rightCollectionView reloadData];
+        callsComplete++;
+        if(callsComplete >= 2) {
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        }
+    }];
+    
+    MPECommerceManager *ecommerce = [MPECommerceManager sharedInstance];
+    [ecommerce getCurrentCart:^(OrderHeader *header, NSArray *cart) {
+        if(!cart || cart.count == 0) {
+            [cartButton setHidden:YES];
+        } else {
+            [cartButton setHidden:NO];
+        }
+        callsComplete++;
+        if(callsComplete >= 2) {
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        }
     }];
 }
 
@@ -83,6 +105,7 @@
             nibMyCellloaded = YES;
         }
         cell = (LongFeedCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"LongFeedCollectionViewCell" forIndexPath:indexPath];
+        
     }
     else if(collectionView == self.leftCollectionView)
     {
@@ -142,7 +165,10 @@
     [self presentViewController:dvc animated:YES completion:nil];
 }
 
-- (IBAction)checkoutPressed:(id)sender {
+- (IBAction)cartPressed:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    CartViewController *cvc = [sb instantiateViewControllerWithIdentifier:@"CartViewController"];
+    [self presentViewController:cvc animated:YES completion:nil];
 }
 
 - (IBAction)dineInPressed:(id)sender {
@@ -160,5 +186,6 @@
 }
 
 - (IBAction)searchPressed:(id)sender {
+    
 }
 @end
