@@ -106,6 +106,15 @@
         }
         cell = (LongFeedCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"LongFeedCollectionViewCell" forIndexPath:indexPath];
         
+        
+        UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:1];
+        
+        UILabel *nameLabel = (UILabel *)[cell.contentView viewWithTag:2];
+        
+        UILabel *authorLabel = (UILabel *)[cell.contentView viewWithTag:3];
+
+        
+        
     }
     else if(collectionView == self.leftCollectionView)
     {
@@ -120,6 +129,11 @@
             nibMyCellloaded = YES;
         }
         cell = (ShortFeedCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"ShortFeedCollectionViewCell" forIndexPath:indexPath];
+        UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:1];
+        
+        UILabel *nameLabel = (UILabel *)[cell.contentView viewWithTag:2];
+        
+        UILabel *authorLabel = (UILabel *)[cell.contentView viewWithTag:3];
     }
     else
     {
