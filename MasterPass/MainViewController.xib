@@ -10,7 +10,6 @@
                 <outlet property="contentView" destination="mOC-8a-Ui2" id="33o-0S-7ix"/>
                 <outlet property="dineInButton" destination="WI0-1z-Jwx" id="hWe-Kw-wJh"/>
                 <outlet property="dineOutButton" destination="rVe-lb-Cqk" id="xnu-EZ-5VM"/>
-                <outlet property="dineOutCollectionView" destination="Dbb-sJ-lQb" id="cQx-rC-9lQ"/>
                 <outlet property="dineOutContentView" destination="Yox-OS-KiS" id="LCU-lA-d6Y"/>
                 <outlet property="footerView" destination="vyH-RX-fPo" id="QNp-so-CuR"/>
                 <outlet property="leftCollectionView" destination="vLW-ce-aUv" id="x5I-MK-hSu"/>
@@ -158,30 +157,10 @@
             <point key="canvasLocation" x="1158" y="86"/>
         </view>
         <view contentMode="scaleToFill" id="Yox-OS-KiS" userLabel="dineOutContentView">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Dbb-sJ-lQb">
-                    <rect key="frame" x="8" y="-14" width="600" height="600"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Pey-nw-Fyq">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="EcG-MS-RZl"/>
-                        <outlet property="delegate" destination="-1" id="fVf-D8-eqk"/>
-                    </connections>
-                </collectionView>
-            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="Dbb-sJ-lQb" secondAttribute="trailing" constant="-8" id="7h2-8a-8Yv"/>
-                <constraint firstAttribute="bottom" secondItem="Dbb-sJ-lQb" secondAttribute="bottom" constant="14" id="CYc-gH-tmd"/>
-                <constraint firstItem="Dbb-sJ-lQb" firstAttribute="leading" secondItem="Yox-OS-KiS" secondAttribute="leading" constant="8" id="Q2q-2f-an4"/>
-                <constraint firstItem="Dbb-sJ-lQb" firstAttribute="top" secondItem="Yox-OS-KiS" secondAttribute="top" constant="-14" id="iGV-cs-m3E"/>
-            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="1382" y="508"/>
         </view>
     </objects>

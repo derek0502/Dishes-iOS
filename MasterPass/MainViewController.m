@@ -13,16 +13,25 @@
 #import "DetailViewController.h"
 #import "MPECommerceManager.h"
 #import "CartViewController.h"
+#import <MapKit/MapKit.h>
 
 #define LongCellHeight 245
 #define ShortCellHeight 181
 
-@interface MainViewController () {
+@interface MainViewController ()  {
     IBOutlet UIButton *cartButton;
     NSArray *images;
     NSArray *names;
     NSArray *authors;
+    UIView *restaurantView;
+    
+
+    float longi;
+    float lati;
+    
 }
+@property (strong, nonatomic)  MKMapView *mapView;
+@property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSArray *productsData;
 @property (nonatomic, strong) NSArray *fullProductsData;
 @end
@@ -30,6 +39,9 @@
 @implementation MainViewController
 
 -(void)setupLocalData {
+    lati = 22.286343;
+    longi = 114.190339;
+    
     images = @[@"sandwich.png", @"salad.png", @"glazedtofu.png", @"friedegg.png", @"easyshrimp.png", @"creamy.png", @"classicitaliantiramisu.png"];
     
     names = @[@"Tuna Sandwich", @"Healthy Salad", @"Glazed Tofu", @"Fried Egg", @"Easy Shrimp", @"Creamy Pasta", @"Classic Italian Tiramisu"];
@@ -39,7 +51,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupLocalData];
+    
+    self.mapView = [[MKMapView alloc]initWithFrame:CGRectMake(0, 0, 375, 200)];
+    [self.mapView setDelegate:self];
+    [self.dineOutContentView addSubview:self.mapView];
+    CLLocationCoordinate2D coord = {.latitude =  lati, .longitude =  longi};
+    MKCoordinateSpan span = {.latitudeDelta =  0.01, .longitudeDelta =  0.01};
+    MKCoordinateRegion region = {coord, span};
+    MKPointAnnotation *point = [[MKPointAnnotation alloc]init];
+    point.coordinate = coord;
+    [point setTitle:@"YOU ARE HERE"];
+    [self.mapView addAnnotation:point];
+    [self.mapView setRegion:region];
     [cartButton setHidden:YES];
+    
     // Do any additional setup after loading the view from its nib.
     [self.titleLabel setText:@"Hello"];
     [self.leftCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"ShortFeedCollectionViewCell"];
@@ -223,10 +248,14 @@
     [self.dineOutButton setSelected:YES];
     [self.contentView setHidden:YES];
     [self.dineOutContentView setHidden:NO];
+    
+    //Get Lat and Long...;
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
+
 - (IBAction)searchPressed:(id)sender {
-    
+
 }
 
 -(void)pressedHeart:(id)sender {
