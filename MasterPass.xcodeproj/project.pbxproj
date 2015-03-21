@@ -10,6 +10,8 @@
 		2728B4E21ABDC71D00CBCC9B /* PreferencesButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728B4E11ABDC71D00CBCC9B /* PreferencesButton.m */; };
 		2728B4E41ABDCE7C00CBCC9B /* prefBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4E31ABDCE7C00CBCC9B /* prefBG.png */; };
 		2728B4E61ABDCEAA00CBCC9B /* loginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4E51ABDCEAA00CBCC9B /* loginBG.png */; };
+		2728B4EB1ABDD8F800CBCC9B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */; };
+		2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */; };
 		2D10C93A1ABDA41F0021B95A /* disheslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9321ABDA41F0021B95A /* disheslogo.png */; };
 		2D10C93B1ABDA41F0021B95A /* splashpagebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9331ABDA41F0021B95A /* splashpagebg.png */; };
 		2D10C93C1ABDA41F0021B95A /* getstartedbtnup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */; };
@@ -186,6 +188,9 @@
 		2728B4E11ABDC71D00CBCC9B /* PreferencesButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesButton.m; sourceTree = "<group>"; };
 		2728B4E31ABDCE7C00CBCC9B /* prefBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prefBG.png; sourceTree = "<group>"; };
 		2728B4E51ABDCEAA00CBCC9B /* loginBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBG.png; sourceTree = "<group>"; };
+		2728B4E81ABDD8F800CBCC9B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		2D10C9321ABDA41F0021B95A /* disheslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disheslogo.png; sourceTree = "<group>"; };
 		2D10C9331ABDA41F0021B95A /* splashpagebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashpagebg.png; sourceTree = "<group>"; };
 		2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getstartedbtnup.png; sourceTree = "<group>"; };
@@ -427,6 +432,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2728B4E71ABDD8E000CBCC9B /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2728B4E81ABDD8F800CBCC9B /* DetailViewController.h */,
+				2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */,
+				2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */,
+			);
+			name = DetailViewController;
+			sourceTree = "<group>";
+		};
+		279FD26B1ABDDDFC00B6B519 /* CartViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CartViewController;
+			sourceTree = "<group>";
+		};
 		2D10C9301ABDA41F0021B95A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +705,8 @@
 		C3212D321906BE460072BA80 /* MasterPass */ = {
 			isa = PBXGroup;
 			children = (
+				279FD26B1ABDDDFC00B6B519 /* CartViewController */,
+				2728B4E71ABDD8E000CBCC9B /* DetailViewController */,
 				2D10C9301ABDA41F0021B95A /* Assets */,
 				2D11498D1ABD9BD700A38C45 /* HumanOrPetViewController */,
 				2D5DD0C61ABD9853003724D1 /* PreferencesViewController */,
@@ -1274,6 +1298,7 @@
 				2D10C95E1ABDD2CF0021B95A /* converter.png in Resources */,
 				C37483F61A186B8900D10742 /* mp_lightbox_base.html in Resources */,
 				2D10C96C1ABDD2CF0021B95A /* red-dot.png in Resources */,
+				2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */,
 				C390081F1926411F00902B6E /* iTunesArtwork.png in Resources */,
 				C344559C1A3260C2007941F0 /* amex_blue.png in Resources */,
 				C3950ECE193E4D760042437A /* 0.jpg in Resources */,
@@ -1408,6 +1433,7 @@
 				2D5DD0BD1ABD93FC003724D1 /* GeneralViewController.m in Sources */,
 				C38B36C5190DD0C800FBB01C /* ProductsListViewController.m in Sources */,
 				C3B1076019227F9B0045EBC0 /* LogInViewController.m in Sources */,
+				2728B4EB1ABDD8F800CBCC9B /* DetailViewController.m in Sources */,
 				C31C83A2192CF8380093751D /* MPLinkedCell.m in Sources */,
 				2728B4E21ABDC71D00CBCC9B /* PreferencesButton.m in Sources */,
 				C3B1075C192279710045EBC0 /* ICSDropShadowView.m in Sources */,
