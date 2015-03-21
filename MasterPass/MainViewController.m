@@ -8,9 +8,12 @@
 
 #import "MainViewController.h"
 #import "MPManager.h"
+#import "DetailViewController.h"
+#import "MPECommerceManager.h"
 
 @interface MainViewController ()
-
+@property (nonatomic, strong) NSArray *productsData;
+@property (nonatomic, strong) NSArray *fullProductsData;
 @end
 
 @implementation MainViewController
@@ -30,6 +33,19 @@
     
     [self.dineInButton setSelected:YES];
     
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [self fullInventory:^(NSArray *products) {
+        self.productsData = [NSArray arrayWithArray:products];
+        self.fullProductsData = [NSArray arrayWithArray:products];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self.leftCollectionView reloadData];
+        [self.rightCollectionView reloadData];
+    }];
+}
+
+-(void)fullInventory:(void (^)(NSArray *products))callback{
+    MPECommerceManager *manager = [MPECommerceManager sharedInstance];
+    [manager getAllProducts:callback];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,7 +100,10 @@
     
 }
 
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    DetailViewController *dvc = [DetailViewController new];
+    [self presentViewController:dvc animated:YES completion:nil];
+}
 
 - (IBAction)dineInPressed:(id)sender {
     [self.dineInButton setSelected:YES];
