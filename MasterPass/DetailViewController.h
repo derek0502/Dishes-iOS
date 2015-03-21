@@ -10,5 +10,6 @@
 #import "GeneralViewController.h"
 
 @interface DetailViewController : GeneralViewController
+@property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
 
 @end

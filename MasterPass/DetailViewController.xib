@@ -7,21 +7,19 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
             <connections>
                 <outlet property="contentView" destination="i5M-Pr-FkT" id="S0N-6c-Ccm"/>
+                <outlet property="myScrollView" destination="13z-3H-Tcy" id="MG6-PU-Zhe"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger-bkg.png" translatesAutoresizingMaskIntoConstraints="NO" id="FqX-qp-PBl">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="597" id="Su7-PK-Siu"/>
-                    </constraints>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13z-3H-Tcy">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunch-dinner.png" translatesAutoresizingMaskIntoConstraints="NO" id="B4F-2S-3BU">
                             <rect key="frame" x="139" y="60" width="96" height="96"/>
@@ -38,56 +36,56 @@
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="gXk-zc-2Lv">
-                            <rect key="frame" x="157" y="514" width="60" height="60"/>
+                            <rect key="frame" x="157" y="414" width="60" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="aMS-bR-1UD"/>
                                 <constraint firstAttribute="width" constant="60" id="gGQ-VI-ROi"/>
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="description.png" translatesAutoresizingMaskIntoConstraints="NO" id="n7h-9H-kXm">
-                            <rect key="frame" x="39" y="614" width="297" height="234"/>
+                            <rect key="frame" x="39" y="514" width="297" height="234"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="297" id="7aU-Qj-8aC"/>
                                 <constraint firstAttribute="height" constant="234" id="X2Y-XB-U1v"/>
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nutritions.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gtr-CX-Ir6">
-                            <rect key="frame" x="15" y="878" width="345" height="161"/>
+                            <rect key="frame" x="15" y="778" width="345" height="161"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="345" id="PEx-Ho-lRp"/>
                                 <constraint firstAttribute="height" constant="161" id="nEq-qX-kQR"/>
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ingredients.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qy4-D9-FZY">
-                            <rect key="frame" x="15" y="1049" width="345" height="345"/>
+                            <rect key="frame" x="15" y="949" width="345" height="345"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="345" id="iRf-H7-H0x"/>
                                 <constraint firstAttribute="height" constant="345" id="qc3-wo-xnn"/>
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="utensils.png" translatesAutoresizingMaskIntoConstraints="NO" id="hnz-7D-QUN">
-                            <rect key="frame" x="15" y="1404" width="345" height="130"/>
+                            <rect key="frame" x="15" y="1304" width="345" height="130"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="345" id="NaE-04-3vg"/>
                                 <constraint firstAttribute="height" constant="130" id="XQ1-hI-tZn"/>
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wine-pairing.png" translatesAutoresizingMaskIntoConstraints="NO" id="DyP-0Y-4jd">
-                            <rect key="frame" x="15" y="1544" width="345" height="230"/>
+                            <rect key="frame" x="15" y="1444" width="345" height="230"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="345" id="MDg-ni-ksP"/>
                                 <constraint firstAttribute="height" constant="230" id="mR8-1I-Y1V"/>
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking.png" translatesAutoresizingMaskIntoConstraints="NO" id="5En-lK-zy7">
-                            <rect key="frame" x="15" y="1784" width="345" height="1449"/>
+                            <rect key="frame" x="15" y="1684" width="345" height="1449"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="345" id="HFC-WZ-Z5m"/>
                                 <constraint firstAttribute="height" constant="1449" id="e52-Fq-6G0"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67O-qT-PH9">
-                            <rect key="frame" x="149" y="1985" width="77" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
                             <state key="normal" title="Add to cart">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -96,7 +94,7 @@
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="converter.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ed-5H-wsd">
-                            <rect key="frame" x="30" y="1334" width="125" height="45"/>
+                            <rect key="frame" x="40" y="1234" width="125" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="125" id="4Nl-RD-5Ta"/>
                                 <constraint firstAttribute="height" constant="45" id="tUg-oa-0MD"/>
@@ -109,7 +107,7 @@
                         <constraint firstAttribute="centerX" secondItem="gXk-zc-2Lv" secondAttribute="centerX" id="BKA-aa-e3L"/>
                         <constraint firstItem="Qy4-D9-FZY" firstAttribute="top" secondItem="Gtr-CX-Ir6" secondAttribute="bottom" constant="10" id="DQ4-PL-CDh"/>
                         <constraint firstItem="5En-lK-zy7" firstAttribute="top" secondItem="DyP-0Y-4jd" secondAttribute="bottom" constant="10" id="Esn-KW-Oqw"/>
-                        <constraint firstItem="2ed-5H-wsd" firstAttribute="leading" secondItem="Qy4-D9-FZY" secondAttribute="leading" constant="15" id="I1w-3w-heM"/>
+                        <constraint firstItem="2ed-5H-wsd" firstAttribute="leading" secondItem="Qy4-D9-FZY" secondAttribute="leading" constant="25" id="I1w-3w-heM"/>
                         <constraint firstAttribute="centerX" secondItem="hnz-7D-QUN" secondAttribute="centerX" id="J8K-3N-eJN"/>
                         <constraint firstItem="DyP-0Y-4jd" firstAttribute="top" secondItem="hnz-7D-QUN" secondAttribute="bottom" constant="10" id="JFl-PW-OrP"/>
                         <constraint firstAttribute="centerX" secondItem="Qy4-D9-FZY" secondAttribute="centerX" id="Jxy-df-IPq"/>
@@ -117,7 +115,7 @@
                         <constraint firstAttribute="centerX" secondItem="B4F-2S-3BU" secondAttribute="centerX" id="U75-gP-WAk"/>
                         <constraint firstAttribute="centerX" secondItem="DyP-0Y-4jd" secondAttribute="centerX" id="Ue3-zF-E7G"/>
                         <constraint firstItem="Gtr-CX-Ir6" firstAttribute="top" secondItem="n7h-9H-kXm" secondAttribute="bottom" constant="30" id="Waa-Rx-lOh"/>
-                        <constraint firstItem="gXk-zc-2Lv" firstAttribute="top" secondItem="13z-3H-Tcy" secondAttribute="top" constant="514" id="g1S-lo-ULU"/>
+                        <constraint firstItem="gXk-zc-2Lv" firstAttribute="top" secondItem="13z-3H-Tcy" secondAttribute="top" constant="414" id="g1S-lo-ULU"/>
                         <constraint firstItem="2ed-5H-wsd" firstAttribute="top" secondItem="Qy4-D9-FZY" secondAttribute="bottom" constant="-60" id="gj4-x5-JzN"/>
                         <constraint firstItem="hnz-7D-QUN" firstAttribute="top" secondItem="Qy4-D9-FZY" secondAttribute="bottom" constant="10" id="iBc-w4-Fc4"/>
                         <constraint firstAttribute="centerX" secondItem="n7h-9H-kXm" secondAttribute="centerX" id="qVD-Tp-gCh"/>
@@ -131,6 +129,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="13z-3H-Tcy" secondAttribute="trailing" id="0uj-li-2TB"/>
                 <constraint firstItem="13z-3H-Tcy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2BK-nm-C4F"/>
+                <constraint firstAttribute="bottom" secondItem="FqX-qp-PBl" secondAttribute="bottom" id="5w9-EN-QcK"/>
                 <constraint firstAttribute="trailing" secondItem="FqX-qp-PBl" secondAttribute="trailing" id="MCG-Wm-iDp"/>
                 <constraint firstItem="FqX-qp-PBl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RQN-Lr-kOe"/>
                 <constraint firstItem="FqX-qp-PBl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fHJ-Fh-Lne"/>

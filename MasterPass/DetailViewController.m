@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.footerContainer hideByHeight:YES];
+    [_myScrollView setContentSize:CGSizeMake(self.view.frame.size.width, 3812)];
 }
 
 - (void)didReceiveMemoryWarning {
