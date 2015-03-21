@@ -18,7 +18,7 @@
 #import <APSDK/APObject+Remote.h>
 #import <APSDK/AuthManager+Protected.h>
 #import "UserRegistrationViewController.h"
-#import "HumanOrPetViewController.h"
+#import "PreferencesViewController.h"
 #import "StyleConstant.h"
 
 @interface LogInViewController ()
@@ -138,10 +138,11 @@
 }
 
 -(IBAction)setupDrawerAndShop{
-    HumanOrPetViewController *vc = [[HumanOrPetViewController alloc]init];
+    PreferencesViewController *vc = [[PreferencesViewController alloc]init];
     UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:vc];
     [nvc.navigationBar setHidden:YES];
     [self presentViewController:nvc animated:YES completion:nil];
+
     
 //    AppDelegate *ad = (AppDelegate *)[[UIApplication sharedApplication]delegate];
 //    
