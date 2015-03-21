@@ -14,6 +14,8 @@
 #import "MPECommerceManager.h"
 #import "CartViewController.h"
 #import <MapKit/MapKit.h>
+#import <XMLDictionary/XMLDictionary.h>
+#import <AFNetworking/AFNetworking.h>
 
 #define LongCellHeight 245
 #define ShortCellHeight 181
@@ -29,11 +31,14 @@
     float longi;
     float lati;
     
+    IBOutlet UITableView *restaurantTableView;
+    
 }
 @property (strong, nonatomic)  MKMapView *mapView;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSArray *productsData;
 @property (nonatomic, strong) NSArray *fullProductsData;
+@property (nonatomic, strong) NSDictionary *restaurantData;
 @end
 
 @implementation MainViewController
@@ -251,6 +256,28 @@
     
     //Get Lat and Long...;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    AFHTTPRequestSerializer * requestSerializer = [AFHTTPRequestSerializer serializer];
+    AFHTTPResponseSerializer * responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    NSString *ua = @"Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25";
+    [requestSerializer setValue:ua forHTTPHeaderField:@"User-Agent"];
+    //    [requestSerializer setValue:@"application/xml" forHTTPHeaderField:@"Content-type"];
+    responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/xml", nil];
+    manager.responseSerializer = responseSerializer;
+    manager.requestSerializer = requestSerializer;
+    
+    [manager POST:@"http://smartkalkyl.se/rateapp.aspx?user=xxxxx&pass=xxxxxx"
+       parameters:nil
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              NSData * data = (NSData *)responseObject;
+              self.restaurantData = [[XMLDictionaryParser sharedInstance]dictionaryWithData:data];
+          }
+          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              NSLog(@"Error: %@", error);
+          }];
+    
 }
 
 
@@ -268,4 +295,42 @@
         [heartButton setSelected:NO];
     }
 }
+
+
+#pragma mark - ---table view---
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+
+    [cell.textLabel setText:@"GREAT"];
+//    NSInteger section = [indexPath section];
+//    
+//    switch (section) {
+//        case 0: // First cell in section 1
+//            cell.textLabel.text = [collectionHelpTitles objectAtIndex:[indexPath row]];
+//            break;
+//        case 1: // Second cell in section 1
+//            cell.textLabel.text = [noteHelpTitles objectAtIndex:[indexPath row]];
+//            break;
+//        case 2: // Third cell in section 1
+//            cell.textLabel.text = [checklistHelpTitles objectAtIndex:[indexPath row]];
+//            break;
+//        case 3: // Fourth cell in section 1
+//            cell.textLabel.text = [photoHelpTitles objectAtIndex:[indexPath row]];
+//            break;
+//        default:
+//            // Do something else here if a cell other than 1,2,3 or 4 is requested
+//            break;
+//    }
+    return cell;
+}
+
 @end
