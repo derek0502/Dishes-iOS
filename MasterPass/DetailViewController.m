@@ -29,20 +29,10 @@
 }
 
 -(IBAction)addToCart:(id)sender {
-    Product *product = [Product new];
-    [product setId:@"MikeHasAnID"];
-    
-    [product setDesc:@"The Description"];
-    [product setImageUrl:@"http://political-science.uchicago.edu/faculty/Mike%20Albertus.jpg"];
-    [product setName:@"Awesome Name!"];
-    [product setPrice:[NSNumber numberWithFloat:29.99f]];
-    
-
     MPECommerceManager *ecommerce = [MPECommerceManager sharedInstance];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [ecommerce addProductToCart:product callback:^(NSError *error) {
-        [MBProgressHUD HUDForView:self.view];
-        
+    [ecommerce addProductToCart:self.detailedProduct callback:^(NSError *error) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
     
 //    @property (nonatomic, strong) NSString * desc;

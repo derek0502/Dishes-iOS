@@ -244,6 +244,13 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     DetailViewController *dvc = [[DetailViewController alloc]init];
+    
+    //doesn't matter which product we add as backend is hidden from user..
+    
+    int randNum = rand() % (self.productsData.count - 0) + 0; //create the random number.
+    
+    dvc.detailedProduct = [self.productsData objectAtIndex:randNum];
+    
     [self.navigationController pushViewController:dvc animated:YES];
     
 }

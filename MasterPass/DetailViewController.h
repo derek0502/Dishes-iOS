@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "GeneralViewController.h"
+#import <APSDK/Product.h>
 
 @interface DetailViewController : GeneralViewController
 @property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
+@property (strong, nonatomic) Product* detailedProduct;
 
 @end
