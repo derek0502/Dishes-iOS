@@ -24,14 +24,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATm-ua-6WU" userLabel="navContainer">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                     <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="GHu-pM-NJd"/>
+                        <constraint firstAttribute="height" constant="70" id="GHu-pM-NJd"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5J-aY-Fma" userLabel="contentContainer">
-                    <rect key="frame" x="0.0" y="60" width="320" height="448"/>
+                    <rect key="frame" x="0.0" y="70" width="320" height="438"/>
                     <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFu-RA-Qob" userLabel="footerContainer">
