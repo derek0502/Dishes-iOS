@@ -8,18 +8,19 @@
             <connections>
                 <outlet property="contentView" destination="i5M-Pr-FkT" id="S0N-6c-Ccm"/>
                 <outlet property="myScrollView" destination="13z-3H-Tcy" id="MG6-PU-Zhe"/>
+                <outlet property="navView" destination="q66-Nw-K2A" id="8bM-Kk-2nB"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger-bkg.png" translatesAutoresizingMaskIntoConstraints="NO" id="FqX-qp-PBl">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13z-3H-Tcy">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13z-3H-Tcy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunch-dinner.png" translatesAutoresizingMaskIntoConstraints="NO" id="B4F-2S-3BU">
                             <rect key="frame" x="139" y="60" width="96" height="96"/>
@@ -84,22 +85,26 @@
                                 <constraint firstAttribute="height" constant="1449" id="e52-Fq-6G0"/>
                             </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67O-qT-PH9">
-                            <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
-                            <state key="normal" title="Add to cart">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="converter.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ed-5H-wsd">
+                            <rect key="frame" x="32" y="1234" width="125" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="4Nl-RD-5Ta"/>
+                                <constraint firstAttribute="height" constant="45" id="tUg-oa-0MD"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67O-qT-PH9">
+                            <rect key="frame" x="163" y="1234" width="180" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="BeI-RZ-6Wg"/>
+                                <constraint firstAttribute="width" constant="180" id="cpD-AP-MOT"/>
+                            </constraints>
+                            <state key="normal" image="add-to-basket.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="addToCart:" destination="-1" eventType="touchUpInside" id="ulX-cC-hys"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="converter.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ed-5H-wsd">
-                            <rect key="frame" x="40" y="1234" width="125" height="45"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="125" id="4Nl-RD-5Ta"/>
-                                <constraint firstAttribute="height" constant="45" id="tUg-oa-0MD"/>
-                            </constraints>
-                        </imageView>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="centerX" secondItem="5En-lK-zy7" secondAttribute="centerX" id="Ahz-3h-Bc4"/>
@@ -107,7 +112,7 @@
                         <constraint firstAttribute="centerX" secondItem="gXk-zc-2Lv" secondAttribute="centerX" id="BKA-aa-e3L"/>
                         <constraint firstItem="Qy4-D9-FZY" firstAttribute="top" secondItem="Gtr-CX-Ir6" secondAttribute="bottom" constant="10" id="DQ4-PL-CDh"/>
                         <constraint firstItem="5En-lK-zy7" firstAttribute="top" secondItem="DyP-0Y-4jd" secondAttribute="bottom" constant="10" id="Esn-KW-Oqw"/>
-                        <constraint firstItem="2ed-5H-wsd" firstAttribute="leading" secondItem="Qy4-D9-FZY" secondAttribute="leading" constant="25" id="I1w-3w-heM"/>
+                        <constraint firstItem="2ed-5H-wsd" firstAttribute="leading" secondItem="Qy4-D9-FZY" secondAttribute="leading" constant="17" id="I1w-3w-heM"/>
                         <constraint firstAttribute="centerX" secondItem="hnz-7D-QUN" secondAttribute="centerX" id="J8K-3N-eJN"/>
                         <constraint firstItem="DyP-0Y-4jd" firstAttribute="top" secondItem="hnz-7D-QUN" secondAttribute="bottom" constant="10" id="JFl-PW-OrP"/>
                         <constraint firstAttribute="centerX" secondItem="Qy4-D9-FZY" secondAttribute="centerX" id="Jxy-df-IPq"/>
@@ -115,9 +120,11 @@
                         <constraint firstAttribute="centerX" secondItem="B4F-2S-3BU" secondAttribute="centerX" id="U75-gP-WAk"/>
                         <constraint firstAttribute="centerX" secondItem="DyP-0Y-4jd" secondAttribute="centerX" id="Ue3-zF-E7G"/>
                         <constraint firstItem="Gtr-CX-Ir6" firstAttribute="top" secondItem="n7h-9H-kXm" secondAttribute="bottom" constant="30" id="Waa-Rx-lOh"/>
+                        <constraint firstItem="67O-qT-PH9" firstAttribute="leading" secondItem="2ed-5H-wsd" secondAttribute="trailing" constant="6" id="YjB-eb-v4i"/>
                         <constraint firstItem="gXk-zc-2Lv" firstAttribute="top" secondItem="13z-3H-Tcy" secondAttribute="top" constant="414" id="g1S-lo-ULU"/>
                         <constraint firstItem="2ed-5H-wsd" firstAttribute="top" secondItem="Qy4-D9-FZY" secondAttribute="bottom" constant="-60" id="gj4-x5-JzN"/>
                         <constraint firstItem="hnz-7D-QUN" firstAttribute="top" secondItem="Qy4-D9-FZY" secondAttribute="bottom" constant="10" id="iBc-w4-Fc4"/>
+                        <constraint firstItem="67O-qT-PH9" firstAttribute="centerY" secondItem="2ed-5H-wsd" secondAttribute="centerY" id="q9h-Mi-bhi"/>
                         <constraint firstAttribute="centerX" secondItem="n7h-9H-kXm" secondAttribute="centerX" id="qVD-Tp-gCh"/>
                         <constraint firstAttribute="centerX" secondItem="Gtr-CX-Ir6" secondAttribute="centerX" id="r3m-gb-tST"/>
                         <constraint firstItem="B4F-2S-3BU" firstAttribute="top" secondItem="13z-3H-Tcy" secondAttribute="top" constant="60" id="sVk-YB-DzO"/>
@@ -139,10 +146,76 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="244.5" y="206"/>
         </view>
+        <view contentMode="scaleToFill" id="q66-Nw-K2A">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vg-oa-dXL">
+                    <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y45-QW-kij">
+                            <rect key="frame" x="0.0" y="3" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Wyn-eb-y42"/>
+                                <constraint firstAttribute="width" constant="44" id="lVi-iZ-cCl"/>
+                            </constraints>
+                            <state key="normal" title="b">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backPressed:" destination="-1" eventType="touchUpInside" id="KL3-7y-7DR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRI-Sp-Di7">
+                            <rect key="frame" x="44" y="3" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="2hZ-gG-9AO"/>
+                                <constraint firstAttribute="height" constant="44" id="ZkP-nt-5Pl"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="basket-icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doC-89-uyb">
+                            <rect key="frame" x="276" y="3" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="fON-TU-m3i"/>
+                                <constraint firstAttribute="height" constant="44" id="szQ-UV-hAT"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="message-icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="doC-89-uyb" secondAttribute="trailing" id="82q-XK-ASO"/>
+                        <constraint firstAttribute="centerY" secondItem="doC-89-uyb" secondAttribute="centerY" id="C5E-ki-vLL"/>
+                        <constraint firstItem="y45-QW-kij" firstAttribute="leading" secondItem="1vg-oa-dXL" secondAttribute="leading" id="fyN-NY-VYA"/>
+                        <constraint firstAttribute="centerY" secondItem="jRI-Sp-Di7" secondAttribute="centerY" id="k1q-Ii-Ajr"/>
+                        <constraint firstItem="jRI-Sp-Di7" firstAttribute="leading" secondItem="y45-QW-kij" secondAttribute="trailing" id="sHS-wx-hmj"/>
+                        <constraint firstAttribute="centerY" secondItem="y45-QW-kij" secondAttribute="centerY" id="vv6-oH-A7k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1vg-oa-dXL" firstAttribute="leading" secondItem="q66-Nw-K2A" secondAttribute="leading" id="8cd-sH-Lld"/>
+                <constraint firstAttribute="trailing" secondItem="1vg-oa-dXL" secondAttribute="trailing" id="AqD-sp-OAP"/>
+                <constraint firstAttribute="bottom" secondItem="1vg-oa-dXL" secondAttribute="bottom" id="IeV-wb-9Gz"/>
+                <constraint firstItem="1vg-oa-dXL" firstAttribute="top" secondItem="q66-Nw-K2A" secondAttribute="top" constant="20" id="ZJh-HH-HGQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="694" y="145"/>
+        </view>
     </objects>
     <resources>
         <image name="Ingredients.png" width="1380" height="1380"/>
         <image name="Nutritions.png" width="1380" height="644"/>
+        <image name="add-to-basket.png" width="720" height="180"/>
+        <image name="basket-icon.png" width="100" height="80"/>
         <image name="burger-bkg.png" width="1500" height="2388"/>
         <image name="converter.png" width="500" height="180"/>
         <image name="cooking-icon.png" width="240" height="240"/>
@@ -150,6 +223,7 @@
         <image name="description.png" width="1188" height="936"/>
         <image name="falafel-veggie-burger.png" width="1208" height="260"/>
         <image name="lunch-dinner.png" width="388" height="388"/>
+        <image name="message-icon.png" width="100" height="92"/>
         <image name="utensils.png" width="1380" height="520"/>
         <image name="wine-pairing.png" width="1380" height="920"/>
     </resources>

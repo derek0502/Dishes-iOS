@@ -104,6 +104,13 @@
             [MBProgressHUD hideHUDForView:self.view animated:YES];
         }
     }];
+    
+    [self.dineInButton setTintColor:[UIColor whiteColor]];
+    [self.dineOutButton setTintColor:[UIColor whiteColor]];
+    [self.dineInButton setTitleColor:COLOR_GreyText forState:UIControlStateNormal];
+    [self.dineInButton setTitleColor:COLOR_OrangeText forState:UIControlStateSelected];
+    [self.dineOutButton setTitleColor:COLOR_GreyText forState:UIControlStateNormal];
+    [self.dineOutButton setTitleColor:COLOR_OrangeText forState:UIControlStateSelected];
 }
 
 -(void)fullInventory:(void (^)(NSArray *products))callback{
@@ -155,9 +162,11 @@
         
         UILabel *nameLabel = (UILabel *)[cell.contentView viewWithTag:2];
         [nameLabel setText:[names objectAtIndex:indexPath.row]];
+        [nameLabel setFont:[UIFont fontWithName:FONT_UniversLTStd size:nameLabel.font.pointSize]];
 
         UILabel *authorLabel = (UILabel *)[cell.contentView viewWithTag:3];
         [authorLabel setText:[authors objectAtIndex:indexPath.row]];
+        [authorLabel setFont:[UIFont fontWithName:FONT_UniversLTStd size:authorLabel.font.pointSize]];
     }
     else if(collectionView == self.leftCollectionView)
     {
@@ -181,9 +190,12 @@
         
         UILabel *nameLabel = (UILabel *)[cell.contentView viewWithTag:2];
         [nameLabel setText:[names objectAtIndex:indexPath.row+3]];
+        [nameLabel setFont:[UIFont fontWithName:FONT_UniversLTStd size:nameLabel.font.pointSize]];
+        
         
         UILabel *authorLabel = (UILabel *)[cell.contentView viewWithTag:3];
         [authorLabel setText:[authors objectAtIndex:indexPath.row+3]];
+        [authorLabel setFont:[UIFont fontWithName:FONT_UniversLTStd size:authorLabel.font.pointSize]];
     }
     else
     {

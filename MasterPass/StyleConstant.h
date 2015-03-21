@@ -15,6 +15,8 @@
 #define COLOR_White             UIColorFromRGB(0xFFFFFF)
 #define COLOR_TransparentButton UIColorFromRGBAndAlpha(0xFFFFFF, 0.7f)
 #define COLOR_SelectedButton    UIColorFromRGB(0x282828)
+#define COLOR_GreyText          UIColorFromRGB(0x9b9b9b)
+#define COLOR_OrangeText        UIColorFromRGB(0xfca700)
 
 #define FONT_MEDIUM_SIZE(x)     [UIFont fontWithName:FONT_UniversLTStd size:(x)]
 #define FONT_REGULAR_SIZE(x)    [UIFont fontWithName:FONT_UniversLTStd size:(x)]
