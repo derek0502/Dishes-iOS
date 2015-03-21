@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -14,17 +14,45 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSN-Oe-IVe">
-                    <rect key="frame" x="261" y="307" width="46" height="30"/>
-                    <state key="normal" title="Button">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSN-Oe-IVe">
+                    <rect key="frame" x="217" y="85" width="167" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="167" id="AHo-i1-yBg"/>
+                        <constraint firstAttribute="height" constant="30" id="PVX-QL-XDV"/>
+                    </constraints>
+                    <state key="normal" title="Are you a Human?">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="nextPressed:" destination="-1" eventType="touchUpInside" id="7ed-zd-UwL"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuP-Xx-a6j">
+                    <rect key="frame" x="241" y="153" width="119" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="PO5-nc-Nlf"/>
+                        <constraint firstAttribute="width" constant="119" id="o3F-IE-4mD"/>
+                    </constraints>
+                    <state key="normal" title="Or are you a pet?">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="DSN-Oe-IVe" secondAttribute="centerX" constant="128.5" id="Fo4-YZ-6Rv"/>
+                <constraint firstAttribute="centerX" secondItem="FuP-Xx-a6j" secondAttribute="centerX" id="G5x-g8-1sM"/>
+                <constraint firstAttribute="centerX" secondItem="DSN-Oe-IVe" secondAttribute="centerX" id="Waq-jb-8RR"/>
+                <constraint firstAttribute="centerX" secondItem="FuP-Xx-a6j" secondAttribute="centerX" constant="128.5" id="aLz-kz-2ag"/>
+                <constraint firstItem="DSN-Oe-IVe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="mA0-B9-jIU"/>
+                <constraint firstItem="FuP-Xx-a6j" firstAttribute="top" secondItem="DSN-Oe-IVe" secondAttribute="bottom" constant="38" id="tFT-By-bu0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="aLz-kz-2ag"/>
+                    <exclude reference="Fo4-YZ-6Rv"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

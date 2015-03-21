@@ -19,22 +19,18 @@
 #import <APSDK/AuthManager+Protected.h>
 #import "UserRegistrationViewController.h"
 #import "HumanOrPetViewController.h"
+#import "StyleConstant.h"
 
 @interface LogInViewController ()
 @property(nonatomic, weak)IBOutlet UIView *container;
 @property(nonatomic, weak)IBOutlet UIView *usernameContainer;
 @property(nonatomic, weak)IBOutlet UIView *passwordContainer;
 @property(nonatomic, weak)IBOutlet UIView *fbLink;
-@property(nonatomic, weak)IBOutlet UIView *twLink;
-@property(nonatomic, weak)IBOutlet UILabel *rememberLabel;
-@property(nonatomic, weak)IBOutlet UIButton *registerLabel;
 @property(nonatomic, weak)IBOutlet UIImageView *usernameImage;
 @property(nonatomic, weak)IBOutlet UIImageView *passwordImage;
 @property(nonatomic, weak)IBOutlet UIImageView *fbImage;
-@property(nonatomic, weak)IBOutlet UIImageView *twImage;
 @property(nonatomic, weak)IBOutlet UITextField *usernameField;
 @property(nonatomic, weak)IBOutlet UITextField *passwordField;
-@property(nonatomic, strong) M13Checkbox *rememberPassword;
 @property(nonatomic, weak)IBOutlet BButton *signInButton;
 @end
 @implementation LogInViewController
@@ -43,20 +39,22 @@
     [super viewDidLoad];
 
     [self.view setBackgroundColor:[UIColor deepBlueColor]];
-    [self.fbLink setBackgroundColor:[UIColor facebookBlue]];
-    [self.twLink setBackgroundColor:[UIColor twitterBlue]];
-    [self.container.layer setCornerRadius:4];
-    [self.rememberLabel setTextColor:[UIColor superGreyColor]];
-    [self.registerLabel setTitleColor:[UIColor fireOrangeColor] forState:UIControlStateNormal];
+    [self.fbLink setBackgroundColor:COLOR_Facebook_Inside];
+    [self.fbLink.layer setCornerRadius:4.0f];
+    [self.fbLink.layer setBorderColor:COLOR_White.CGColor];
+    [self.fbLink.layer setBorderWidth:1.0f];
     
-    [self.usernameContainer setBackgroundColor:[UIColor whiteColor]];
-    [self.usernameContainer.layer setCornerRadius:4];
-    [self.usernameContainer.layer setBorderColor:[[UIColor fireOrangeColor] CGColor]];
-    [self.usernameContainer.layer setBorderWidth:1];
-    [self.passwordContainer setBackgroundColor:[UIColor whiteColor]];
-    [self.passwordContainer.layer setCornerRadius:4];
-    [self.passwordContainer.layer setBorderColor:[[UIColor blackColor] CGColor]];
-    [self.passwordContainer.layer setBorderWidth:1];
+    [self.container.layer setCornerRadius:4];
+    
+    [self.usernameContainer setBackgroundColor:COLOR_TransparentButton];
+    [self.usernameContainer.layer setCornerRadius:4.0f];
+    [self.usernameContainer.layer setBorderColor:COLOR_White.CGColor];
+    [self.usernameContainer.layer setBorderWidth:1.0f];
+    
+    [self.passwordContainer setBackgroundColor:COLOR_TransparentButton];
+    [self.passwordContainer.layer setCornerRadius:4.0f];
+    [self.passwordContainer.layer setBorderColor:COLOR_White.CGColor];
+    [self.passwordContainer.layer setBorderWidth:1.0f];
     
     
     self.usernameField.text = [[NSUserDefaults standardUserDefaults]stringForKey:@"username"];
@@ -74,24 +72,9 @@
     [facebookIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
     self.fbImage.image = [facebookIcon imageWithSize:CGSizeMake(20, 20)];
     
-    FAKFontAwesome *twitterIcon = [FAKFontAwesome twitterIconWithSize:20];
-    [twitterIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
-    self.twImage.image = [twitterIcon imageWithSize:CGSizeMake(20, 20)];
-    
     [self.fbLink bk_whenTapped:^{
-        [self socialLoginAlert];
+        [self socialNetworkLogin];
     }];
-    
-    [self.twLink bk_whenTapped:^{
-        [self socialLoginAlert];
-    }];
-    
-    self.rememberPassword = [[M13Checkbox alloc]init];
-    self.rememberPassword.checkState = M13CheckboxStateChecked;
-    [self.rememberPassword setFrame:CGRectMake(30, 150, 10, 10)];
-    self.rememberPassword.checkColor = [UIColor blackColor];
-    self.rememberPassword.strokeColor = [UIColor superGreyColor];
-    [self.container addSubview:self.rememberPassword];
     
     [self.signInButton bk_addEventHandler:^(id sender) {
         [self authenticate];
@@ -100,34 +83,26 @@
 
 -(void)authenticate{
     // Demo Code
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    if ([self.rememberPassword checkState] == M13CheckboxStateChecked) {
-        [prefs setObject:self.usernameField.text forKey:@"username"];
-    }
-    else {
-        [prefs removeObjectForKey:@"username"];
-    }
-    [prefs synchronize];
     [self login];
 }
 
--(void)socialLoginAlert{
-    SIAlertView *alert = [[SIAlertView alloc]initWithTitle:@"Social Login" andMessage:@"You can add code here to authenticate via social networks"];
-    [alert addButtonWithTitle:@"OK" type:SIAlertViewButtonTypeCancel handler:nil];
-    alert.transitionStyle = SIAlertViewTransitionStyleBounce;
-    [alert show];
+-(void)socialNetworkLogin { //Stub the social network login for now but this should be replaced by a call to FB SDK.
+    self.usernameField.text = @"mike";
+    self.passwordField.text = @"password";
+    [self authenticate];
 }
 
--(IBAction)registerUser{
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main"
-                                                         bundle: nil];
-    
-    UserRegistrationViewController *registerView = [storyboard instantiateViewControllerWithIdentifier:@"RegisterView"];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:registerView];
-    
-    [self presentViewController:nav animated:YES completion:nil];
-}
+//Keep temporarily perhaps will implement it later if we have time
+//-(IBAction)registerUser{
+//    
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main"
+//                                                         bundle: nil];
+//    
+//    UserRegistrationViewController *registerView = [storyboard instantiateViewControllerWithIdentifier:@"RegisterView"];
+//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:registerView];
+//    
+//    [self presentViewController:nav animated:YES completion:nil];
+//}
 
 -(IBAction)login{
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
