@@ -25,4 +25,6 @@
 - (IBAction)backPressed:(id)sender;
 - (IBAction)nextPressed:(id)sender;
 
+-(void)addConstraintForViewToContainer:(UIView *)view;
+
 @end

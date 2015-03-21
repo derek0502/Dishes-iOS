@@ -8,7 +8,6 @@
 
 #import "MainViewController.h"
 #import "MPManager.h"
-#import "MPLightboxViewController.h"
 
 @interface MainViewController ()
 
@@ -20,6 +19,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.titleLabel setText:@"Hello"];
+    [self.leftCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    [self.rightCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    
+    
+    [self.dineOutCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    [self.dineOutContentView setHidden:YES];
+    [self.contentContainer addSubview:self.dineOutContentView];
+    [self addConstraintForViewToContainer:self.dineOutContentView];
+    
+    [self.dineInButton setSelected:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,46 +37,69 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)loadMasterPass:(id)sender {
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     
-    MPLightboxViewController *lightboxViewController = [[MPLightboxViewController alloc]init];
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    NSDictionary *lightBoxParams = @{@"requestToken":@"3DIWiJjAC8vTIcrwkFuOqHxAwWdsr5bRZlCHFNgTb9a7626b!414969684342562b53374f47485157794272354a6d55773d",
-                                     @"merchantCheckoutId":@"a466w4xy5ex04i2z936ao1i3adi17b1jpd",
-                                     @"requestedDataTypes":@[@"CARD", @"ADDRESS", @"PROFILE"],
-                                     @"callbackUrl":@"http://mikeisgreat.com",
-                                     @"pairingRequestToken":@"0d6b4de661b5627af734da118ea4ebae4a7f9779",
-                                     @"allowedCardTypes":@[@"amex", @"discover", @"master", @"maestro"],
-                                     @"requestPairing":@1,
-                                     @"version":@"v6"};
+    return 10;
+}
+
+-(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    lightboxViewController.delegate = self;
-    [self presentViewController:lightboxViewController animated:YES completion:^{
-        [lightboxViewController initiateLightBoxOfType:MPLightBoxTypePreCheckout WithOptions:lightBoxParams];
-    }];
+    UICollectionViewCell *cell = (UICollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
+    
+    return cell;
 }
 
--(void)pairingView:(MPLightboxViewController *)pairingViewController didCompletePairing:(BOOL)success error:(NSError *)error {
-    //Add code for completing pairing lightbox
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(collectionView == self.leftCollectionView)
+    {
+        return CGSizeMake(collectionView.frame.size.width-15, 90.f);
+    }
+    else if(collectionView == self.rightCollectionView)
+    {
+        return CGSizeMake(collectionView.frame.size.width-15, 120.f);
+    }
+    else
+    {
+        return CGSizeMake(collectionView.frame.size.width, 80.f);
+    }
 }
 
--(void)lightBox:(MPLightboxViewController *)lightBoxViewController didCompletePreCheckout:(BOOL)success data:(NSDictionary *)data error:(NSError *)error {
-    //Add code for completing precheckout lighbox
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if(scrollView == self.leftCollectionView)
+    {
+        self.rightCollectionView.contentOffset = self.leftCollectionView.contentOffset;
+    }
+    else if(scrollView ==self.rightCollectionView)
+    {
+        self.leftCollectionView.contentOffset = self.rightCollectionView.contentOffset;
+    }
+    
 }
 
--(void)lightBox:(MPLightboxViewController *)pairingViewController didCompleteCheckout:(BOOL)success error:(NSError *)error {
-    //Add code for completion of checkout lightbox
+
+
+- (IBAction)dineInPressed:(id)sender {
+    [self.dineInButton setSelected:YES];
+    [self.dineOutButton setSelected:NO];
+    [self.contentView setHidden:NO];
+    [self.dineOutContentView setHidden:YES];
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)dineOutPressed:(id)sender {
+    [self.dineInButton setSelected:NO];
+    [self.dineOutButton setSelected:YES];
+    [self.contentView setHidden:YES];
+    [self.dineOutContentView setHidden:NO];
 }
-*/
 
+- (IBAction)searchPressed:(id)sender {
+}
 @end
