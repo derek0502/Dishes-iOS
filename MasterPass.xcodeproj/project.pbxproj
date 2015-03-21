@@ -12,6 +12,12 @@
 		2728B4E61ABDCEAA00CBCC9B /* loginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4E51ABDCEAA00CBCC9B /* loginBG.png */; };
 		2728B4EB1ABDD8F800CBCC9B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */; };
 		2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */; };
+		273230711ABE33A6009156CC /* restaurantF-VeggieSF.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */; };
+		273230721ABE33A6009156CC /* restaurantE-PureVeggieHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */; };
+		273230731ABE33A6009156CC /* restaurantD-LokChaTeahouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */; };
+		273230741ABE33A6009156CC /* restaurantC-Locofama.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */; };
+		273230751ABE33A6009156CC /* restaurantB-Herbivores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */; };
+		273230761ABE33A6009156CC /* restaurantA-Finds.png in Resources */ = {isa = PBXBuildFile; fileRef = 273230701ABE33A6009156CC /* restaurantA-Finds.png */; };
 		2737FBB81ABE09E0003E3B67 /* sandwich.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB11ABE09E0003E3B67 /* sandwich.png */; };
 		2737FBB91ABE09E0003E3B67 /* salad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB21ABE09E0003E3B67 /* salad.png */; };
 		2737FBBA1ABE09E0003E3B67 /* glazedtofu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB31ABE09E0003E3B67 /* glazedtofu.png */; };
@@ -202,6 +208,12 @@
 		2728B4E81ABDD8F800CBCC9B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantF-VeggieSF.png"; path = "../../Downloads/restaurantF-VeggieSF.png"; sourceTree = "<group>"; };
+		2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantE-PureVeggieHouse.png"; path = "../../Downloads/restaurantE-PureVeggieHouse.png"; sourceTree = "<group>"; };
+		2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantD-LokChaTeahouse.png"; path = "../../Downloads/restaurantD-LokChaTeahouse.png"; sourceTree = "<group>"; };
+		2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantC-Locofama.png"; path = "../../Downloads/restaurantC-Locofama.png"; sourceTree = "<group>"; };
+		2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantB-Herbivores.png"; path = "../../Downloads/restaurantB-Herbivores.png"; sourceTree = "<group>"; };
+		273230701ABE33A6009156CC /* restaurantA-Finds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantA-Finds.png"; path = "../../Downloads/restaurantA-Finds.png"; sourceTree = "<group>"; };
 		2737FBB11ABE09E0003E3B67 /* sandwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandwich.png; sourceTree = "<group>"; };
 		2737FBB21ABE09E0003E3B67 /* salad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salad.png; sourceTree = "<group>"; };
 		2737FBB31ABE09E0003E3B67 /* glazedtofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glazedtofu.png; sourceTree = "<group>"; };
@@ -468,6 +480,12 @@
 		2737FBB01ABE09CE003E3B67 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */,
+				2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */,
+				2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */,
+				2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */,
+				2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */,
+				273230701ABE33A6009156CC /* restaurantA-Finds.png */,
 				2737FBBF1ABE1287003E3B67 /* heartup.png */,
 				2737FBC01ABE1287003E3B67 /* heartdown.png */,
 				2737FBC11ABE1287003E3B67 /* seperator.png */,
@@ -1292,8 +1310,10 @@
 				2D5DD0C41ABD9426003724D1 /* DIN-Medium.otf in Resources */,
 				2D10C95A1ABDD2CF0021B95A /* basket-icon.png in Resources */,
 				C34455A21A3260C2007941F0 /* maestro_blue.png in Resources */,
+				273230761ABE33A6009156CC /* restaurantA-Finds.png in Resources */,
 				C3950ED8193E4D760042437A /* samsung-galaxy-tab-city1.jpg in Resources */,
 				2D10C96B1ABDD2CF0021B95A /* pumpkin-cake.png in Resources */,
+				273230751ABE33A6009156CC /* restaurantB-Herbivores.png in Resources */,
 				2D10C96A1ABDD2CF0021B95A /* Nutritions.png in Resources */,
 				2737FBBB1ABE09E0003E3B67 /* friedegg.png in Resources */,
 				C390084419297DF500902B6E /* orange_cc.png in Resources */,
@@ -1301,6 +1321,7 @@
 				2D5DD0BC1ABD93FC003724D1 /* GeneralViewController.xib in Resources */,
 				C39008181926411F00902B6E /* Icon-76@2x.png in Resources */,
 				C3950ECF193E4D760042437A /* display_hero.jpg in Resources */,
+				273230711ABE33A6009156CC /* restaurantF-VeggieSF.png in Resources */,
 				2D10C95D1ABDD2CF0021B95A /* cinnamon-apple.png in Resources */,
 				C34455A31A3260C2007941F0 /* maestro_yellow.png in Resources */,
 				C3BB758219B0B97500A7DE29 /* blue_cc@2x.png in Resources */,
@@ -1329,6 +1350,7 @@
 				2D10C9621ABDD2CF0021B95A /* falafel-veggie-burger.png in Resources */,
 				C344559F1A3260C2007941F0 /* generic_card_blue.png in Resources */,
 				C390081B1926411F00902B6E /* Icon-Small.png in Resources */,
+				273230721ABE33A6009156CC /* restaurantE-PureVeggieHouse.png in Resources */,
 				2D1149921ABD9BEE00A38C45 /* HumanOrPetViewController.xib in Resources */,
 				C390081C1926411F00902B6E /* Icon-Small@2x.png in Resources */,
 				C39008121926411F00902B6E /* Icon-40@2x.png in Resources */,
@@ -1368,6 +1390,7 @@
 				C3950ED7193E4D760042437A /* samsung-galaxy-s4-polycarbonate-body-macro1.jpg in Resources */,
 				2D5DD0C51ABD9426003724D1 /* DIN-Regular.otf in Resources */,
 				C39008131926411F00902B6E /* Icon-60.png in Resources */,
+				273230741ABE33A6009156CC /* restaurantC-Locofama.png in Resources */,
 				2D10C96F1ABDD2CF0021B95A /* wine-pairing.png in Resources */,
 				C39008191926411F00902B6E /* Icon-Small-50.png in Resources */,
 				2D10C96E1ABDD2CF0021B95A /* utensils.png in Resources */,
@@ -1393,6 +1416,7 @@
 				C39008171926411F00902B6E /* Icon-76.png in Resources */,
 				2D10C95C1ABDD2CF0021B95A /* burger-overlay-bkg.png in Resources */,
 				2D10C9681ABDD2CF0021B95A /* message-icon.png in Resources */,
+				273230731ABE33A6009156CC /* restaurantD-LokChaTeahouse.png in Resources */,
 				C3900826192654F200902B6E /* buy-with-masterpass.png in Resources */,
 				C390084A192A309300902B6E /* connect_with_masterpass.png in Resources */,
 				C3950ED1193E4D760042437A /* hp-chromebook-11-thumb.jpg in Resources */,

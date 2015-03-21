@@ -39,6 +39,7 @@
 @property (nonatomic, strong) NSArray *productsData;
 @property (nonatomic, strong) NSArray *fullProductsData;
 @property (nonatomic, strong) NSDictionary *restaurantData;
+@property (nonatomic, strong) NSArray *restaurants;
 @end
 
 @implementation MainViewController
@@ -268,11 +269,15 @@
     manager.responseSerializer = responseSerializer;
     manager.requestSerializer = requestSerializer;
     
-    [manager POST:@"http://smartkalkyl.se/rateapp.aspx?user=xxxxx&pass=xxxxxx"
+    NSString *getReq = [NSString stringWithFormat:@"http://dmartin.org:8021/restaurants/v1/restaurant?Format=XML&PageOffset=0&PageLength=10&Latitude=%f&Longitude=%f",lati, longi];
+    [manager GET:getReq
        parameters:nil
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               NSData * data = (NSData *)responseObject;
               self.restaurantData = [[XMLDictionaryParser sharedInstance]dictionaryWithData:data];
+              self.restaurants = [self.restaurantData valueForKey:@"Restaurant"];
+              [restaurantTableView reloadData];
+              [MBProgressHUD hideHUDForView:self.view animated:YES];
           }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"Error: %@", error);
@@ -299,9 +304,16 @@
 
 #pragma mark - ---table view---
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    if(self.restaurantData) {
+        return 5;
+    } else {
+        return 1;
+    }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 130;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
@@ -310,26 +322,26 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 
-    [cell.textLabel setText:@"GREAT"];
-//    NSInteger section = [indexPath section];
-//    
-//    switch (section) {
-//        case 0: // First cell in section 1
-//            cell.textLabel.text = [collectionHelpTitles objectAtIndex:[indexPath row]];
-//            break;
-//        case 1: // Second cell in section 1
-//            cell.textLabel.text = [noteHelpTitles objectAtIndex:[indexPath row]];
-//            break;
-//        case 2: // Third cell in section 1
-//            cell.textLabel.text = [checklistHelpTitles objectAtIndex:[indexPath row]];
-//            break;
-//        case 3: // Fourth cell in section 1
-//            cell.textLabel.text = [photoHelpTitles objectAtIndex:[indexPath row]];
-//            break;
-//        default:
-//            // Do something else here if a cell other than 1,2,3 or 4 is requested
-//            break;
-//    }
+    UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 375, 130)];
+    switch(indexPath.row) {
+        case 0:
+            [iv setImage:[UIImage imageNamed:@"restaurantF-VeggieSF.png"]];
+            break;
+        case 1:
+            [iv setImage:[UIImage imageNamed:@"restaurantE-PureVeggieHouse.png"]];
+            break;
+        case 2:
+            [iv setImage:[UIImage imageNamed:@"restaurantC-Locofama.png"]];
+            break;
+        case 3:
+            [iv setImage:[UIImage imageNamed:@"restaurantB-Herbivores.png"]];
+            break;
+        case 4:
+            [iv setImage:[UIImage imageNamed:@"restaurantA-Finds.png"]];
+            break;
+    }
+
+    [cell.contentView addSubview:iv];
     return cell;
 }
 
