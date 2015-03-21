@@ -1,0 +1,33 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #define MAS_SHORTHAND
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <ObjectiveSugar/ObjectiveSugar.h>
+    #import <BlocksKit/BlocksKit.h>
+    #import <BlocksKit/BlocksKit+UIKit.h>
+    #import <Masonry/Masonry.h>
+    #import <POP/POP.h>
+    #import <JMGBlockSegue/UIViewController+BlockSegue.h>
+    #import <SIAlertView/SIAlertView.h> 
+    #import <FontAwesomeKit/FontAwesomeKit.h>
+    #import "MBProgressHUD.h"//
+
+    #import "UIColor+ExtendedColors.h"
+
+    #define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+    #import "StyleConstant.h"
+    #import <UIView+UpdateAutoLayoutConstraints.h>
+#endif

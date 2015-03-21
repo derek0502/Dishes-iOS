@@ -1,0 +1,182 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// BBBadgeBarButtonItem
+#define COCOAPODS_POD_AVAILABLE_BBBadgeBarButtonItem
+#define COCOAPODS_VERSION_MAJOR_BBBadgeBarButtonItem 1
+#define COCOAPODS_VERSION_MINOR_BBBadgeBarButtonItem 1
+#define COCOAPODS_VERSION_PATCH_BBBadgeBarButtonItem 0
+
+// BButton
+#define COCOAPODS_POD_AVAILABLE_BButton
+#define COCOAPODS_VERSION_MAJOR_BButton 4
+#define COCOAPODS_VERSION_MINOR_BButton 0
+#define COCOAPODS_VERSION_PATCH_BButton 2
+
+// BlocksKit
+#define COCOAPODS_POD_AVAILABLE_BlocksKit
+#define COCOAPODS_VERSION_MAJOR_BlocksKit 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit 5
+
+// BlocksKit/All
+#define COCOAPODS_POD_AVAILABLE_BlocksKit_All
+#define COCOAPODS_VERSION_MAJOR_BlocksKit_All 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit_All 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit_All 5
+
+// BlocksKit/Core
+#define COCOAPODS_POD_AVAILABLE_BlocksKit_Core
+#define COCOAPODS_VERSION_MAJOR_BlocksKit_Core 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit_Core 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit_Core 5
+
+// BlocksKit/DynamicDelegate
+#define COCOAPODS_POD_AVAILABLE_BlocksKit_DynamicDelegate
+#define COCOAPODS_VERSION_MAJOR_BlocksKit_DynamicDelegate 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit_DynamicDelegate 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit_DynamicDelegate 5
+
+// BlocksKit/MessageUI
+#define COCOAPODS_POD_AVAILABLE_BlocksKit_MessageUI
+#define COCOAPODS_VERSION_MAJOR_BlocksKit_MessageUI 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit_MessageUI 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit_MessageUI 5
+
+// BlocksKit/UIKit
+#define COCOAPODS_POD_AVAILABLE_BlocksKit_UIKit
+#define COCOAPODS_VERSION_MAJOR_BlocksKit_UIKit 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit_UIKit 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit_UIKit 5
+
+// FontAwesomeKit
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit 8
+
+// FontAwesomeKit/Core
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_Core
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_Core 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_Core 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_Core 8
+
+// FontAwesomeKit/FontAwesome
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_FontAwesome
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_FontAwesome 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_FontAwesome 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_FontAwesome 8
+
+// FontAwesomeKit/FoundationIcons
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_FoundationIcons
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_FoundationIcons 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_FoundationIcons 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_FoundationIcons 8
+
+// FontAwesomeKit/IonIcons
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_IonIcons
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_IonIcons 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_IonIcons 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_IonIcons 8
+
+// FontAwesomeKit/Zocial
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_Zocial
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_Zocial 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_Zocial 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_Zocial 8
+
+// JMGBlockSegue
+#define COCOAPODS_POD_AVAILABLE_JMGBlockSegue
+#define COCOAPODS_VERSION_MAJOR_JMGBlockSegue 0
+#define COCOAPODS_VERSION_MINOR_JMGBlockSegue 2
+#define COCOAPODS_VERSION_PATCH_JMGBlockSegue 0
+
+// KLScrollSelect
+#define COCOAPODS_POD_AVAILABLE_KLScrollSelect
+#define COCOAPODS_VERSION_MAJOR_KLScrollSelect 1
+#define COCOAPODS_VERSION_MINOR_KLScrollSelect 0
+#define COCOAPODS_VERSION_PATCH_KLScrollSelect 0
+
+// M13Checkbox
+#define COCOAPODS_POD_AVAILABLE_M13Checkbox
+#define COCOAPODS_VERSION_MAJOR_M13Checkbox 1
+#define COCOAPODS_VERSION_MINOR_M13Checkbox 1
+#define COCOAPODS_VERSION_PATCH_M13Checkbox 2
+
+// MBProgressHUD
+#define COCOAPODS_POD_AVAILABLE_MBProgressHUD
+#define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
+#define COCOAPODS_VERSION_MINOR_MBProgressHUD 9
+#define COCOAPODS_VERSION_PATCH_MBProgressHUD 1
+
+// Masonry
+#define COCOAPODS_POD_AVAILABLE_Masonry
+#define COCOAPODS_VERSION_MAJOR_Masonry 0
+#define COCOAPODS_VERSION_MINOR_Masonry 6
+#define COCOAPODS_VERSION_PATCH_Masonry 1
+
+// ObjectiveSugar
+#define COCOAPODS_POD_AVAILABLE_ObjectiveSugar
+#define COCOAPODS_VERSION_MAJOR_ObjectiveSugar 1
+#define COCOAPODS_VERSION_MINOR_ObjectiveSugar 1
+#define COCOAPODS_VERSION_PATCH_ObjectiveSugar 0
+
+// SDWebImage
+#define COCOAPODS_POD_AVAILABLE_SDWebImage
+#define COCOAPODS_VERSION_MAJOR_SDWebImage 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage 7
+#define COCOAPODS_VERSION_PATCH_SDWebImage 2
+
+// SDWebImage/Core
+#define COCOAPODS_POD_AVAILABLE_SDWebImage_Core
+#define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage_Core 7
+#define COCOAPODS_VERSION_PATCH_SDWebImage_Core 2
+
+// SIAlertView
+#define COCOAPODS_POD_AVAILABLE_SIAlertView
+#define COCOAPODS_VERSION_MAJOR_SIAlertView 1
+#define COCOAPODS_VERSION_MINOR_SIAlertView 3
+#define COCOAPODS_VERSION_PATCH_SIAlertView 0
+
+// SVWebViewController
+#define COCOAPODS_POD_AVAILABLE_SVWebViewController
+#define COCOAPODS_VERSION_MAJOR_SVWebViewController 1
+#define COCOAPODS_VERSION_MINOR_SVWebViewController 0
+#define COCOAPODS_VERSION_PATCH_SVWebViewController 0
+
+// SwipeView
+#define COCOAPODS_POD_AVAILABLE_SwipeView
+#define COCOAPODS_VERSION_MAJOR_SwipeView 1
+#define COCOAPODS_VERSION_MINOR_SwipeView 3
+#define COCOAPODS_VERSION_PATCH_SwipeView 2
+
+// TPKeyboardAvoiding
+#define COCOAPODS_POD_AVAILABLE_TPKeyboardAvoiding
+#define COCOAPODS_VERSION_MAJOR_TPKeyboardAvoiding 1
+#define COCOAPODS_VERSION_MINOR_TPKeyboardAvoiding 2
+#define COCOAPODS_VERSION_PATCH_TPKeyboardAvoiding 6
+
+// UIActivityIndicator-for-SDWebImage
+#define COCOAPODS_POD_AVAILABLE_UIActivityIndicator_for_SDWebImage
+#define COCOAPODS_VERSION_MAJOR_UIActivityIndicator_for_SDWebImage 1
+#define COCOAPODS_VERSION_MINOR_UIActivityIndicator_for_SDWebImage 2
+#define COCOAPODS_VERSION_PATCH_UIActivityIndicator_for_SDWebImage 0
+
+// UpdateAutoLayoutConstraints
+#define COCOAPODS_POD_AVAILABLE_UpdateAutoLayoutConstraints
+#define COCOAPODS_VERSION_MAJOR_UpdateAutoLayoutConstraints 0
+#define COCOAPODS_VERSION_MINOR_UpdateAutoLayoutConstraints 2
+#define COCOAPODS_VERSION_PATCH_UpdateAutoLayoutConstraints 0
+
+// pop
+#define COCOAPODS_POD_AVAILABLE_pop
+#define COCOAPODS_VERSION_MAJOR_pop 1
+#define COCOAPODS_VERSION_MINOR_pop 0
+#define COCOAPODS_VERSION_PATCH_pop 7
+
