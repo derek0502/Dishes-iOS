@@ -19,6 +19,9 @@
 
 @interface MainViewController () {
     IBOutlet UIButton *cartButton;
+    NSArray *images;
+    NSArray *names;
+    NSArray *authors;
 }
 @property (nonatomic, strong) NSArray *productsData;
 @property (nonatomic, strong) NSArray *fullProductsData;
@@ -26,8 +29,16 @@
 
 @implementation MainViewController
 
+-(void)setupLocalData {
+    images = @[@"sandwich.png", @"salad.png", @"glazedtofu.png", @"friedegg.png", @"easyshrimp.png", @"creamy.png", @"classicitaliantiramisu.png"];
+    
+    names = @[@"Tuna Sandwich", @"Healthy Salad", @"Glazed Tofu", @"Fried Egg", @"Easy Shrimp", @"Creamy Pasta", @"Classic Italian Tiramisu"];
+    
+    authors = @[@"Amelia Lee", @"Mike Woodruff", @"Derek Cheung", @"Julia Wood", @"Joseph Liu", @"Kit Chan", @"Momo Woodruff"];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupLocalData];
     [cartButton setHidden:YES];
     // Do any additional setup after loading the view from its nib.
     [self.titleLabel setText:@"Hello"];
@@ -50,6 +61,7 @@
         [self.leftCollectionView reloadData];
         [self.rightCollectionView reloadData];
         callsComplete++;
+        
         if(callsComplete >= 2) {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
         }
@@ -86,6 +98,11 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
+    if([collectionView isEqual:self.rightCollectionView]) {
+        return 3;
+    } else if([collectionView isEqual:self.leftCollectionView]) {
+        return 4;
+    }
     return 10;
 }
 
@@ -105,16 +122,17 @@
             nibMyCellloaded = YES;
         }
         cell = (LongFeedCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"LongFeedCollectionViewCell" forIndexPath:indexPath];
-        
+        UIButton *heartButton = (UIButton*)[cell.contentView viewWithTag:4];
+        [heartButton addTarget:self action:@selector(pressedHeart:) forControlEvents:UIControlEventTouchUpInside];
         
         UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:1];
+        [imageView setImage:[UIImage imageNamed:[images objectAtIndex:indexPath.row]]];
         
         UILabel *nameLabel = (UILabel *)[cell.contentView viewWithTag:2];
-        
-        UILabel *authorLabel = (UILabel *)[cell.contentView viewWithTag:3];
+        [nameLabel setText:[names objectAtIndex:indexPath.row]];
 
-        
-        
+        UILabel *authorLabel = (UILabel *)[cell.contentView viewWithTag:3];
+        [authorLabel setText:[authors objectAtIndex:indexPath.row]];
     }
     else if(collectionView == self.leftCollectionView)
     {
@@ -129,11 +147,18 @@
             nibMyCellloaded = YES;
         }
         cell = (ShortFeedCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"ShortFeedCollectionViewCell" forIndexPath:indexPath];
+        
+        UIButton *heartButton = (UIButton*)[cell.contentView viewWithTag:4];
+        [heartButton addTarget:self action:@selector(pressedHeart:) forControlEvents:UIControlEventTouchUpInside];
+
         UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:1];
+        [imageView setImage:[UIImage imageNamed:[images objectAtIndex:indexPath.row+3]]];
         
         UILabel *nameLabel = (UILabel *)[cell.contentView viewWithTag:2];
+        [nameLabel setText:[names objectAtIndex:indexPath.row+3]];
         
         UILabel *authorLabel = (UILabel *)[cell.contentView viewWithTag:3];
+        [authorLabel setText:[authors objectAtIndex:indexPath.row+3]];
     }
     else
     {
@@ -201,5 +226,16 @@
 
 - (IBAction)searchPressed:(id)sender {
     
+}
+
+-(void)pressedHeart:(id)sender {
+    UIButton *heartButton = (UIButton*)sender;
+    if(!heartButton.selected) {
+        [heartButton setBackgroundImage:[UIImage imageNamed:@"heartup.png"] forState:UIControlStateNormal];
+        [heartButton setSelected:YES];
+    } else {
+        [heartButton setBackgroundImage:[UIImage imageNamed:@"heartdown.png"] forState:UIControlStateNormal];
+        [heartButton setSelected:NO];
+    }
 }
 @end

@@ -12,6 +12,16 @@
 		2728B4E61ABDCEAA00CBCC9B /* loginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4E51ABDCEAA00CBCC9B /* loginBG.png */; };
 		2728B4EB1ABDD8F800CBCC9B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */; };
 		2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */; };
+		2737FBB81ABE09E0003E3B67 /* sandwich.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB11ABE09E0003E3B67 /* sandwich.png */; };
+		2737FBB91ABE09E0003E3B67 /* salad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB21ABE09E0003E3B67 /* salad.png */; };
+		2737FBBA1ABE09E0003E3B67 /* glazedtofu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB31ABE09E0003E3B67 /* glazedtofu.png */; };
+		2737FBBB1ABE09E0003E3B67 /* friedegg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB41ABE09E0003E3B67 /* friedegg.png */; };
+		2737FBBC1ABE09E0003E3B67 /* easyshrimp.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB51ABE09E0003E3B67 /* easyshrimp.png */; };
+		2737FBBD1ABE09E0003E3B67 /* creamy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB61ABE09E0003E3B67 /* creamy.png */; };
+		2737FBBE1ABE09E0003E3B67 /* classicitaliantiramisu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB71ABE09E0003E3B67 /* classicitaliantiramisu.png */; };
+		2737FBC21ABE1287003E3B67 /* heartup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBBF1ABE1287003E3B67 /* heartup.png */; };
+		2737FBC31ABE1287003E3B67 /* heartdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBC01ABE1287003E3B67 /* heartdown.png */; };
+		2737FBC41ABE1287003E3B67 /* seperator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBC11ABE1287003E3B67 /* seperator.png */; };
 		2D10C93A1ABDA41F0021B95A /* disheslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9321ABDA41F0021B95A /* disheslogo.png */; };
 		2D10C93B1ABDA41F0021B95A /* splashpagebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9331ABDA41F0021B95A /* splashpagebg.png */; };
 		2D10C93C1ABDA41F0021B95A /* getstartedbtnup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */; };
@@ -191,6 +201,16 @@
 		2728B4E81ABDD8F800CBCC9B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		2737FBB11ABE09E0003E3B67 /* sandwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandwich.png; sourceTree = "<group>"; };
+		2737FBB21ABE09E0003E3B67 /* salad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salad.png; sourceTree = "<group>"; };
+		2737FBB31ABE09E0003E3B67 /* glazedtofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glazedtofu.png; sourceTree = "<group>"; };
+		2737FBB41ABE09E0003E3B67 /* friedegg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friedegg.png; sourceTree = "<group>"; };
+		2737FBB51ABE09E0003E3B67 /* easyshrimp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easyshrimp.png; sourceTree = "<group>"; };
+		2737FBB61ABE09E0003E3B67 /* creamy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = creamy.png; sourceTree = "<group>"; };
+		2737FBB71ABE09E0003E3B67 /* classicitaliantiramisu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = classicitaliantiramisu.png; sourceTree = "<group>"; };
+		2737FBBF1ABE1287003E3B67 /* heartup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartup.png; sourceTree = "<group>"; };
+		2737FBC01ABE1287003E3B67 /* heartdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartdown.png; sourceTree = "<group>"; };
+		2737FBC11ABE1287003E3B67 /* seperator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seperator.png; sourceTree = "<group>"; };
 		2D10C9321ABDA41F0021B95A /* disheslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disheslogo.png; sourceTree = "<group>"; };
 		2D10C9331ABDA41F0021B95A /* splashpagebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashpagebg.png; sourceTree = "<group>"; };
 		2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getstartedbtnup.png; sourceTree = "<group>"; };
@@ -442,6 +462,23 @@
 			name = DetailViewController;
 			sourceTree = "<group>";
 		};
+		2737FBB01ABE09CE003E3B67 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2737FBBF1ABE1287003E3B67 /* heartup.png */,
+				2737FBC01ABE1287003E3B67 /* heartdown.png */,
+				2737FBC11ABE1287003E3B67 /* seperator.png */,
+				2737FBB11ABE09E0003E3B67 /* sandwich.png */,
+				2737FBB21ABE09E0003E3B67 /* salad.png */,
+				2737FBB31ABE09E0003E3B67 /* glazedtofu.png */,
+				2737FBB41ABE09E0003E3B67 /* friedegg.png */,
+				2737FBB51ABE09E0003E3B67 /* easyshrimp.png */,
+				2737FBB61ABE09E0003E3B67 /* creamy.png */,
+				2737FBB71ABE09E0003E3B67 /* classicitaliantiramisu.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		279FD26B1ABDDDFC00B6B519 /* CartViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,6 +574,7 @@
 		2D5DD0B21ABD93C6003724D1 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2737FBB01ABE09CE003E3B67 /* Images */,
 				2D5DD0B31ABD93D6003724D1 /* MainViewController.h */,
 				2D5DD0B41ABD93D6003724D1 /* MainViewController.m */,
 				2D5DD0B51ABD93D6003724D1 /* MainViewController.xib */,
@@ -1246,12 +1284,14 @@
 				C3B107621922A34C0045EBC0 /* logo.png in Resources */,
 				2D5DD0C31ABD9426003724D1 /* DIN-Bold.otf in Resources */,
 				C3950ED9193E4D760042437A /* Sony-Playstation-4-disc.jpg in Resources */,
+				2737FBC41ABE1287003E3B67 /* seperator.png in Resources */,
 				2D5DD0C41ABD9426003724D1 /* DIN-Medium.otf in Resources */,
 				2D10C95A1ABDD2CF0021B95A /* basket-icon.png in Resources */,
 				C34455A21A3260C2007941F0 /* maestro_blue.png in Resources */,
 				C3950ED8193E4D760042437A /* samsung-galaxy-tab-city1.jpg in Resources */,
 				2D10C96B1ABDD2CF0021B95A /* pumpkin-cake.png in Resources */,
 				2D10C96A1ABDD2CF0021B95A /* Nutritions.png in Resources */,
+				2737FBBB1ABE09E0003E3B67 /* friedegg.png in Resources */,
 				C390084419297DF500902B6E /* orange_cc.png in Resources */,
 				C3950ED2193E4D760042437A /* IdeaPad-Y500-Laptop-PC-Closeup-Removeable-Drive-9L-940x475.jpg in Resources */,
 				2D5DD0BC1ABD93FC003724D1 /* GeneralViewController.xib in Resources */,
@@ -1263,6 +1303,7 @@
 				2D10C9611ABDD2CF0021B95A /* description.png in Resources */,
 				C3212D371906BE460072BA80 /* InfoPlist.strings in Resources */,
 				C3BB758019B0B93100A7DE29 /* black_cc_mc@2x.png in Resources */,
+				2737FBBC1ABE09E0003E3B67 /* easyshrimp.png in Resources */,
 				2D10C9741ABDD4650021B95A /* LongFeedCollectionViewCell.xib in Resources */,
 				C3950ED0193E4D760042437A /* gear-2-bike.jpg in Resources */,
 				C39008161926411F00902B6E /* Icon-72@2x.png in Resources */,
@@ -1300,13 +1341,18 @@
 				2D10C96C1ABDD2CF0021B95A /* red-dot.png in Resources */,
 				2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */,
 				C390081F1926411F00902B6E /* iTunesArtwork.png in Resources */,
+				2737FBC31ABE1287003E3B67 /* heartdown.png in Resources */,
 				C344559C1A3260C2007941F0 /* amex_blue.png in Resources */,
 				C3950ECE193E4D760042437A /* 0.jpg in Resources */,
 				2D10C9791ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib in Resources */,
+				2737FBC21ABE1287003E3B67 /* heartup.png in Resources */,
 				2D10C9601ABDD2CF0021B95A /* cooking.png in Resources */,
 				C34455A51A3260C2007941F0 /* mastercard_green.png in Resources */,
 				2D10C9651ABDD2CF0021B95A /* lunch-dinner.png in Resources */,
+				2737FBB81ABE09E0003E3B67 /* sandwich.png in Resources */,
+				2737FBBE1ABE09E0003E3B67 /* classicitaliantiramisu.png in Resources */,
 				C39008151926411F00902B6E /* Icon-72.png in Resources */,
+				2737FBBD1ABE09E0003E3B67 /* creamy.png in Resources */,
 				2D5DD0B71ABD93D6003724D1 /* MainViewController.xib in Resources */,
 				C34455A11A3260C2007941F0 /* generic_card_orange.png in Resources */,
 				2D10C93D1ABDA41F0021B95A /* getstarteddown.png in Resources */,
@@ -1333,9 +1379,11 @@
 				C3BB758419B0B99D00A7DE29 /* orange_cc@2x.png in Resources */,
 				C3950ED5193E4D760042437A /* kindle-fire1.jpg in Resources */,
 				2D10C93E1ABDA41F0021B95A /* signupbg.png in Resources */,
+				2737FBBA1ABE09E0003E3B67 /* glazedtofu.png in Resources */,
 				2D10C93B1ABDA41F0021B95A /* splashpagebg.png in Resources */,
 				2728B4E41ABDCE7C00CBCC9B /* prefBG.png in Resources */,
 				C3F5173B1951E9DE0035570A /* black_cc_mc.png in Resources */,
+				2737FBB91ABE09E0003E3B67 /* salad.png in Resources */,
 				C390082A19266A6B00902B6E /* bank-logo.png in Resources */,
 				C3950EDA193E4D760042437A /* tumblr_m9y5jp3Svf1r5eau1o1_500.jpg in Resources */,
 				C39008171926411F00902B6E /* Icon-76.png in Resources */,
