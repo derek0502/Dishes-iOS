@@ -12,6 +12,7 @@
 		2D10C93C1ABDA41F0021B95A /* getstartedbtnup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */; };
 		2D10C93D1ABDA41F0021B95A /* getstarteddown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9361ABDA41F0021B95A /* getstarteddown.png */; };
 		2D10C93E1ABDA41F0021B95A /* signupbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9371ABDA41F0021B95A /* signupbg.png */; };
+		2D10C9401ABDA6260021B95A /* UniversLTStd-LightCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C93F1ABDA6260021B95A /* UniversLTStd-LightCn.otf */; };
 		2D1149911ABD9BEE00A38C45 /* HumanOrPetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */; };
 		2D1149921ABD9BEE00A38C45 /* HumanOrPetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */; };
 		2D5DD0B61ABD93D6003724D1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5DD0B41ABD93D6003724D1 /* MainViewController.m */; };
@@ -156,6 +157,7 @@
 		2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getstartedbtnup.png; sourceTree = "<group>"; };
 		2D10C9361ABDA41F0021B95A /* getstarteddown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getstarteddown.png; sourceTree = "<group>"; };
 		2D10C9371ABDA41F0021B95A /* signupbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signupbg.png; sourceTree = "<group>"; };
+		2D10C93F1ABDA6260021B95A /* UniversLTStd-LightCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UniversLTStd-LightCn.otf"; sourceTree = "<group>"; };
 		2D11498E1ABD9BEE00A38C45 /* HumanOrPetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanOrPetViewController.h; sourceTree = "<group>"; };
 		2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanOrPetViewController.m; sourceTree = "<group>"; };
 		2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanOrPetViewController.xib; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 		2D5DD0BF1ABD9426003724D1 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2D10C93F1ABDA6260021B95A /* UniversLTStd-LightCn.otf */,
 				2D5DD0C01ABD9426003724D1 /* DIN-Bold.otf */,
 				2D5DD0C11ABD9426003724D1 /* DIN-Medium.otf */,
 				2D5DD0C21ABD9426003724D1 /* DIN-Regular.otf */,
@@ -1170,6 +1173,7 @@
 				C39008191926411F00902B6E /* Icon-Small-50.png in Resources */,
 				C3950E9F193E3AB80042437A /* black_cc_mp.png in Resources */,
 				C3950ED6193E4D760042437A /* Nokia-Lumia-520-1-2.jpg in Resources */,
+				2D10C9401ABDA6260021B95A /* UniversLTStd-LightCn.otf in Resources */,
 				2D5DD0CB1ABD98E7003724D1 /* PreferencesViewController.xib in Resources */,
 				C390082C19266A6B00902B6E /* blue_cc.png in Resources */,
 				C344559D1A3260C2007941F0 /* discover_grey.png in Resources */,
