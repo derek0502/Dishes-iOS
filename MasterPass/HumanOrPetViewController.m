@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.footerContainer hideByHeight:YES];
+    [self.navContainer hideByHeight:YES];
 }
 
 - (void)didReceiveMemoryWarning {

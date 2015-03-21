@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D10C93A1ABDA41F0021B95A /* disheslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9321ABDA41F0021B95A /* disheslogo.png */; };
+		2D10C93B1ABDA41F0021B95A /* splashpagebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9331ABDA41F0021B95A /* splashpagebg.png */; };
+		2D10C93C1ABDA41F0021B95A /* getstartedbtnup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */; };
+		2D10C93D1ABDA41F0021B95A /* getstarteddown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9361ABDA41F0021B95A /* getstarteddown.png */; };
+		2D10C93E1ABDA41F0021B95A /* signupbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9371ABDA41F0021B95A /* signupbg.png */; };
 		2D1149911ABD9BEE00A38C45 /* HumanOrPetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */; };
 		2D1149921ABD9BEE00A38C45 /* HumanOrPetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */; };
 		2D5DD0B61ABD93D6003724D1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5DD0B41ABD93D6003724D1 /* MainViewController.m */; };
@@ -146,6 +151,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D10C9321ABDA41F0021B95A /* disheslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disheslogo.png; sourceTree = "<group>"; };
+		2D10C9331ABDA41F0021B95A /* splashpagebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashpagebg.png; sourceTree = "<group>"; };
+		2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getstartedbtnup.png; sourceTree = "<group>"; };
+		2D10C9361ABDA41F0021B95A /* getstarteddown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = getstarteddown.png; sourceTree = "<group>"; };
+		2D10C9371ABDA41F0021B95A /* signupbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signupbg.png; sourceTree = "<group>"; };
 		2D11498E1ABD9BEE00A38C45 /* HumanOrPetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanOrPetViewController.h; sourceTree = "<group>"; };
 		2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanOrPetViewController.m; sourceTree = "<group>"; };
 		2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanOrPetViewController.xib; sourceTree = "<group>"; };
@@ -352,6 +362,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D10C9301ABDA41F0021B95A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2D10C9311ABDA41F0021B95A /* 1-splashpage */,
+				2D10C9341ABDA41F0021B95A /* 2-signuppage */,
+				2D10C9381ABDA41F0021B95A /* 3-registeration */,
+				2D10C9391ABDA41F0021B95A /* 4-personalizedtab */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2D10C9311ABDA41F0021B95A /* 1-splashpage */ = {
+			isa = PBXGroup;
+			children = (
+				2D10C9321ABDA41F0021B95A /* disheslogo.png */,
+				2D10C9331ABDA41F0021B95A /* splashpagebg.png */,
+			);
+			path = "1-splashpage";
+			sourceTree = "<group>";
+		};
+		2D10C9341ABDA41F0021B95A /* 2-signuppage */ = {
+			isa = PBXGroup;
+			children = (
+				2D10C9351ABDA41F0021B95A /* getstartedbtnup.png */,
+				2D10C9361ABDA41F0021B95A /* getstarteddown.png */,
+				2D10C9371ABDA41F0021B95A /* signupbg.png */,
+			);
+			path = "2-signuppage";
+			sourceTree = "<group>";
+		};
+		2D10C9381ABDA41F0021B95A /* 3-registeration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3-registeration";
+			sourceTree = "<group>";
+		};
+		2D10C9391ABDA41F0021B95A /* 4-personalizedtab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4-personalizedtab";
+			sourceTree = "<group>";
+		};
 		2D11498D1ABD9BD700A38C45 /* HumanOrPetViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +577,7 @@
 		C3212D321906BE460072BA80 /* MasterPass */ = {
 			isa = PBXGroup;
 			children = (
+				2D10C9301ABDA41F0021B95A /* Assets */,
 				2D11498D1ABD9BD700A38C45 /* HumanOrPetViewController */,
 				2D5DD0C61ABD9853003724D1 /* PreferencesViewController */,
 				2D5DD0BE1ABD9412003724D1 /* StyleConstant.h */,
@@ -1084,7 +1139,9 @@
 				AAB2E5A71986086C0026934A /* mp_password_checkout.png in Resources */,
 				C34455A01A3260C2007941F0 /* generic_card_green.png in Resources */,
 				C34455A61A3260C2007941F0 /* visa_blue.png in Resources */,
+				2D10C93A1ABDA41F0021B95A /* disheslogo.png in Resources */,
 				C390082B19266A6B00902B6E /* black_cc.png in Resources */,
+				2D10C93C1ABDA41F0021B95A /* getstartedbtnup.png in Resources */,
 				C344559F1A3260C2007941F0 /* generic_card_blue.png in Resources */,
 				C390081B1926411F00902B6E /* Icon-Small.png in Resources */,
 				2D1149921ABD9BEE00A38C45 /* HumanOrPetViewController.xib in Resources */,
@@ -1102,6 +1159,7 @@
 				C39008151926411F00902B6E /* Icon-72.png in Resources */,
 				2D5DD0B71ABD93D6003724D1 /* MainViewController.xib in Resources */,
 				C34455A11A3260C2007941F0 /* generic_card_orange.png in Resources */,
+				2D10C93D1ABDA41F0021B95A /* getstarteddown.png in Resources */,
 				C35E060019FDEBB700D93415 /* APResources.bundle in Resources */,
 				C34455A71A3260C2007941F0 /* visa_red.png in Resources */,
 				C344559B1A3260C2007941F0 /* amex_black.png in Resources */,
@@ -1117,6 +1175,8 @@
 				C344559D1A3260C2007941F0 /* discover_grey.png in Resources */,
 				C3BB758419B0B99D00A7DE29 /* orange_cc@2x.png in Resources */,
 				C3950ED5193E4D760042437A /* kindle-fire1.jpg in Resources */,
+				2D10C93E1ABDA41F0021B95A /* signupbg.png in Resources */,
+				2D10C93B1ABDA41F0021B95A /* splashpagebg.png in Resources */,
 				C3F5173B1951E9DE0035570A /* black_cc_mc.png in Resources */,
 				C390082A19266A6B00902B6E /* bank-logo.png in Resources */,
 				C3950EDA193E4D760042437A /* tumblr_m9y5jp3Svf1r5eau1o1_500.jpg in Resources */,

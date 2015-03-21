@@ -16,6 +16,8 @@
 		<string>https://github.com/ap-customer-mc-org/MasterPass-WebViews.git</string>
 		<key>E2E339EC05FF99AF5ECAE62EDBC78398DA1111C6</key>
 		<string>https://github.com/AnyPresence-Services/SIAlertView.git</string>
+		<key>E83FC294D8AE77C4053EB2651E42E53E58BC4261</key>
+		<string>https://github.com/derek0502/dreamMaster.git</string>
 		<key>EA33F5D6900DDC5B2CACEA082161CA372B3E4B1B</key>
 		<string>https://github.com/ap-customer-mc/MasterPass-GadgetShop-demo.git</string>
 	</dict>
@@ -24,22 +26,32 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>00DEE37500E6C7998F4D113C875F3996AE26D5BE</key>
-		<string>../Pods/SVWebViewController</string>
+		<string>../../MasterPass-GadgetShop-demo/Pods/SVWebViewController</string>
 		<key>5A86244848327ACD4EC22F70C3CB1CDD38D0D020</key>
-		<string>../webviews</string>
+		<string>../../MasterPass-GadgetShop-demo/webviews</string>
 		<key>E2E339EC05FF99AF5ECAE62EDBC78398DA1111C6</key>
-		<string>../Pods/SIAlertView</string>
-		<key>EA33F5D6900DDC5B2CACEA082161CA372B3E4B1B</key>
+		<string>../../MasterPass-GadgetShop-demo/Pods/SIAlertView</string>
+		<key>E83FC294D8AE77C4053EB2651E42E53E58BC4261</key>
 		<string>..</string>
+		<key>EA33F5D6900DDC5B2CACEA082161CA372B3E4B1B</key>
+		<string>../../MasterPass-GadgetShop-demo</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ap-customer-mc/MasterPass-GadgetShop-demo.git</string>
+	<string>https://github.com/derek0502/dreamMaster.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EA33F5D6900DDC5B2CACEA082161CA372B3E4B1B</string>
+	<string>E83FC294D8AE77C4053EB2651E42E53E58BC4261</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E83FC294D8AE77C4053EB2651E42E53E58BC4261</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dreamMaster</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
