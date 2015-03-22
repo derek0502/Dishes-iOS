@@ -22,15 +22,29 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__Block_byref_object_copy_"
+                  symbolName = "-[CartViewController moveToCheckout]"
                   moduleName = "MasterPass"
                   urlString = "file:///Users/derekcheung/Desktop/dreamMaster/MasterPass/CartViewController.m"
-                  timestampString = "448688588.878642"
+                  timestampString = "448692458.532832"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "247"
                   endingLineNumber = "247"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Block_byref_object_copy_"
+                  moduleName = "MasterPass"
+                  urlString = "file:///Users/derekcheung/Desktop/dreamMaster/MasterPass/CartViewController.m"
+                  timestampString = "448692458.533042"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "24">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -39,12 +53,12 @@
                   symbolName = "__Block_byref_object_dispose_"
                   moduleName = "MasterPass"
                   urlString = "file:///Users/derekcheung/Desktop/dreamMaster/MasterPass/CartViewController.m"
-                  timestampString = "448688588.878886"
+                  timestampString = "448692458.533182"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "247"
                   endingLineNumber = "247"
-                  offsetFromSymbolStart = "22">
+                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
          </BreakpointContent>

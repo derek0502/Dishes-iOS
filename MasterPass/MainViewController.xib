@@ -242,7 +242,6 @@
                             </state>
                             <connections>
                                 <action selector="bowlPressed:" destination="-1" eventType="touchUpInside" id="FEJ-PH-VUi"/>
-                                <action selector="searchPressed:" destination="-1" eventType="touchUpInside" id="7Hu-Q4-PBq"/>
                             </connections>
                         </button>
                     </subviews>
