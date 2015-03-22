@@ -153,13 +153,14 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vg-oa-dXL">
                     <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y45-QW-kij">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y45-QW-kij">
                             <rect key="frame" x="0.0" y="3" width="44" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="Wyn-eb-y42"/>
                                 <constraint firstAttribute="width" constant="44" id="lVi-iZ-cCl"/>
                             </constraints>
-                            <state key="normal" title="b">
+                            <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                            <state key="normal" image="back.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -183,7 +184,7 @@
                                 <constraint firstAttribute="width" constant="44" id="fON-TU-m3i"/>
                                 <constraint firstAttribute="height" constant="44" id="szQ-UV-hAT"/>
                             </constraints>
-                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="12" maxX="10" maxY="8"/>
                             <state key="normal" image="message-icon.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -215,6 +216,7 @@
         <image name="Ingredients.png" width="1380" height="1380"/>
         <image name="Nutritions.png" width="1380" height="644"/>
         <image name="add-to-basket.png" width="720" height="180"/>
+        <image name="back.png" width="48" height="82"/>
         <image name="basket-icon.png" width="100" height="80"/>
         <image name="burger-bkg.png" width="1500" height="2388"/>
         <image name="converter.png" width="500" height="180"/>

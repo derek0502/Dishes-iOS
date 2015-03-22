@@ -117,6 +117,30 @@
     [self.dineInButton setTitleColor:COLOR_OrangeText forState:UIControlStateSelected];
     [self.dineOutButton setTitleColor:COLOR_GreyText forState:UIControlStateNormal];
     [self.dineOutButton setTitleColor:COLOR_OrangeText forState:UIControlStateSelected];
+    [self.dineInLine setHidden:NO];
+    [self.dineOutLine setHidden:YES];
+  
+    UIImage *image = [UIImage imageNamed:@"feedup.png"];
+    [_feedButton setImage:image forState:UIControlStateNormal];
+    image = [UIImage imageNamed:@"basketup.png"];
+    [_basketButton setImage:image forState:UIControlStateNormal];
+    image = [UIImage imageNamed:@"recipeup.png"];
+    [_receiptButton setImage:image forState:UIControlStateNormal];
+    image = [UIImage imageNamed:@"msgup.png"];
+    [_msgButton setImage:image forState:UIControlStateNormal];
+    image = [UIImage imageNamed:@"profileup.png"];
+    [_profileButton setImage:image forState:UIControlStateNormal];
+    
+    image = [UIImage imageNamed:@"feeddown.png"];
+    [_feedButton setImage:image forState:UIControlStateSelected];
+    image = [UIImage imageNamed:@"basketdown.png"];
+    [_basketButton setImage:image forState:UIControlStateSelected];
+    image = [UIImage imageNamed:@"recipedown.png"];
+    [_receiptButton setImage:image forState:UIControlStateSelected];
+    image = [UIImage imageNamed:@"msgup.png"];
+    [_msgButton setImage:image forState:UIControlStateSelected];
+    image = [UIImage imageNamed:@"profiledown.png"];
+    [_profileButton setImage:image forState:UIControlStateSelected];
 }
 
 -(void)fullInventory:(void (^)(NSArray *products))callback{
@@ -266,6 +290,8 @@
     [self.dineOutButton setSelected:NO];
     [self.contentView setHidden:NO];
     [self.dineOutContentView setHidden:YES];
+    [self.dineInLine setHidden:NO];
+    [self.dineOutLine setHidden:YES];
 }
 
 - (IBAction)dineOutPressed:(id)sender {
@@ -273,6 +299,8 @@
     [self.dineOutButton setSelected:YES];
     [self.contentView setHidden:YES];
     [self.dineOutContentView setHidden:NO];
+    [self.dineInLine setHidden:YES];
+    [self.dineOutLine setHidden:NO];
     
     //Get Lat and Long...;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];

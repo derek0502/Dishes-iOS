@@ -27,4 +27,13 @@
 - (IBAction)searchPressed:(id)sender;
 - (IBAction)cartPressed:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIButton *feedButton;
+@property (strong, nonatomic) IBOutlet UIButton *basketButton;
+@property (strong, nonatomic) IBOutlet UIButton *receiptButton;
+@property (strong, nonatomic) IBOutlet UIButton *msgButton;
+@property (strong, nonatomic) IBOutlet UIButton *profileButton;
+@property (strong, nonatomic) IBOutlet UIImageView *dineInLine;
+@property (strong, nonatomic) IBOutlet UIImageView *dineOutLine;
+
+
 @end

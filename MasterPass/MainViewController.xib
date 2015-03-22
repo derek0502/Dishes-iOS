@@ -6,13 +6,20 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="basketButton" destination="D7h-7V-ZDZ" id="BIL-qY-FAC"/>
                 <outlet property="contentView" destination="mOC-8a-Ui2" id="33o-0S-7ix"/>
                 <outlet property="dineInButton" destination="WI0-1z-Jwx" id="hWe-Kw-wJh"/>
+                <outlet property="dineInLine" destination="Z3Z-UP-ioo" id="8q8-q1-q4t"/>
                 <outlet property="dineOutButton" destination="rVe-lb-Cqk" id="xnu-EZ-5VM"/>
                 <outlet property="dineOutContentView" destination="Yox-OS-KiS" id="LCU-lA-d6Y"/>
+                <outlet property="dineOutLine" destination="zU9-Qt-Zy8" id="icW-aD-HLr"/>
+                <outlet property="feedButton" destination="DxK-U0-JMo" id="etF-Dp-5ms"/>
                 <outlet property="footerView" destination="vyH-RX-fPo" id="QNp-so-CuR"/>
                 <outlet property="leftCollectionView" destination="vLW-ce-aUv" id="x5I-MK-hSu"/>
+                <outlet property="msgButton" destination="wZo-qT-hMw" id="yIK-6q-Bf8"/>
                 <outlet property="navView" destination="PtP-br-K2S" id="Zm8-oR-fGl"/>
+                <outlet property="profileButton" destination="U6Y-ER-izN" id="Ipj-NG-YRn"/>
+                <outlet property="receiptButton" destination="7ki-vT-hG6" id="NsW-NG-9mw"/>
                 <outlet property="restaurantTableView" destination="67p-GC-eJv" id="NLg-nX-K4Q"/>
                 <outlet property="rightCollectionView" destination="LJg-go-74h" id="ArY-yc-9UP"/>
                 <outlet property="searchButton" destination="Fbt-fY-h8Z" id="bQN-gK-UwM"/>
@@ -66,12 +73,79 @@
             <point key="canvasLocation" x="579" y="351"/>
         </view>
         <view contentMode="scaleToFill" id="vyH-RX-fPo" userLabel="footerView">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfp-U4-kW0">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="center" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxK-U0-JMo" userLabel="feedButton">
+                            <rect key="frame" x="15" y="10" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="l0i-tl-KpZ"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7h-7V-ZDZ" userLabel="basketButton">
+                            <rect key="frame" x="75" y="10" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="2r0-iJ-pBl"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cartPressed:" destination="-1" eventType="touchUpInside" id="YbO-sx-ulr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZo-qT-hMw" userLabel="msgButton">
+                            <rect key="frame" x="195" y="10" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="1Qx-M1-vsU"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6Y-ER-izN" userLabel="profileButton">
+                            <rect key="frame" x="255" y="10" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="aLN-NJ-khV"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ki-vT-hG6" userLabel="receiptButton">
+                            <rect key="frame" x="135" y="10" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="qU8-KI-eeE"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7ki-vT-hG6" firstAttribute="width" secondItem="D7h-7V-ZDZ" secondAttribute="width" id="48l-ey-BsV"/>
+                        <constraint firstAttribute="centerY" secondItem="U6Y-ER-izN" secondAttribute="centerY" id="5ht-YV-fqO"/>
+                        <constraint firstItem="D7h-7V-ZDZ" firstAttribute="centerY" secondItem="DxK-U0-JMo" secondAttribute="centerY" id="86E-y9-oft"/>
+                        <constraint firstAttribute="centerY" secondItem="DxK-U0-JMo" secondAttribute="centerY" id="JVQ-eO-ugZ"/>
+                        <constraint firstAttribute="trailing" secondItem="U6Y-ER-izN" secondAttribute="trailing" constant="15" id="LaQ-gq-Aw7"/>
+                        <constraint firstItem="wZo-qT-hMw" firstAttribute="leading" secondItem="7ki-vT-hG6" secondAttribute="trailing" constant="10" id="Lgx-JC-pMO"/>
+                        <constraint firstItem="D7h-7V-ZDZ" firstAttribute="leading" secondItem="DxK-U0-JMo" secondAttribute="trailing" constant="10" id="Lof-6g-May"/>
+                        <constraint firstAttribute="centerY" secondItem="wZo-qT-hMw" secondAttribute="centerY" id="Qft-5m-ce9"/>
+                        <constraint firstItem="DxK-U0-JMo" firstAttribute="leading" secondItem="hfp-U4-kW0" secondAttribute="leading" constant="15" id="QrM-fC-DO6"/>
+                        <constraint firstAttribute="centerY" secondItem="7ki-vT-hG6" secondAttribute="centerY" id="Spw-fb-XVl"/>
+                        <constraint firstItem="wZo-qT-hMw" firstAttribute="width" secondItem="7ki-vT-hG6" secondAttribute="width" id="ZYt-K4-IgN"/>
+                        <constraint firstItem="7ki-vT-hG6" firstAttribute="leading" secondItem="D7h-7V-ZDZ" secondAttribute="trailing" constant="10" id="qbT-gY-rVi"/>
+                        <constraint firstItem="U6Y-ER-izN" firstAttribute="leading" secondItem="wZo-qT-hMw" secondAttribute="trailing" constant="10" id="sSf-bG-d6M"/>
+                        <constraint firstItem="U6Y-ER-izN" firstAttribute="width" secondItem="wZo-qT-hMw" secondAttribute="width" id="xV9-zC-62E"/>
+                        <constraint firstItem="D7h-7V-ZDZ" firstAttribute="width" secondItem="DxK-U0-JMo" secondAttribute="width" id="zcJ-ZG-53H"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -82,6 +156,7 @@
                 <constraint firstAttribute="bottom" secondItem="hfp-U4-kW0" secondAttribute="bottom" id="swC-Uf-ZI1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="112" y="158"/>
         </view>
         <view contentMode="scaleToFill" id="PtP-br-K2S" userLabel="navView">
             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
@@ -91,7 +166,7 @@
                     <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbt-fY-h8Z" userLabel="searchButton">
-                            <rect key="frame" x="272" y="2.5" width="44" height="44"/>
+                            <rect key="frame" x="272" y="3" width="44" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="fjn-fC-551"/>
                                 <constraint firstAttribute="width" constant="44" id="x7c-sc-V8i"/>
@@ -105,10 +180,10 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tox-Ln-htF">
-                            <rect key="frame" x="92" y="0.0" width="137" height="50"/>
+                            <rect key="frame" x="69" y="0.0" width="183" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI0-1z-Jwx" userLabel="dineInButton">
-                                    <rect key="frame" x="0.0" y="10" width="61" height="30"/>
+                                    <rect key="frame" x="0.0" y="10" width="84" height="30"/>
                                     <state key="normal" title="Dine In">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -117,7 +192,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVe-lb-Cqk" userLabel="dineOutButton">
-                                    <rect key="frame" x="76" y="10" width="61" height="30"/>
+                                    <rect key="frame" x="99" y="10" width="84" height="30"/>
                                     <state key="normal" title="Dine Out">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -125,25 +200,58 @@
                                         <action selector="dineOutPressed:" destination="-1" eventType="touchUpInside" id="y5U-9W-f5O"/>
                                     </connections>
                                 </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-UP-ioo">
+                                    <rect key="frame" x="0.0" y="40" width="84" height="4"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="4" id="rsq-Uk-TaJ"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="zU9-Qt-Zy8">
+                                    <rect key="frame" x="99.5" y="40" width="84" height="4"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="4" id="5cj-bi-lhs"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstItem="rVe-lb-Cqk" firstAttribute="width" secondItem="zU9-Qt-Zy8" secondAttribute="width" id="04V-jA-oTn"/>
+                                <constraint firstItem="Z3Z-UP-ioo" firstAttribute="top" secondItem="WI0-1z-Jwx" secondAttribute="bottom" id="1zT-Hj-Zst"/>
                                 <constraint firstAttribute="trailing" secondItem="rVe-lb-Cqk" secondAttribute="trailing" id="49x-0M-djH"/>
+                                <constraint firstItem="WI0-1z-Jwx" firstAttribute="width" secondItem="Z3Z-UP-ioo" secondAttribute="width" id="Gqs-h4-g4H"/>
                                 <constraint firstItem="WI0-1z-Jwx" firstAttribute="width" secondItem="rVe-lb-Cqk" secondAttribute="width" id="NQx-eO-4jS"/>
                                 <constraint firstItem="WI0-1z-Jwx" firstAttribute="leading" secondItem="Tox-Ln-htF" secondAttribute="leading" id="Se4-Df-hlh"/>
+                                <constraint firstItem="zU9-Qt-Zy8" firstAttribute="top" secondItem="rVe-lb-Cqk" secondAttribute="bottom" id="ViE-yF-jyf"/>
                                 <constraint firstAttribute="centerY" secondItem="WI0-1z-Jwx" secondAttribute="centerY" id="fuU-YO-yxF"/>
                                 <constraint firstAttribute="centerY" secondItem="rVe-lb-Cqk" secondAttribute="centerY" id="g80-dd-nci"/>
+                                <constraint firstItem="rVe-lb-Cqk" firstAttribute="centerX" secondItem="zU9-Qt-Zy8" secondAttribute="centerX" id="jnp-aR-Sqz"/>
                                 <constraint firstItem="rVe-lb-Cqk" firstAttribute="leading" secondItem="WI0-1z-Jwx" secondAttribute="trailing" constant="15" id="o3j-3e-Wju"/>
+                                <constraint firstItem="WI0-1z-Jwx" firstAttribute="centerX" secondItem="Z3Z-UP-ioo" secondAttribute="centerX" id="tuf-6B-TjM"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RM-N0-neP" userLabel="searchButton">
+                            <rect key="frame" x="3" y="3" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="U2X-cw-FcU"/>
+                                <constraint firstAttribute="height" constant="44" id="vqE-7Z-bRd"/>
+                            </constraints>
+                            <state key="normal" image="bowl.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="searchPressed:" destination="-1" eventType="touchUpInside" id="7Hu-Q4-PBq"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="centerY" secondItem="Tox-Ln-htF" secondAttribute="centerY" id="IxN-29-poD"/>
                         <constraint firstAttribute="centerY" secondItem="Fbt-fY-h8Z" secondAttribute="centerY" id="Q4M-Uu-peT"/>
                         <constraint firstItem="Tox-Ln-htF" firstAttribute="height" secondItem="ZqH-dM-Viu" secondAttribute="height" id="Ubm-NN-jqj"/>
+                        <constraint firstAttribute="centerY" secondItem="1RM-N0-neP" secondAttribute="centerY" id="bAv-di-Cnh"/>
                         <constraint firstAttribute="trailing" secondItem="Fbt-fY-h8Z" secondAttribute="trailing" constant="4" id="dUE-e9-66B"/>
                         <constraint firstAttribute="centerX" secondItem="Tox-Ln-htF" secondAttribute="centerX" id="rFZ-KI-KHH"/>
+                        <constraint firstItem="1RM-N0-neP" firstAttribute="leading" secondItem="ZqH-dM-Viu" secondAttribute="leading" constant="3" id="trn-Z5-RYY"/>
                     </constraints>
                 </view>
             </subviews>
@@ -177,6 +285,8 @@
         </view>
     </objects>
     <resources>
+        <image name="Line.png" width="84" height="4"/>
+        <image name="bowl.png" width="87" height="88"/>
         <image name="search.png" width="40" height="41"/>
     </resources>
 </document>
