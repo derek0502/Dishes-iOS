@@ -42,6 +42,8 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
 
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self.containerTable setBackgroundColor:[UIColor whiteColor]];
     self.containerTable.backgroundColor = [UIColor deepBlueColor];
     self.containerTable.separatorColor = [UIColor deepBlueColor];
     if ([self.containerTable respondsToSelector:@selector(setSeparatorInset:)]) {
@@ -289,17 +291,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 8;    //count of section
+    return 7;    //count of section
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     switch (section) {
-        case 0:return 1;  // Subtotal Title
-        case 1:return 3;  // Subtotal items
-        case 2:return 1;  // Total
-        case 3:return 1;  // Card Selector
-        case 4:  {        // Card Info Form
+        case 0:return 1;
+        case 1:return 1;  // Card Selector
+        case 2:  {        // Card Info Form
             if (self.selectedCard) {
                 return 0;
             }
@@ -307,23 +307,22 @@
                 return 4;
             }
         }
-        case 5:return 1;  // Shipping Info
-        case 6:return 0;  // TextView Cell
-        case 7:return 1;  // Process Order Button
+        case 3:return 1;  // Shipping Info
+        case 4:return 0;  // TextView Cell
+        case 5:return 1;  // Process Order Button
+        case 6:return 1;
         default:return 0;
     }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
-        case 0:return 26;  // Subtotal Title
-        case 1:return 26;  // Subtotal items
-        case 2:return 26;  // Total
-        case 3:return 160; // Card Selector
-        case 4:return 44;  // Card Info Form
-        case 5:return 70;  // Shipping Info Form
-        case 6:return 44;  // TextView Cell
-        case 7:   {        // Process Order Button
+        case 0:return 90;
+        case 1:return 160; // Card Selector
+        case 2:return 44;  // Card Info Form
+        case 3:return 70;  // Shipping Info Form
+        case 4:return 44;  // TextView Cell
+        case 5:   {        // Process Order Button
             if (self.selectedCard){
                 return 80;
             }
@@ -331,15 +330,17 @@
                 return 60;
             }
         }
+        case 6: return 80;
+        case 7: return 60;
         default:return 0;
     }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (section == 4 && !self.selectedCard){
+    if (section == 2 && !self.selectedCard){
         return 44;
     }
-    else if (section == 5) {
+    else if (section == 3) {
         return 44;
     }
     else {
@@ -349,10 +350,10 @@
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
 
-    if (section == 4 || section == 5) {
+    if (section == 2 || section == 3) {
         
         UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 44)];
-        view.backgroundColor = [UIColor superGreyColor];
+        view.backgroundColor = COLOR_GreyCell;
         
         UILabel *title = [[UILabel alloc]initWithFrame:CGRectZero];
         title.textAlignment = NSTextAlignmentCenter;
@@ -365,10 +366,10 @@
         // Set Text
         
         switch (section) {
-            case 4:
+            case 2:
                 title.text = @"Credit Card Details";
                 break;
-            case 5:
+            case 3:
                 title.text = @"Shipping Information";
                 break;
             default:
@@ -386,84 +387,27 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *totalTitleCellId = @"TotalTitleCell";
-    static NSString *subTotalTitleCellId = @"SubtotalTitleCell";
-    static NSString *subTotalCellId = @"SubtotalCell";
     static NSString *cardSelectCellId = @"CardSelectCell";
     static NSString *processOrderCellId = @"ProcessOrderCell";
     static NSString *textFieldCellId = @"TextFieldCell";
     static NSString *textViewCellId = @"TextViewCell";
     static NSString *selectShippingCellId = @"SelectShippingCell";
     
-    if (indexPath.section == 0) { // Subtotal Title
-        
-        SubtotalTitleItemCell *cell = [tableView dequeueReusableCellWithIdentifier:subTotalTitleCellId];
-        
-        if (cell == nil)
-        {
-            cell = [[SubtotalTitleItemCell alloc] initWithStyle:UITableViewCellStyleValue1
-                                         reuseIdentifier:subTotalTitleCellId];
+    if(indexPath.section == 0) {
+        TextViewCell *cell = [tableView dequeueReusableCellWithIdentifier:textViewCellId];
+        if(cell == nil) {
+            cell = [[TextViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:textViewCellId];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
-        cell.textLabel.text = @"Sub Total";
-        cell.layoutMargins = UIEdgeInsetsZero;
+        UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, cell.frame.size.width, 90)];
+        [iv setImage:[UIImage imageNamed:@"delivery.png"]];
+        [cell addSubview:iv];
         return cell;
-        
     }
-    else if (indexPath.section == 1) { // Subtotal items
-        
-        SubtotalItemCell *cell = [tableView dequeueReusableCellWithIdentifier:subTotalCellId];
-        
-        if (cell == nil)
-        {
-            cell = [[SubtotalItemCell alloc] initWithStyle:UITableViewCellStyleValue1
-                                          reuseIdentifier:subTotalCellId];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        }
-        
-        
-        switch (indexPath.row) {
-            case 0:
-                cell.textLabel.text = @"Items";
-                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[self formatCurrency:self.subtotal]];
-                break;
-            case 1:
-                cell.textLabel.text = @"Tax";
-                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[self formatCurrency:self.tax]];
-                break;
-            case 2:
-                cell.textLabel.text = @"Shipping";
-                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[self formatCurrency:self.shipping]];
-                break;
-            default:
-                cell.textLabel.text = nil;
-                cell.detailTextLabel.text = nil;
-                break;
-        }
-        cell.layoutMargins = UIEdgeInsetsZero;
-        return cell;
-        
-    }
-    else if (indexPath.section == 2) { // Total
-        
-        TotalItemCell *cell = [tableView dequeueReusableCellWithIdentifier:totalTitleCellId];
-        
-        if (cell == nil)
-        {
-            cell = [[TotalItemCell alloc] initWithStyle:UITableViewCellStyleValue1
-                                                reuseIdentifier:totalTitleCellId];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        }
-        cell.textLabel.text = @"Total";
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ USD",[self formatCurrency:self.total]];
-        cell.layoutMargins = UIEdgeInsetsZero;
-        return cell;
-        
-    }
-    else if (indexPath.section == 3) { // Card Selector
+    else if (indexPath.section == 1) { // Card Selector
         
         CardSelectCell *cell = [tableView dequeueReusableCellWithIdentifier:cardSelectCellId];
-        
         if (cell == nil)
         {
             cell = [[CardSelectCell alloc] initWithStyle:UITableViewCellStyleDefault
@@ -474,6 +418,7 @@
         [cell setCards:self.cards showManualEntry:!self.precheckoutConfirmation]; // TODO
         [cell reloadMPImageUI]; //
         
+        [cell setBackgroundColor:[UIColor whiteColor]];
         if (!self.precheckoutConfirmation) {
             [cell setMasterPassImage:self.walletInfo[@"masterpass_logo_url"] andBrandImage:self.walletInfo[@"wallet_partner_logo_url"]];
         }
@@ -481,7 +426,7 @@
         return cell;
         
     }
-    else if (indexPath.section == 4) { // Card Info Form
+    else if (indexPath.section == 2) { // Card Info Form
         
         TextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:textFieldCellId];
         
@@ -536,7 +481,7 @@
         return cell;
         
     }
-    else if (indexPath.section == 5) { // Shipping
+    else if (indexPath.section == 3) { // Shipping
         
         ShippingSelectCell *cell = [tableView dequeueReusableCellWithIdentifier:selectShippingCellId];
         
@@ -563,7 +508,7 @@
         return cell;
         
     }
-    else if (indexPath.section == 6) { // TextView
+    else if (indexPath.section == 4) { // TextView
         
         TextViewCell *cell = [tableView dequeueReusableCellWithIdentifier:textViewCellId];
         
@@ -582,8 +527,19 @@
         cell.layoutMargins = UIEdgeInsetsZero;
         return cell;
         
+    } else if (indexPath.section == 5) {
+        TextViewCell *cell = [tableView dequeueReusableCellWithIdentifier:textViewCellId];
+        if(cell == nil) {
+            cell = [[TextViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:textViewCellId];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
+        UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, cell.frame.size.width, 80)];
+        [iv setImage:[UIImage imageNamed:@"choose-delivery.png"]];
+        [cell addSubview:iv];
+        return cell;
     }
-    else if (indexPath.section == 7) { // Process order
+    else if (indexPath.section == 6) { // Process order
         
         ProcessOrderCell *cell = [tableView dequeueReusableCellWithIdentifier:processOrderCellId];
         

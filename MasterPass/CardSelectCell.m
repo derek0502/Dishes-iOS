@@ -26,7 +26,7 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor superGreyColor];
+        self.contentView.backgroundColor = COLOR_GreyCell;
                 
         self.cardSwipeView = [[SwipeView alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 200)];
         self.cardSwipeView.alignment = SwipeViewAlignmentCenter;
@@ -43,7 +43,7 @@
         CGFloat padding = 5;
         
         UILabel *paymentMethodLabel = [[UILabel alloc]initWithFrame:CGRectZero];
-        paymentMethodLabel.text = @"Select Payment Method";
+        paymentMethodLabel.text = @"Choose a Payment Method";
         paymentMethodLabel.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:paymentMethodLabel];
         
@@ -221,12 +221,12 @@
         CGRect viewFrame = swipeView.bounds;
         view = [[UIView alloc] initWithFrame:viewFrame];
         view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        view.backgroundColor = [UIColor superGreyColor];
+        view.backgroundColor = COLOR_GreyCell;
         
         cardImage = [[UIImageView alloc] initWithFrame:CGRectMake((view.bounds.size.width /2) - (cardImageWidth / 2), (view.bounds.size.height /2) - (cardImageHeight / 2) - padding, cardImageWidth, cardImageHeight)];
         [cardImage.layer setCornerRadius:4];
         cardImage.tag = 1;
-        cardImage.backgroundColor = [UIColor superGreyColor];
+        cardImage.backgroundColor = COLOR_GreyCell;
         [view addSubview:cardImage];
         [cardImage makeConstraints:^(MASConstraintMaker *make) {
             make.height.equalTo(@76.5);

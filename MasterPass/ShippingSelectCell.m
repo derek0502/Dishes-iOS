@@ -13,7 +13,7 @@
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
-        self.contentView.backgroundColor = [UIColor superLightGreyColor];
+        self.contentView.backgroundColor = COLOR_GreyCell;
         
         UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 70);
         
@@ -23,7 +23,8 @@
         self.textView = [[UITextView alloc]initWithFrame:CGRectZero];
         self.textView.selectable = NO;
         self.textView.editable = NO;
-        self.textView.backgroundColor = [UIColor superLightGreyColor];
+        [self.textView setTextColor:[UIColor blackColor]];
+        self.textView.backgroundColor = COLOR_GreyCell;
         [self.contentView addSubview:self.textView];
         
         [self.textView makeConstraints:^(MASConstraintMaker *make) {

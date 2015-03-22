@@ -15,16 +15,16 @@
 @implementation ProcessOrderCell
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = [UIColor superGreyColor];
+        self.contentView.backgroundColor = COLOR_GreyCell;
         
         UIEdgeInsets insets = UIEdgeInsetsMake(10, 10, 10, 10);
         
         // Process Button
         self.processButton = [[UIButton alloc]initWithFrame:CGRectZero];
-        [self.processButton setTitle:@"Process Order" forState:UIControlStateNormal];
-        [self.processButton setBackgroundColor:[UIColor fireOrangeColor]];
-        [self.processButton.titleLabel setFont:[UIFont boldSystemFontOfSize:15]];
-        [self.processButton.layer setCornerRadius:4];
+        [self.processButton setTitle:@"Process Payment" forState:UIControlStateNormal];
+        [self.processButton setBackgroundColor:COLOR_OrangeText];
+        [self.processButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.processButton.layer setCornerRadius:8.0f];
         self.processButton.hidden = YES;
         self.processButton.userInteractionEnabled = NO;
         [self.contentView addSubview:self.processButton];
