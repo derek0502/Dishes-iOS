@@ -95,6 +95,8 @@
 		2D10C9CA1ABE4CA20021B95A /* bone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9C81ABE4CA20021B95A /* bone.png */; };
 		2D10C9CC1ABE4DCC0021B95A /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9CB1ABE4DCC0021B95A /* back.png */; };
 		2D10C9CE1ABE4EA00021B95A /* Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9CD1ABE4EA00021B95A /* Line.png */; };
+		2D10C9D11ABE56A60021B95A /* 2-signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9CF1ABE56A60021B95A /* 2-signup.png */; };
+		2D10C9D21ABE56A60021B95A /* 1-splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9D01ABE56A60021B95A /* 1-splashscreen.png */; };
 		2D1149911ABD9BEE00A38C45 /* HumanOrPetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */; };
 		2D1149921ABD9BEE00A38C45 /* HumanOrPetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */; };
 		2D5DD0B61ABD93D6003724D1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5DD0B41ABD93D6003724D1 /* MainViewController.m */; };
@@ -326,6 +328,8 @@
 		2D10C9C81ABE4CA20021B95A /* bone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bone.png; sourceTree = "<group>"; };
 		2D10C9CB1ABE4DCC0021B95A /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		2D10C9CD1ABE4EA00021B95A /* Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Line.png; sourceTree = "<group>"; };
+		2D10C9CF1ABE56A60021B95A /* 2-signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-signup.png"; sourceTree = "<group>"; };
+		2D10C9D01ABE56A60021B95A /* 1-splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-splashscreen.png"; sourceTree = "<group>"; };
 		2D11498E1ABD9BEE00A38C45 /* HumanOrPetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanOrPetViewController.h; sourceTree = "<group>"; };
 		2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanOrPetViewController.m; sourceTree = "<group>"; };
 		2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanOrPetViewController.xib; sourceTree = "<group>"; };
@@ -570,6 +574,8 @@
 		2D10C9301ABDA41F0021B95A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2D10C9CF1ABE56A60021B95A /* 2-signup.png */,
+				2D10C9D01ABE56A60021B95A /* 1-splashscreen.png */,
 				2D10C9CD1ABE4EA00021B95A /* Line.png */,
 				2D10C9CB1ABE4DCC0021B95A /* back.png */,
 				2D10C9A21ABE41110021B95A /* 9-restaurant */,
@@ -1460,6 +1466,7 @@
 				2D10C9941ABE41010021B95A /* creamy.png in Resources */,
 				C34455A41A3260C2007941F0 /* mastercard_blue.png in Resources */,
 				2D10C9691ABDD2CF0021B95A /* message-white-icon.png in Resources */,
+				2D10C9D11ABE56A60021B95A /* 2-signup.png in Resources */,
 				C39008111926411F00902B6E /* Icon-40.png in Resources */,
 				C344559E1A3260C2007941F0 /* discover_orange.png in Resources */,
 				C390081D1926411F00902B6E /* Icon.png in Resources */,
@@ -1510,6 +1517,7 @@
 				2737FBBD1ABE09E0003E3B67 /* creamy.png in Resources */,
 				2D5DD0B71ABD93D6003724D1 /* MainViewController.xib in Resources */,
 				2D10C9981ABE41010021B95A /* friedegg.png in Resources */,
+				2D10C9D21ABE56A60021B95A /* 1-splashscreen.png in Resources */,
 				C34455A11A3260C2007941F0 /* generic_card_orange.png in Resources */,
 				2D10C93D1ABDA41F0021B95A /* getstarteddown.png in Resources */,
 				2D10C9631ABDD2CF0021B95A /* having-dessert.png in Resources */,

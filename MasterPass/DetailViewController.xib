@@ -189,12 +189,21 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falafel Veggie Burgers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="htB-Al-gVA">
+                            <rect key="frame" x="93" y="14" width="134.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="doC-89-uyb" secondAttribute="trailing" id="82q-XK-ASO"/>
                         <constraint firstAttribute="centerY" secondItem="doC-89-uyb" secondAttribute="centerY" id="C5E-ki-vLL"/>
+                        <constraint firstAttribute="centerY" secondItem="htB-Al-gVA" secondAttribute="centerY" id="Gz0-Qx-D0L"/>
+                        <constraint firstItem="htB-Al-gVA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jRI-Sp-Di7" secondAttribute="trailing" constant="5" id="HO5-nF-lgd"/>
                         <constraint firstItem="y45-QW-kij" firstAttribute="leading" secondItem="1vg-oa-dXL" secondAttribute="leading" id="fyN-NY-VYA"/>
+                        <constraint firstAttribute="centerX" secondItem="htB-Al-gVA" secondAttribute="centerX" id="icb-DX-CzE"/>
                         <constraint firstAttribute="centerY" secondItem="jRI-Sp-Di7" secondAttribute="centerY" id="k1q-Ii-Ajr"/>
                         <constraint firstItem="jRI-Sp-Di7" firstAttribute="leading" secondItem="y45-QW-kij" secondAttribute="trailing" id="sHS-wx-hmj"/>
                         <constraint firstAttribute="centerY" secondItem="y45-QW-kij" secondAttribute="centerY" id="vv6-oH-A7k"/>

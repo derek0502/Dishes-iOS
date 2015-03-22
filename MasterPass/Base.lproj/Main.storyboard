@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lcZ-2j-H5c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TcI-qF-1th">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -587,6 +587,45 @@
             </objects>
             <point key="canvasLocation" x="-1271" y="-483"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="eqM-Rx-osd">
+            <objects>
+                <viewController id="TcI-qF-1th" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qhz-BS-LSO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ju6-dB-zU7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SeN-dz-Q7l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2-signup.png" translatesAutoresizingMaskIntoConstraints="NO" id="38I-0z-Yn2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UU-fn-Bnj">
+                                <rect key="frame" x="56" y="467" width="208" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lcZ-2j-H5c" kind="modal" id="BuL-Zv-Vvw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="38I-0z-Yn2" secondAttribute="trailing" constant="-20" id="GOd-bK-2Oj"/>
+                            <constraint firstItem="38I-0z-Yn2" firstAttribute="top" secondItem="qhz-BS-LSO" secondAttribute="bottom" constant="-20" id="L5y-E0-koy"/>
+                            <constraint firstItem="38I-0z-Yn2" firstAttribute="leading" secondItem="SeN-dz-Q7l" secondAttribute="leadingMargin" constant="-20" id="Pkv-XE-Hqf"/>
+                            <constraint firstItem="ju6-dB-zU7" firstAttribute="top" secondItem="38I-0z-Yn2" secondAttribute="bottom" id="qCr-7Q-mIu"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDz-yT-3dN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2042" y="-294"/>
+        </scene>
         <!--Log In View Controller-->
         <scene sceneID="G5M-tL-7x7">
             <objects>
@@ -715,6 +754,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2-signup.png" width="750" height="1289"/>
         <image name="loginBG.png" width="326" height="579"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
