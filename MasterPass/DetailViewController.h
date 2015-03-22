@@ -13,5 +13,6 @@
 @interface DetailViewController : GeneralViewController
 @property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
 @property (strong, nonatomic) Product* detailedProduct;
+@property (strong, nonatomic) IBOutlet UILabel *numberLabel;
 
 @end

@@ -12,12 +12,6 @@
 		2728B4E61ABDCEAA00CBCC9B /* loginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4E51ABDCEAA00CBCC9B /* loginBG.png */; };
 		2728B4EB1ABDD8F800CBCC9B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */; };
 		2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */; };
-		273230711ABE33A6009156CC /* restaurantF-VeggieSF.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */; };
-		273230721ABE33A6009156CC /* restaurantE-PureVeggieHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */; };
-		273230731ABE33A6009156CC /* restaurantD-LokChaTeahouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */; };
-		273230741ABE33A6009156CC /* restaurantC-Locofama.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */; };
-		273230751ABE33A6009156CC /* restaurantB-Herbivores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */; };
-		273230761ABE33A6009156CC /* restaurantA-Finds.png in Resources */ = {isa = PBXBuildFile; fileRef = 273230701ABE33A6009156CC /* restaurantA-Finds.png */; };
 		273230781ABE4BF8009156CC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 273230771ABE4BF8009156CC /* back.png */; };
 		2732307A1ABE56EB009156CC /* checkout.png in Resources */ = {isa = PBXBuildFile; fileRef = 273230791ABE56EB009156CC /* checkout.png */; };
 		2737FBB81ABE09E0003E3B67 /* sandwich.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB11ABE09E0003E3B67 /* sandwich.png */; };
@@ -116,6 +110,7 @@
 		2D5DD0C51ABD9426003724D1 /* DIN-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D5DD0C21ABD9426003724D1 /* DIN-Regular.otf */; };
 		2D5DD0CA1ABD98E7003724D1 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5DD0C81ABD98E7003724D1 /* PreferencesViewController.m */; };
 		2D5DD0CB1ABD98E7003724D1 /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5DD0C91ABD98E7003724D1 /* PreferencesViewController.xib */; };
+		2DCE330B1ABE6F700013FC41 /* 6-feed3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DCE330A1ABE6F700013FC41 /* 6-feed3.png */; };
 		936E59227FEB448A801A00EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E6AC0A76634904AFF81993 /* libPods.a */; };
 		AAB2E5A71986086C0026934A /* mp_password_checkout.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB2E5A61986086C0026934A /* mp_password_checkout.png */; };
 		C30FABB81A1FB97A003672B7 /* MPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C30FABB71A1FB97A003672B7 /* MPAddress.m */; };
@@ -362,6 +357,7 @@
 		2D5DD0C71ABD98E7003724D1 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
 		2D5DD0C81ABD98E7003724D1 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 		2D5DD0C91ABD98E7003724D1 /* PreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
+		2DCE330A1ABE6F700013FC41 /* 6-feed3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6-feed3.png"; sourceTree = "<group>"; };
 		88E6AC0A76634904AFF81993 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2D70B233CF4D368F785B91 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AAB2E5A61986086C0026934A /* mp_password_checkout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mp_password_checkout.png; path = PairingSite/mp_password_checkout.png; sourceTree = "<group>"; };
@@ -597,6 +593,7 @@
 		2D10C9301ABDA41F0021B95A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2DCE330A1ABE6F700013FC41 /* 6-feed3.png */,
 				2D10C9CF1ABE56A60021B95A /* 2-signup.png */,
 				2D10C9D01ABE56A60021B95A /* 1-splashscreen.png */,
 				2D10C9CD1ABE4EA00021B95A /* Line.png */,
@@ -1416,9 +1413,10 @@
 				ORGANIZATIONNAME = "David Benko";
 				TargetAttributes = {
 					C3212D281906BE460072BA80 = {
-						DevelopmentTeam = 7J86WHUZXM;
+						DevelopmentTeam = 948W38T38P;
 					};
 					C3212D491906BE470072BA80 = {
+						DevelopmentTeam = 948W38T38P;
 						TestTargetID = C3212D281906BE460072BA80;
 					};
 				};
@@ -1603,6 +1601,7 @@
 				2D10C9971ABE41010021B95A /* feedup.png in Resources */,
 				2D10C99C1ABE41010021B95A /* profiledown.png in Resources */,
 				C3950ECD193E4D760042437A /* 00_feature_LivRoom.jpg in Resources */,
+				2DCE330B1ABE6F700013FC41 /* 6-feed3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1841,8 +1840,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Prashant Sharma (ZZEFH7AFQU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Prashant Sharma (ZZEFH7AFQU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1857,7 +1856,7 @@
 					"-licucore",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2dff9b80-4a17-4906-94af-644f88f1afc7";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1868,8 +1867,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Prashant Sharma (ZZEFH7AFQU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Prashant Sharma (ZZEFH7AFQU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1884,7 +1883,7 @@
 					"-licucore",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2dff9b80-4a17-4906-94af-644f88f1afc7";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1894,6 +1893,8 @@
 			baseConfigurationReference = BDCE99066D7B03C8E1C43595 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MasterPass.app/MasterPass";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1907,6 +1908,7 @@
 				);
 				INFOPLIST_FILE = "MasterPassTests/MasterPassTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1917,6 +1919,8 @@
 			baseConfigurationReference = BDCE99066D7B03C8E1C43595 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MasterPass.app/MasterPass";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1926,6 +1930,7 @@
 				GCC_PREFIX_HEADER = "MasterPass/MasterPass-Prefix.pch";
 				INFOPLIST_FILE = "MasterPassTests/MasterPassTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};

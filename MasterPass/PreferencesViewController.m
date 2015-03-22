@@ -43,7 +43,7 @@
     if(!selectedButton.isWanted) {
         amountSelected++;
         [selectedButton setIsWanted:YES];
-        [selectedButton setTitleColor:COLOR_SelectedButton forState:UIControlStateNormal];
+        [selectedButton setTitleColor:COLOR_OrangeText forState:UIControlStateNormal];
     } else {
         amountSelected--;
         [selectedButton setIsWanted:NO];

@@ -21,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *dineOutButton;
 @property (strong, nonatomic) IBOutlet UIButton *searchButton;
 
+@property (strong, nonatomic) IBOutlet UIView *dogContentView;
 
 - (IBAction)dineInPressed:(id)sender;
 - (IBAction)dineOutPressed:(id)sender;
@@ -34,6 +35,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *profileButton;
 @property (strong, nonatomic) IBOutlet UIImageView *dineInLine;
 @property (strong, nonatomic) IBOutlet UIImageView *dineOutLine;
+- (IBAction)bowlPressed:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIButton *bowlButton;
 
 @end

@@ -2,25 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Dish needs your location to find nearby restaurants</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Dish needs your location to find nearby restaurants</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>DIN-Bold.otf</string>
-		<string>DIN-Medium.otf</string>
-		<string>DIN-Regular.otf</string>
-		<string>UniversLTStd-LightCn.otf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>GadgetShop</string>
+	<string>Dashes</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.mastercard.gadgetshop</string>
+	<string>com.mpayme.dashes</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -35,6 +24,17 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Dish needs your location to find nearby restaurants</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Dish needs your location to find nearby restaurants</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DIN-Bold.otf</string>
+		<string>DIN-Medium.otf</string>
+		<string>DIN-Regular.otf</string>
+		<string>UniversLTStd-LightCn.otf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
                 <outlet property="basketButton" destination="D7h-7V-ZDZ" id="BIL-qY-FAC"/>
+                <outlet property="bowlButton" destination="1RM-N0-neP" id="eXK-QZ-ydn"/>
                 <outlet property="contentView" destination="mOC-8a-Ui2" id="33o-0S-7ix"/>
                 <outlet property="dineInButton" destination="WI0-1z-Jwx" id="hWe-Kw-wJh"/>
                 <outlet property="dineInLine" destination="Z3Z-UP-ioo" id="8q8-q1-q4t"/>
                 <outlet property="dineOutButton" destination="rVe-lb-Cqk" id="xnu-EZ-5VM"/>
                 <outlet property="dineOutContentView" destination="Yox-OS-KiS" id="LCU-lA-d6Y"/>
                 <outlet property="dineOutLine" destination="zU9-Qt-Zy8" id="icW-aD-HLr"/>
+                <outlet property="dogContentView" destination="V59-dz-Hse" id="Ca0-mh-zNe"/>
                 <outlet property="feedButton" destination="DxK-U0-JMo" id="etF-Dp-5ms"/>
                 <outlet property="footerView" destination="vyH-RX-fPo" id="QNp-so-CuR"/>
                 <outlet property="leftCollectionView" destination="vLW-ce-aUv" id="x5I-MK-hSu"/>
@@ -239,6 +241,7 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
+                                <action selector="bowlPressed:" destination="-1" eventType="touchUpInside" id="FEJ-PH-VUi"/>
                                 <action selector="searchPressed:" destination="-1" eventType="touchUpInside" id="7Hu-Q4-PBq"/>
                             </connections>
                         </button>
@@ -283,8 +286,26 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="1382" y="508"/>
         </view>
+        <view contentMode="scaleToFill" id="V59-dz-Hse" userLabel="dogContentViewView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-feed3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nxm-MU-LVN">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Nxm-MU-LVN" secondAttribute="trailing" id="Afk-Si-GHO"/>
+                <constraint firstAttribute="bottom" secondItem="Nxm-MU-LVN" secondAttribute="bottom" id="HId-LJ-j1f"/>
+                <constraint firstItem="Nxm-MU-LVN" firstAttribute="top" secondItem="V59-dz-Hse" secondAttribute="top" id="M7e-dT-m60"/>
+                <constraint firstItem="Nxm-MU-LVN" firstAttribute="leading" secondItem="V59-dz-Hse" secondAttribute="leading" id="cYP-pb-1GR"/>
+            </constraints>
+            <point key="canvasLocation" x="1032" y="1029"/>
+        </view>
     </objects>
     <resources>
+        <image name="6-feed3.png" width="750" height="1043"/>
         <image name="Line.png" width="84" height="4"/>
         <image name="bowl.png" width="87" height="88"/>
         <image name="search.png" width="40" height="41"/>

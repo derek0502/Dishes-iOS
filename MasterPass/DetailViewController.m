@@ -34,6 +34,7 @@
     [ecommerce addProductToCart:self.detailedProduct callback:^(NSError *error) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
+    [_numberLabel setText:@"2"];
     
 //    @property (nonatomic, strong) NSString * desc;
 //    /*!
