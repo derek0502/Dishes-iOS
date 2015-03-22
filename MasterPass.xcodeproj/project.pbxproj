@@ -12,12 +12,6 @@
 		2728B4E61ABDCEAA00CBCC9B /* loginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4E51ABDCEAA00CBCC9B /* loginBG.png */; };
 		2728B4EB1ABDD8F800CBCC9B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */; };
 		2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */; };
-		273230711ABE33A6009156CC /* restaurantF-VeggieSF.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */; };
-		273230721ABE33A6009156CC /* restaurantE-PureVeggieHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */; };
-		273230731ABE33A6009156CC /* restaurantD-LokChaTeahouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */; };
-		273230741ABE33A6009156CC /* restaurantC-Locofama.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */; };
-		273230751ABE33A6009156CC /* restaurantB-Herbivores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */; };
-		273230761ABE33A6009156CC /* restaurantA-Finds.png in Resources */ = {isa = PBXBuildFile; fileRef = 273230701ABE33A6009156CC /* restaurantA-Finds.png */; };
 		2737FBB81ABE09E0003E3B67 /* sandwich.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB11ABE09E0003E3B67 /* sandwich.png */; };
 		2737FBB91ABE09E0003E3B67 /* salad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB21ABE09E0003E3B67 /* salad.png */; };
 		2737FBBA1ABE09E0003E3B67 /* glazedtofu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB31ABE09E0003E3B67 /* glazedtofu.png */; };
@@ -62,6 +56,41 @@
 		2D10C9741ABDD4650021B95A /* LongFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9721ABDD4650021B95A /* LongFeedCollectionViewCell.xib */; };
 		2D10C9781ABDD49E0021B95A /* ShortFeedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10C9761ABDD49E0021B95A /* ShortFeedCollectionViewCell.m */; };
 		2D10C9791ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9771ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib */; };
+		2D10C9911ABE41010021B95A /* basketdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9801ABE41010021B95A /* basketdown.png */; };
+		2D10C9921ABE41010021B95A /* basketup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9811ABE41010021B95A /* basketup.png */; };
+		2D10C9931ABE41010021B95A /* classicitaliantiramisu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9821ABE41010021B95A /* classicitaliantiramisu.png */; };
+		2D10C9941ABE41010021B95A /* creamy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9831ABE41010021B95A /* creamy.png */; };
+		2D10C9951ABE41010021B95A /* easyshrimp.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9841ABE41010021B95A /* easyshrimp.png */; };
+		2D10C9961ABE41010021B95A /* feeddown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9851ABE41010021B95A /* feeddown.png */; };
+		2D10C9971ABE41010021B95A /* feedup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9861ABE41010021B95A /* feedup.png */; };
+		2D10C9981ABE41010021B95A /* friedegg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9871ABE41010021B95A /* friedegg.png */; };
+		2D10C9991ABE41010021B95A /* glazedtofu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9881ABE41010021B95A /* glazedtofu.png */; };
+		2D10C99A1ABE41010021B95A /* msgdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9891ABE41010021B95A /* msgdown.png */; };
+		2D10C99B1ABE41010021B95A /* msgup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C98A1ABE41010021B95A /* msgup.png */; };
+		2D10C99C1ABE41010021B95A /* profiledown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C98B1ABE41010021B95A /* profiledown.png */; };
+		2D10C99D1ABE41010021B95A /* profileup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C98C1ABE41010021B95A /* profileup.png */; };
+		2D10C99E1ABE41010021B95A /* recipedown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C98D1ABE41010021B95A /* recipedown.png */; };
+		2D10C99F1ABE41010021B95A /* recipeup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C98E1ABE41010021B95A /* recipeup.png */; };
+		2D10C9A01ABE41010021B95A /* salad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C98F1ABE41010021B95A /* salad.png */; };
+		2D10C9A11ABE41010021B95A /* sandwich.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9901ABE41010021B95A /* sandwich.png */; };
+		2D10C9B51ABE41110021B95A /* aglio-nero.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9A31ABE41110021B95A /* aglio-nero.png */; };
+		2D10C9B61ABE41110021B95A /* italian-garden.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9A41ABE41110021B95A /* italian-garden.png */; };
+		2D10C9B71ABE41110021B95A /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9A51ABE41110021B95A /* location.png */; };
+		2D10C9B81ABE41110021B95A /* make-a-reservation.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9A61ABE41110021B95A /* make-a-reservation.png */; };
+		2D10C9B91ABE41110021B95A /* menu-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9A71ABE41110021B95A /* menu-header.png */; };
+		2D10C9BA1ABE41110021B95A /* Menu-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9A81ABE41110021B95A /* Menu-hover.png */; };
+		2D10C9BB1ABE41110021B95A /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9A91ABE41110021B95A /* Menu.png */; };
+		2D10C9BC1ABE41110021B95A /* organic-quinoa.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9AA1ABE41110021B95A /* organic-quinoa.png */; };
+		2D10C9BD1ABE41110021B95A /* restaurant-bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9AB1ABE41110021B95A /* restaurant-bkg.png */; };
+		2D10C9BE1ABE41110021B95A /* restaurant-contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9AC1ABE41110021B95A /* restaurant-contact.png */; };
+		2D10C9BF1ABE41110021B95A /* restaurantA-Finds.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9AD1ABE41110021B95A /* restaurantA-Finds.png */; };
+		2D10C9C01ABE41110021B95A /* restaurantB-Herbivores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9AE1ABE41110021B95A /* restaurantB-Herbivores.png */; };
+		2D10C9C11ABE41110021B95A /* restaurantC-Locofama.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9AF1ABE41110021B95A /* restaurantC-Locofama.png */; };
+		2D10C9C21ABE41110021B95A /* restaurantD-LokChaTeahouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9B01ABE41110021B95A /* restaurantD-LokChaTeahouse.png */; };
+		2D10C9C31ABE41110021B95A /* restaurantE-PureVeggieHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9B11ABE41110021B95A /* restaurantE-PureVeggieHouse.png */; };
+		2D10C9C41ABE41110021B95A /* restaurantF-VeggieSF.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9B21ABE41110021B95A /* restaurantF-VeggieSF.png */; };
+		2D10C9C51ABE41110021B95A /* split-bill.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9B31ABE41110021B95A /* split-bill.png */; };
+		2D10C9C61ABE41110021B95A /* tomato-carpaccio.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10C9B41ABE41110021B95A /* tomato-carpaccio.png */; };
 		2D1149911ABD9BEE00A38C45 /* HumanOrPetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */; };
 		2D1149921ABD9BEE00A38C45 /* HumanOrPetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */; };
 		2D5DD0B61ABD93D6003724D1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5DD0B41ABD93D6003724D1 /* MainViewController.m */; };
@@ -208,12 +237,6 @@
 		2728B4E81ABDD8F800CBCC9B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantF-VeggieSF.png"; path = "../../Downloads/restaurantF-VeggieSF.png"; sourceTree = "<group>"; };
-		2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantE-PureVeggieHouse.png"; path = "../../Downloads/restaurantE-PureVeggieHouse.png"; sourceTree = "<group>"; };
-		2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantD-LokChaTeahouse.png"; path = "../../Downloads/restaurantD-LokChaTeahouse.png"; sourceTree = "<group>"; };
-		2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantC-Locofama.png"; path = "../../Downloads/restaurantC-Locofama.png"; sourceTree = "<group>"; };
-		2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantB-Herbivores.png"; path = "../../Downloads/restaurantB-Herbivores.png"; sourceTree = "<group>"; };
-		273230701ABE33A6009156CC /* restaurantA-Finds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantA-Finds.png"; path = "../../Downloads/restaurantA-Finds.png"; sourceTree = "<group>"; };
 		2737FBB11ABE09E0003E3B67 /* sandwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandwich.png; sourceTree = "<group>"; };
 		2737FBB21ABE09E0003E3B67 /* salad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salad.png; sourceTree = "<group>"; };
 		2737FBB31ABE09E0003E3B67 /* glazedtofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glazedtofu.png; sourceTree = "<group>"; };
@@ -260,6 +283,41 @@
 		2D10C9751ABDD49E0021B95A /* ShortFeedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortFeedCollectionViewCell.h; sourceTree = "<group>"; };
 		2D10C9761ABDD49E0021B95A /* ShortFeedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortFeedCollectionViewCell.m; sourceTree = "<group>"; };
 		2D10C9771ABDD49E0021B95A /* ShortFeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortFeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		2D10C9801ABE41010021B95A /* basketdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basketdown.png; sourceTree = "<group>"; };
+		2D10C9811ABE41010021B95A /* basketup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basketup.png; sourceTree = "<group>"; };
+		2D10C9821ABE41010021B95A /* classicitaliantiramisu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = classicitaliantiramisu.png; sourceTree = "<group>"; };
+		2D10C9831ABE41010021B95A /* creamy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = creamy.png; sourceTree = "<group>"; };
+		2D10C9841ABE41010021B95A /* easyshrimp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easyshrimp.png; sourceTree = "<group>"; };
+		2D10C9851ABE41010021B95A /* feeddown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeddown.png; sourceTree = "<group>"; };
+		2D10C9861ABE41010021B95A /* feedup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feedup.png; sourceTree = "<group>"; };
+		2D10C9871ABE41010021B95A /* friedegg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friedegg.png; sourceTree = "<group>"; };
+		2D10C9881ABE41010021B95A /* glazedtofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glazedtofu.png; sourceTree = "<group>"; };
+		2D10C9891ABE41010021B95A /* msgdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = msgdown.png; sourceTree = "<group>"; };
+		2D10C98A1ABE41010021B95A /* msgup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = msgup.png; sourceTree = "<group>"; };
+		2D10C98B1ABE41010021B95A /* profiledown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profiledown.png; sourceTree = "<group>"; };
+		2D10C98C1ABE41010021B95A /* profileup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileup.png; sourceTree = "<group>"; };
+		2D10C98D1ABE41010021B95A /* recipedown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipedown.png; sourceTree = "<group>"; };
+		2D10C98E1ABE41010021B95A /* recipeup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipeup.png; sourceTree = "<group>"; };
+		2D10C98F1ABE41010021B95A /* salad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salad.png; sourceTree = "<group>"; };
+		2D10C9901ABE41010021B95A /* sandwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandwich.png; sourceTree = "<group>"; };
+		2D10C9A31ABE41110021B95A /* aglio-nero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aglio-nero.png"; sourceTree = "<group>"; };
+		2D10C9A41ABE41110021B95A /* italian-garden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "italian-garden.png"; sourceTree = "<group>"; };
+		2D10C9A51ABE41110021B95A /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		2D10C9A61ABE41110021B95A /* make-a-reservation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "make-a-reservation.png"; sourceTree = "<group>"; };
+		2D10C9A71ABE41110021B95A /* menu-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-header.png"; sourceTree = "<group>"; };
+		2D10C9A81ABE41110021B95A /* Menu-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-hover.png"; sourceTree = "<group>"; };
+		2D10C9A91ABE41110021B95A /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
+		2D10C9AA1ABE41110021B95A /* organic-quinoa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "organic-quinoa.png"; sourceTree = "<group>"; };
+		2D10C9AB1ABE41110021B95A /* restaurant-bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurant-bkg.png"; sourceTree = "<group>"; };
+		2D10C9AC1ABE41110021B95A /* restaurant-contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurant-contact.png"; sourceTree = "<group>"; };
+		2D10C9AD1ABE41110021B95A /* restaurantA-Finds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurantA-Finds.png"; sourceTree = "<group>"; };
+		2D10C9AE1ABE41110021B95A /* restaurantB-Herbivores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurantB-Herbivores.png"; sourceTree = "<group>"; };
+		2D10C9AF1ABE41110021B95A /* restaurantC-Locofama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurantC-Locofama.png"; sourceTree = "<group>"; };
+		2D10C9B01ABE41110021B95A /* restaurantD-LokChaTeahouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurantD-LokChaTeahouse.png"; sourceTree = "<group>"; };
+		2D10C9B11ABE41110021B95A /* restaurantE-PureVeggieHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurantE-PureVeggieHouse.png"; sourceTree = "<group>"; };
+		2D10C9B21ABE41110021B95A /* restaurantF-VeggieSF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurantF-VeggieSF.png"; sourceTree = "<group>"; };
+		2D10C9B31ABE41110021B95A /* split-bill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "split-bill.png"; sourceTree = "<group>"; };
+		2D10C9B41ABE41110021B95A /* tomato-carpaccio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tomato-carpaccio.png"; sourceTree = "<group>"; };
 		2D11498E1ABD9BEE00A38C45 /* HumanOrPetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanOrPetViewController.h; sourceTree = "<group>"; };
 		2D11498F1ABD9BEE00A38C45 /* HumanOrPetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanOrPetViewController.m; sourceTree = "<group>"; };
 		2D1149901ABD9BEE00A38C45 /* HumanOrPetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanOrPetViewController.xib; sourceTree = "<group>"; };
@@ -480,12 +538,6 @@
 		2737FBB01ABE09CE003E3B67 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */,
-				2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */,
-				2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */,
-				2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */,
-				2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */,
-				273230701ABE33A6009156CC /* restaurantA-Finds.png */,
 				2737FBBF1ABE1287003E3B67 /* heartup.png */,
 				2737FBC01ABE1287003E3B67 /* heartdown.png */,
 				2737FBC11ABE1287003E3B67 /* seperator.png */,
@@ -510,6 +562,8 @@
 		2D10C9301ABDA41F0021B95A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2D10C9A21ABE41110021B95A /* 9-restaurant */,
+				2D10C97F1ABE41010021B95A /* 5-feed */,
 				2D10C9411ABDD2CF0021B95A /* 7-receipe */,
 				2D10C9311ABDA41F0021B95A /* 1-splashpage */,
 				2D10C9341ABDA41F0021B95A /* 2-signuppage */,
@@ -580,6 +634,55 @@
 				2D10C9581ABDD2CF0021B95A /* wine-pairing.png */,
 			);
 			path = "7-receipe";
+			sourceTree = "<group>";
+		};
+		2D10C97F1ABE41010021B95A /* 5-feed */ = {
+			isa = PBXGroup;
+			children = (
+				2D10C9801ABE41010021B95A /* basketdown.png */,
+				2D10C9811ABE41010021B95A /* basketup.png */,
+				2D10C9821ABE41010021B95A /* classicitaliantiramisu.png */,
+				2D10C9831ABE41010021B95A /* creamy.png */,
+				2D10C9841ABE41010021B95A /* easyshrimp.png */,
+				2D10C9851ABE41010021B95A /* feeddown.png */,
+				2D10C9861ABE41010021B95A /* feedup.png */,
+				2D10C9871ABE41010021B95A /* friedegg.png */,
+				2D10C9881ABE41010021B95A /* glazedtofu.png */,
+				2D10C9891ABE41010021B95A /* msgdown.png */,
+				2D10C98A1ABE41010021B95A /* msgup.png */,
+				2D10C98B1ABE41010021B95A /* profiledown.png */,
+				2D10C98C1ABE41010021B95A /* profileup.png */,
+				2D10C98D1ABE41010021B95A /* recipedown.png */,
+				2D10C98E1ABE41010021B95A /* recipeup.png */,
+				2D10C98F1ABE41010021B95A /* salad.png */,
+				2D10C9901ABE41010021B95A /* sandwich.png */,
+			);
+			path = "5-feed";
+			sourceTree = "<group>";
+		};
+		2D10C9A21ABE41110021B95A /* 9-restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				2D10C9A31ABE41110021B95A /* aglio-nero.png */,
+				2D10C9A41ABE41110021B95A /* italian-garden.png */,
+				2D10C9A51ABE41110021B95A /* location.png */,
+				2D10C9A61ABE41110021B95A /* make-a-reservation.png */,
+				2D10C9A71ABE41110021B95A /* menu-header.png */,
+				2D10C9A81ABE41110021B95A /* Menu-hover.png */,
+				2D10C9A91ABE41110021B95A /* Menu.png */,
+				2D10C9AA1ABE41110021B95A /* organic-quinoa.png */,
+				2D10C9AB1ABE41110021B95A /* restaurant-bkg.png */,
+				2D10C9AC1ABE41110021B95A /* restaurant-contact.png */,
+				2D10C9AD1ABE41110021B95A /* restaurantA-Finds.png */,
+				2D10C9AE1ABE41110021B95A /* restaurantB-Herbivores.png */,
+				2D10C9AF1ABE41110021B95A /* restaurantC-Locofama.png */,
+				2D10C9B01ABE41110021B95A /* restaurantD-LokChaTeahouse.png */,
+				2D10C9B11ABE41110021B95A /* restaurantE-PureVeggieHouse.png */,
+				2D10C9B21ABE41110021B95A /* restaurantF-VeggieSF.png */,
+				2D10C9B31ABE41110021B95A /* split-bill.png */,
+				2D10C9B41ABE41110021B95A /* tomato-carpaccio.png */,
+			);
+			path = "9-restaurant";
 			sourceTree = "<group>";
 		};
 		2D11498D1ABD9BD700A38C45 /* HumanOrPetViewController */ = {
@@ -1310,32 +1413,39 @@
 				2D5DD0C41ABD9426003724D1 /* DIN-Medium.otf in Resources */,
 				2D10C95A1ABDD2CF0021B95A /* basket-icon.png in Resources */,
 				C34455A21A3260C2007941F0 /* maestro_blue.png in Resources */,
-				273230761ABE33A6009156CC /* restaurantA-Finds.png in Resources */,
 				C3950ED8193E4D760042437A /* samsung-galaxy-tab-city1.jpg in Resources */,
 				2D10C96B1ABDD2CF0021B95A /* pumpkin-cake.png in Resources */,
-				273230751ABE33A6009156CC /* restaurantB-Herbivores.png in Resources */,
 				2D10C96A1ABDD2CF0021B95A /* Nutritions.png in Resources */,
 				2737FBBB1ABE09E0003E3B67 /* friedegg.png in Resources */,
 				C390084419297DF500902B6E /* orange_cc.png in Resources */,
 				C3950ED2193E4D760042437A /* IdeaPad-Y500-Laptop-PC-Closeup-Removeable-Drive-9L-940x475.jpg in Resources */,
 				2D5DD0BC1ABD93FC003724D1 /* GeneralViewController.xib in Resources */,
+				2D10C9931ABE41010021B95A /* classicitaliantiramisu.png in Resources */,
 				C39008181926411F00902B6E /* Icon-76@2x.png in Resources */,
 				C3950ECF193E4D760042437A /* display_hero.jpg in Resources */,
-				273230711ABE33A6009156CC /* restaurantF-VeggieSF.png in Resources */,
 				2D10C95D1ABDD2CF0021B95A /* cinnamon-apple.png in Resources */,
 				C34455A31A3260C2007941F0 /* maestro_yellow.png in Resources */,
+				2D10C9B91ABE41110021B95A /* menu-header.png in Resources */,
+				2D10C9C31ABE41110021B95A /* restaurantE-PureVeggieHouse.png in Resources */,
 				C3BB758219B0B97500A7DE29 /* blue_cc@2x.png in Resources */,
 				2D10C9611ABDD2CF0021B95A /* description.png in Resources */,
 				C3212D371906BE460072BA80 /* InfoPlist.strings in Resources */,
 				C3BB758019B0B93100A7DE29 /* black_cc_mc@2x.png in Resources */,
 				2737FBBC1ABE09E0003E3B67 /* easyshrimp.png in Resources */,
 				2D10C9741ABDD4650021B95A /* LongFeedCollectionViewCell.xib in Resources */,
+				2D10C99E1ABE41010021B95A /* recipedown.png in Resources */,
 				C3950ED0193E4D760042437A /* gear-2-bike.jpg in Resources */,
 				C39008161926411F00902B6E /* Icon-72@2x.png in Resources */,
 				2D10C9641ABDD2CF0021B95A /* Ingredients.png in Resources */,
 				C3212D401906BE460072BA80 /* Main.storyboard in Resources */,
+				2D10C9921ABE41010021B95A /* basketup.png in Resources */,
+				2D10C9961ABE41010021B95A /* feeddown.png in Resources */,
+				2D10C9B61ABE41110021B95A /* italian-garden.png in Resources */,
+				2D10C9B81ABE41110021B95A /* make-a-reservation.png in Resources */,
 				C39007E71925084100902B6E /* masterpass-small-logo.png in Resources */,
 				C390081A1926411F00902B6E /* Icon-Small-50@2x.png in Resources */,
+				2D10C9991ABE41010021B95A /* glazedtofu.png in Resources */,
+				2D10C9941ABE41010021B95A /* creamy.png in Resources */,
 				C34455A41A3260C2007941F0 /* mastercard_blue.png in Resources */,
 				2D10C9691ABDD2CF0021B95A /* message-white-icon.png in Resources */,
 				C39008111926411F00902B6E /* Icon-40.png in Resources */,
@@ -1350,23 +1460,28 @@
 				2D10C9621ABDD2CF0021B95A /* falafel-veggie-burger.png in Resources */,
 				C344559F1A3260C2007941F0 /* generic_card_blue.png in Resources */,
 				C390081B1926411F00902B6E /* Icon-Small.png in Resources */,
-				273230721ABE33A6009156CC /* restaurantE-PureVeggieHouse.png in Resources */,
 				2D1149921ABD9BEE00A38C45 /* HumanOrPetViewController.xib in Resources */,
 				C390081C1926411F00902B6E /* Icon-Small@2x.png in Resources */,
 				C39008121926411F00902B6E /* Icon-40@2x.png in Resources */,
 				2728B4E61ABDCEAA00CBCC9B /* loginBG.png in Resources */,
+				2D10C9C01ABE41110021B95A /* restaurantB-Herbivores.png in Resources */,
 				2D10C96D1ABDD2CF0021B95A /* search.png in Resources */,
 				2D10C9661ABDD2CF0021B95A /* maple-peanut.png in Resources */,
 				C3950ED4193E4D760042437A /* ipad_mini_hero_black.jpg in Resources */,
 				C39008141926411F00902B6E /* Icon-60@2x.png in Resources */,
+				2D10C9BC1ABE41110021B95A /* organic-quinoa.png in Resources */,
 				C390081E1926411F00902B6E /* Icon@2x.png in Resources */,
 				2D10C95B1ABDD2CF0021B95A /* burger-bkg.png in Resources */,
+				2D10C99D1ABE41010021B95A /* profileup.png in Resources */,
 				C3950ED3193E4D760042437A /* images.jpg in Resources */,
+				2D10C9C61ABE41110021B95A /* tomato-carpaccio.png in Resources */,
 				2D10C95E1ABDD2CF0021B95A /* converter.png in Resources */,
+				2D10C9A11ABE41010021B95A /* sandwich.png in Resources */,
 				C37483F61A186B8900D10742 /* mp_lightbox_base.html in Resources */,
 				2D10C96C1ABDD2CF0021B95A /* red-dot.png in Resources */,
 				2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */,
 				C390081F1926411F00902B6E /* iTunesArtwork.png in Resources */,
+				2D10C9BD1ABE41110021B95A /* restaurant-bkg.png in Resources */,
 				2737FBC31ABE1287003E3B67 /* heartdown.png in Resources */,
 				C344559C1A3260C2007941F0 /* amex_blue.png in Resources */,
 				C3950ECE193E4D760042437A /* 0.jpg in Resources */,
@@ -1380,6 +1495,7 @@
 				C39008151926411F00902B6E /* Icon-72.png in Resources */,
 				2737FBBD1ABE09E0003E3B67 /* creamy.png in Resources */,
 				2D5DD0B71ABD93D6003724D1 /* MainViewController.xib in Resources */,
+				2D10C9981ABE41010021B95A /* friedegg.png in Resources */,
 				C34455A11A3260C2007941F0 /* generic_card_orange.png in Resources */,
 				2D10C93D1ABDA41F0021B95A /* getstarteddown.png in Resources */,
 				2D10C9631ABDD2CF0021B95A /* having-dessert.png in Resources */,
@@ -1387,39 +1503,55 @@
 				C34455A71A3260C2007941F0 /* visa_red.png in Resources */,
 				C344559B1A3260C2007941F0 /* amex_black.png in Resources */,
 				C39008201926411F00902B6E /* iTunesArtwork@2x.png in Resources */,
+				2D10C9A01ABE41010021B95A /* salad.png in Resources */,
 				C3950ED7193E4D760042437A /* samsung-galaxy-s4-polycarbonate-body-macro1.jpg in Resources */,
 				2D5DD0C51ABD9426003724D1 /* DIN-Regular.otf in Resources */,
+				2D10C9C11ABE41110021B95A /* restaurantC-Locofama.png in Resources */,
 				C39008131926411F00902B6E /* Icon-60.png in Resources */,
-				273230741ABE33A6009156CC /* restaurantC-Locofama.png in Resources */,
+				2D10C9BF1ABE41110021B95A /* restaurantA-Finds.png in Resources */,
+				2D10C99F1ABE41010021B95A /* recipeup.png in Resources */,
 				2D10C96F1ABDD2CF0021B95A /* wine-pairing.png in Resources */,
 				C39008191926411F00902B6E /* Icon-Small-50.png in Resources */,
 				2D10C96E1ABDD2CF0021B95A /* utensils.png in Resources */,
 				2D10C9671ABDD2CF0021B95A /* matcha-cake.png in Resources */,
 				2D10C9591ABDD2CF0021B95A /* add-to-basket.png in Resources */,
 				C3950E9F193E3AB80042437A /* black_cc_mp.png in Resources */,
+				2D10C9B71ABE41110021B95A /* location.png in Resources */,
 				C3950ED6193E4D760042437A /* Nokia-Lumia-520-1-2.jpg in Resources */,
 				2D10C9401ABDA6260021B95A /* UniversLTStd-LightCn.otf in Resources */,
 				2D5DD0CB1ABD98E7003724D1 /* PreferencesViewController.xib in Resources */,
 				2D10C95F1ABDD2CF0021B95A /* cooking-icon.png in Resources */,
+				2D10C9BB1ABE41110021B95A /* Menu.png in Resources */,
 				C390082C19266A6B00902B6E /* blue_cc.png in Resources */,
 				C344559D1A3260C2007941F0 /* discover_grey.png in Resources */,
+				2D10C9BA1ABE41110021B95A /* Menu-hover.png in Resources */,
 				C3BB758419B0B99D00A7DE29 /* orange_cc@2x.png in Resources */,
 				C3950ED5193E4D760042437A /* kindle-fire1.jpg in Resources */,
 				2D10C93E1ABDA41F0021B95A /* signupbg.png in Resources */,
+				2D10C9951ABE41010021B95A /* easyshrimp.png in Resources */,
 				2737FBBA1ABE09E0003E3B67 /* glazedtofu.png in Resources */,
 				2D10C93B1ABDA41F0021B95A /* splashpagebg.png in Resources */,
+				2D10C9911ABE41010021B95A /* basketdown.png in Resources */,
 				2728B4E41ABDCE7C00CBCC9B /* prefBG.png in Resources */,
+				2D10C9B51ABE41110021B95A /* aglio-nero.png in Resources */,
 				C3F5173B1951E9DE0035570A /* black_cc_mc.png in Resources */,
+				2D10C9C51ABE41110021B95A /* split-bill.png in Resources */,
 				2737FBB91ABE09E0003E3B67 /* salad.png in Resources */,
+				2D10C99B1ABE41010021B95A /* msgup.png in Resources */,
+				2D10C9BE1ABE41110021B95A /* restaurant-contact.png in Resources */,
 				C390082A19266A6B00902B6E /* bank-logo.png in Resources */,
 				C3950EDA193E4D760042437A /* tumblr_m9y5jp3Svf1r5eau1o1_500.jpg in Resources */,
 				C39008171926411F00902B6E /* Icon-76.png in Resources */,
 				2D10C95C1ABDD2CF0021B95A /* burger-overlay-bkg.png in Resources */,
 				2D10C9681ABDD2CF0021B95A /* message-icon.png in Resources */,
-				273230731ABE33A6009156CC /* restaurantD-LokChaTeahouse.png in Resources */,
 				C3900826192654F200902B6E /* buy-with-masterpass.png in Resources */,
 				C390084A192A309300902B6E /* connect_with_masterpass.png in Resources */,
+				2D10C9C41ABE41110021B95A /* restaurantF-VeggieSF.png in Resources */,
 				C3950ED1193E4D760042437A /* hp-chromebook-11-thumb.jpg in Resources */,
+				2D10C9C21ABE41110021B95A /* restaurantD-LokChaTeahouse.png in Resources */,
+				2D10C99A1ABE41010021B95A /* msgdown.png in Resources */,
+				2D10C9971ABE41010021B95A /* feedup.png in Resources */,
+				2D10C99C1ABE41010021B95A /* profiledown.png in Resources */,
 				C3950ECD193E4D760042437A /* 00_feature_LivRoom.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
