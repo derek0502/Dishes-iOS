@@ -35,11 +35,17 @@
 #pragma mark - UIViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
-    
-    self.footer.backgroundColor = [UIColor superGreyColor];
-    self.totalBar.backgroundColor = [UIColor deepBlueColor];
-    self.cartTable.backgroundColor = [UIColor deepBlueColor];
-    [self.cartTable setSeparatorColor:[UIColor cartSeperatorColor]];
+  
+    [self.checkoutButton.layer setBackgroundColor:COLOR_OrangeText.CGColor];
+    [self.checkoutButton.layer setCornerRadius:4.0f];
+    [self.checkoutButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.cartTable setBackgroundColor:[UIColor whiteColor]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self.navigationController setNavigationBarHidden:YES];
+    self.footer.backgroundColor = [UIColor whiteColor];
+    self.totalBar.backgroundColor = [UIColor whiteColor];
+    [self.totalBar setHidden:YES]; //Temp Hack
+    [self.cartTable setSeparatorColor:[UIColor whiteColor]];
     if ([self.cartTable respondsToSelector:@selector(setSeparatorInset:)]) {
         [self.cartTable setSeparatorInset:UIEdgeInsetsZero];
     }
@@ -83,7 +89,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
+
     self.totalLabel.text = [self formatCurrency:[self.orderHeader normalizedSubTotal]];
     [self.cartTable reloadData];
 }
@@ -92,7 +98,7 @@
     if(![[MPManager sharedInstance] isAppPaired]) {
         [self.footer removeConstraints:self.footer.constraints];
         [self.footer updateConstraints:^(MASConstraintMaker *make) {
-            make.height.equalTo(@150);
+            make.height.equalTo(@75);
             make.width.equalTo(self.view);
             make.bottom.equalTo(self.view);
             make.centerX.equalTo(self.view);
@@ -103,10 +109,10 @@
         [self.footer addSubview:self.masterPassButton];
         [self.checkoutButton removeConstraints:self.checkoutButton.constraints];
         [self.masterPassButton makeConstraints:^(MASConstraintMaker *make) {
-            make.height.equalTo(@60);
-            make.width.equalTo(@280);
-            make.top.equalTo(self.footer).with.offset(10);
-            make.centerX.equalTo(self.footer);
+            make.height.equalTo(@35);
+            make.width.equalTo(@140);
+            make.bottom.equalTo(self.footer).with.offset(-10);
+            make.right.equalTo(self.footer).with.offset(-10);
         }];
         
         [self.masterPassButton bk_addEventHandler:^(id sender) {
@@ -116,22 +122,18 @@
         
         [self.checkoutButton makeConstraints:^(MASConstraintMaker *make) {
             make.bottom.equalTo(self.footer).with.offset(-10);
-            make.height.equalTo(@40);
-            make.width.equalTo(@280);
-            make.centerX.equalTo(self.footer);
+            make.height.equalTo(@35);
+            make.width.equalTo(@140);
+            make.left.equalTo(self.footer).with.offset(10);
         }];
         
-        UILabel *orLabel = [[UILabel alloc]initWithFrame:CGRectZero];
-        orLabel.textAlignment = NSTextAlignmentCenter;
-        orLabel.font = [UIFont boldSystemFontOfSize:20];
-        orLabel.textColor = [UIColor deepBlueColor];
-        orLabel.text = @"- OR -";
-        [self.footer addSubview:orLabel];
-        [orLabel makeConstraints:^(MASConstraintMaker *make) {
-            make.width.equalTo(@280);
-            make.top.equalTo(self.masterPassButton.bottom);
-            make.bottom.equalTo(self.checkoutButton.top);
-            make.centerX.equalTo(self.footer);
+    } else {
+        [self.checkoutButton makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(self.footer).with.offset(-10);
+            make.height.equalTo(@35);
+            make.width.equalTo(@2800);
+            make.left.equalTo(self.footer).with.offset(10);
+            make.right.equalTo(self.footer).with.offset(-10);
         }];
     }
 }
@@ -194,7 +196,7 @@
             [checkout.containerTable reloadData];
             [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
             
-            [weakSelf presentViewController:checkout animated:YES completion:nil];
+            [weakSelf.navigationController pushViewController:checkout animated:YES];
         }];
 //    }
 }
@@ -216,7 +218,13 @@
     static NSString *MyIdentifier = @"Cell";
     
     CartProductCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    
+    [cell.contentView setBackgroundColor:COLOR_GreyCell];
+    [cell.productName setTextColor:[UIColor blackColor]];
+    [cell.productPrice setTextColor:[UIColor blackColor]];
+    [cell.productQuant setTextColor:[UIColor blackColor]];
+    [cell.ingredientButton setTitleColor:COLOR_OrangeText forState:UIControlStateNormal];
+    [cell.ingredientButton.layer setBorderWidth:1];
+    [cell.ingredientButton.layer setBorderColor:COLOR_OrangeText.CGColor];
     if (cell == nil) {
         cell = [[CartProductCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:MyIdentifier];
@@ -274,7 +282,7 @@
                     checkout.walletInfo = walletInfo;
                     
                     [MBProgressHUD hideAllHUDsForView:weakSelf.view animated:YES];
-                    [weakSelf presentViewController:checkout animated:YES completion:nil];
+                    [weakSelf.navigationController pushViewController:checkout animated:YES];
                 }
             }];
         }
@@ -289,5 +297,11 @@
     
     [super viewDidLayoutSubviews];
     self.cartTable.layoutMargins = UIEdgeInsetsZero;
+}
+
+-(IBAction)toggleDrawer{
+    if (self.navigationController) {
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 @end

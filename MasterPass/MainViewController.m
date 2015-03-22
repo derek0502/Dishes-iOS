@@ -54,6 +54,7 @@
     
     authors = @[@"Amelia Lee", @"Mike Woodruff", @"Derek Cheung", @"Julia Wood", @"Joseph Liu", @"Kit Chan", @"Momo Woodruff"];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupLocalData];
@@ -282,7 +283,8 @@
 - (IBAction)cartPressed:(id)sender {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     CartViewController *cvc = [sb instantiateViewControllerWithIdentifier:@"CartViewController"];
-    [self presentViewController:cvc animated:YES completion:nil];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:cvc];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (IBAction)dineInPressed:(id)sender {

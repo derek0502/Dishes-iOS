@@ -12,6 +12,14 @@
 		2728B4E61ABDCEAA00CBCC9B /* loginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4E51ABDCEAA00CBCC9B /* loginBG.png */; };
 		2728B4EB1ABDD8F800CBCC9B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */; };
 		2728B4EC1ABDD8F800CBCC9B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */; };
+		273230711ABE33A6009156CC /* restaurantF-VeggieSF.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */; };
+		273230721ABE33A6009156CC /* restaurantE-PureVeggieHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */; };
+		273230731ABE33A6009156CC /* restaurantD-LokChaTeahouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */; };
+		273230741ABE33A6009156CC /* restaurantC-Locofama.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */; };
+		273230751ABE33A6009156CC /* restaurantB-Herbivores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */; };
+		273230761ABE33A6009156CC /* restaurantA-Finds.png in Resources */ = {isa = PBXBuildFile; fileRef = 273230701ABE33A6009156CC /* restaurantA-Finds.png */; };
+		273230781ABE4BF8009156CC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 273230771ABE4BF8009156CC /* back.png */; };
+		2732307A1ABE56EB009156CC /* checkout.png in Resources */ = {isa = PBXBuildFile; fileRef = 273230791ABE56EB009156CC /* checkout.png */; };
 		2737FBB81ABE09E0003E3B67 /* sandwich.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB11ABE09E0003E3B67 /* sandwich.png */; };
 		2737FBB91ABE09E0003E3B67 /* salad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB21ABE09E0003E3B67 /* salad.png */; };
 		2737FBBA1ABE09E0003E3B67 /* glazedtofu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2737FBB31ABE09E0003E3B67 /* glazedtofu.png */; };
@@ -241,6 +249,14 @@
 		2728B4E81ABDD8F800CBCC9B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2728B4E91ABDD8F800CBCC9B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2728B4EA1ABDD8F800CBCC9B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantF-VeggieSF.png"; path = "../../Downloads/restaurantF-VeggieSF.png"; sourceTree = "<group>"; };
+		2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantE-PureVeggieHouse.png"; path = "../../Downloads/restaurantE-PureVeggieHouse.png"; sourceTree = "<group>"; };
+		2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantD-LokChaTeahouse.png"; path = "../../Downloads/restaurantD-LokChaTeahouse.png"; sourceTree = "<group>"; };
+		2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantC-Locofama.png"; path = "../../Downloads/restaurantC-Locofama.png"; sourceTree = "<group>"; };
+		2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantB-Herbivores.png"; path = "../../Downloads/restaurantB-Herbivores.png"; sourceTree = "<group>"; };
+		273230701ABE33A6009156CC /* restaurantA-Finds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restaurantA-Finds.png"; path = "../../Downloads/restaurantA-Finds.png"; sourceTree = "<group>"; };
+		273230771ABE4BF8009156CC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		273230791ABE56EB009156CC /* checkout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkout.png; sourceTree = "<group>"; };
 		2737FBB11ABE09E0003E3B67 /* sandwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandwich.png; sourceTree = "<group>"; };
 		2737FBB21ABE09E0003E3B67 /* salad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salad.png; sourceTree = "<group>"; };
 		2737FBB31ABE09E0003E3B67 /* glazedtofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glazedtofu.png; sourceTree = "<group>"; };
@@ -546,6 +562,13 @@
 		2737FBB01ABE09CE003E3B67 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				273230791ABE56EB009156CC /* checkout.png */,
+				2732306B1ABE33A6009156CC /* restaurantF-VeggieSF.png */,
+				2732306C1ABE33A6009156CC /* restaurantE-PureVeggieHouse.png */,
+				2732306D1ABE33A6009156CC /* restaurantD-LokChaTeahouse.png */,
+				2732306E1ABE33A6009156CC /* restaurantC-Locofama.png */,
+				2732306F1ABE33A6009156CC /* restaurantB-Herbivores.png */,
+				273230701ABE33A6009156CC /* restaurantA-Finds.png */,
 				2737FBBF1ABE1287003E3B67 /* heartup.png */,
 				2737FBC01ABE1287003E3B67 /* heartdown.png */,
 				2737FBC11ABE1287003E3B67 /* seperator.png */,
@@ -574,6 +597,7 @@
 				2D10C9CB1ABE4DCC0021B95A /* back.png */,
 				2D10C9A21ABE41110021B95A /* 9-restaurant */,
 				2D10C97F1ABE41010021B95A /* 5-feed */,
+				273230771ABE4BF8009156CC /* back.png */,
 				2D10C9411ABDD2CF0021B95A /* 7-receipe */,
 				2D10C9311ABDA41F0021B95A /* 1-splashpage */,
 				2D10C9341ABDA41F0021B95A /* 2-signuppage */,
@@ -1548,6 +1572,7 @@
 				2D10C9911ABE41010021B95A /* basketdown.png in Resources */,
 				2728B4E41ABDCE7C00CBCC9B /* prefBG.png in Resources */,
 				2D10C9B51ABE41110021B95A /* aglio-nero.png in Resources */,
+				2732307A1ABE56EB009156CC /* checkout.png in Resources */,
 				C3F5173B1951E9DE0035570A /* black_cc_mc.png in Resources */,
 				2D10C9CA1ABE4CA20021B95A /* bone.png in Resources */,
 				2D10C9C51ABE41110021B95A /* split-bill.png in Resources */,
@@ -1560,6 +1585,7 @@
 				2D10C95C1ABDD2CF0021B95A /* burger-overlay-bkg.png in Resources */,
 				2D10C9681ABDD2CF0021B95A /* message-icon.png in Resources */,
 				C3900826192654F200902B6E /* buy-with-masterpass.png in Resources */,
+				273230781ABE4BF8009156CC /* back.png in Resources */,
 				C390084A192A309300902B6E /* connect_with_masterpass.png in Resources */,
 				2D10C9C41ABE41110021B95A /* restaurantF-VeggieSF.png in Resources */,
 				C3950ED1193E4D760042437A /* hp-chromebook-11-thumb.jpg in Resources */,
