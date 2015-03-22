@@ -48,7 +48,7 @@
     lati = 22.286343;
     longi = 114.190339;
     
-    images = @[@"sandwich.png", @"salad.png", @"glazedtofu.png", @"friedegg.png", @"easyshrimp.png", @"creamy.png", @"classicitaliantiramisu.png"];
+    images = @[@"burger-bkg.png", @"salad.png", @"glazedtofu.png", @"friedegg.png", @"easyshrimp.png", @"creamy.png", @"classicitaliantiramisu.png"];
     
     names = @[@"Tuna Sandwich", @"Healthy Salad", @"Glazed Tofu", @"Fried Egg", @"Easy Shrimp", @"Creamy Pasta", @"Classic Italian Tiramisu"];
     
@@ -82,6 +82,10 @@
     [self.dineOutContentView setHidden:YES];
     [self.contentContainer addSubview:self.dineOutContentView];
     [self addConstraintForViewToContainer:self.dineOutContentView];
+    
+    [self.dogContentView setHidden:YES];
+    [self.contentContainer addSubview:self.dogContentView];
+    [self addConstraintForViewToContainer:self.dogContentView];
     
     [self.dineInButton setSelected:YES];
     
@@ -142,6 +146,11 @@
     [_msgButton setImage:image forState:UIControlStateSelected];
     image = [UIImage imageNamed:@"profiledown.png"];
     [_profileButton setImage:image forState:UIControlStateSelected];
+    
+    UIImage *dog = [UIImage imageNamed:@"bone.png"];
+    [_bowlButton setImage:dog forState:UIControlStateSelected];
+    
+    
 }
 
 -(void)fullInventory:(void (^)(NSArray *products))callback{
@@ -371,27 +380,40 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 
-    UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 375, 130)];
+    UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 130)];
+    UIImage *image;
     switch(indexPath.row) {
-        case 0:
-            [iv setImage:[UIImage imageNamed:@"restaurantF-VeggieSF.png"]];
-            break;
-        case 1:
-            [iv setImage:[UIImage imageNamed:@"restaurantE-PureVeggieHouse.png"]];
-            break;
-        case 2:
-            [iv setImage:[UIImage imageNamed:@"restaurantC-Locofama.png"]];
+        case 4:
+            image = [UIImage imageNamed:@"restaurantF-VeggieSF.png"];
             break;
         case 3:
-            [iv setImage:[UIImage imageNamed:@"restaurantB-Herbivores.png"]];
+            image = [UIImage imageNamed:@"restaurantE-PureVeggieHouse.png"];
             break;
-        case 4:
-            [iv setImage:[UIImage imageNamed:@"restaurantA-Finds.png"]];
+        case 2:
+            image = [UIImage imageNamed:@"restaurantC-Locofama.png"];
+            break;
+        case 1:
+            image = [UIImage imageNamed:@"restaurantB-Herbivores.png"];
+            break;
+        case 0:
+            image = [UIImage imageNamed:@"restaurantA-Finds.png"];
             break;
     }
+    [iv setImage:image];
 
     [cell.contentView addSubview:iv];
     return cell;
 }
 
+- (IBAction)bowlPressed:(id)sender {
+    [_bowlButton setSelected:!_bowlButton.isSelected];
+    if([_bowlButton isSelected])
+    {
+        [_dogContentView setHidden:NO];
+    }
+    else
+    {
+        [_dogContentView setHidden:YES];
+    }
+}
 @end

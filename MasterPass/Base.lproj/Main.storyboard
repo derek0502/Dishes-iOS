@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LOA-2f-IVt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LOA-2f-IVt">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -418,57 +418,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="95M-Bb-1aU" customClass="TPKeyboardAvoidingTableView">
-                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="498" id="HeB-EE-mX9"/>
-                                    <constraint firstAttribute="width" constant="320" id="pjk-Mj-8YW"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="HHC-fN-sdG" id="3Zz-SY-bZw"/>
                                     <outlet property="delegate" destination="HHC-fN-sdG" id="lHS-M7-du9"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4b-V0-oG8" userLabel="navView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sGJ-Jp-VcD">
-                                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZf-0m-73n">
-                                                <rect key="frame" x="14" y="10" width="18" height="30"/>
-                                                <state key="normal" image="back.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="GoBack:" destination="HHC-fN-sdG" eventType="touchUpInside" id="ZFd-hj-l22"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdT-m4-cna">
-                                                <rect key="frame" x="119" y="14" width="83" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="K96-hw-HVX"/>
-                                    <constraint firstAttribute="width" constant="320" id="iib-wi-pbT"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Z4b-V0-oG8" firstAttribute="top" secondItem="aFf-Je-agW" secondAttribute="topMargin" id="87u-Pl-xQz"/>
-                            <constraint firstItem="Z4b-V0-oG8" firstAttribute="leading" secondItem="aFf-Je-agW" secondAttribute="leadingMargin" constant="-16" id="FSZ-n1-Pdl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="95M-Bb-1aU" secondAttribute="trailing" constant="-16" id="Hqi-aV-FKH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Z4b-V0-oG8" secondAttribute="trailing" constant="-16" id="QFs-c8-0mP"/>
-                            <constraint firstItem="95M-Bb-1aU" firstAttribute="top" secondItem="Z4b-V0-oG8" secondAttribute="bottom" id="sUB-1X-zAn"/>
-                            <constraint firstItem="95M-Bb-1aU" firstAttribute="leading" secondItem="aFf-Je-agW" secondAttribute="leadingMargin" constant="-16" id="ti9-Bt-IcY"/>
+                            <constraint firstItem="95M-Bb-1aU" firstAttribute="leading" secondItem="aFf-Je-agW" secondAttribute="leading" id="D4b-Kp-uEA"/>
+                            <constraint firstAttribute="trailing" secondItem="95M-Bb-1aU" secondAttribute="trailing" id="PfQ-9o-L0v"/>
+                            <constraint firstAttribute="centerX" secondItem="95M-Bb-1aU" secondAttribute="centerX" id="YC8-7j-y99"/>
+                            <constraint firstItem="95M-Bb-1aU" firstAttribute="top" secondItem="aFf-Je-agW" secondAttribute="top" id="et4-He-42G"/>
+                            <constraint firstItem="CI4-yP-ONR" firstAttribute="top" secondItem="95M-Bb-1aU" secondAttribute="bottom" id="mse-5r-Jam"/>
+                            <constraint firstAttribute="centerY" secondItem="95M-Bb-1aU" secondAttribute="centerY" id="nLD-6w-bfg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Checkout" id="1Rv-d4-cMo"/>
