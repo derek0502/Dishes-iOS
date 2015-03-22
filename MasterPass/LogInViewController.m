@@ -87,7 +87,7 @@
 }
 
 -(void)socialNetworkLogin { //Stub the social network login for now but this should be replaced by a call to FB SDK.
-    self.usernameField.text = @"mike";
+    self.usernameField.text = @"mike8";
     self.passwordField.text = @"password";
     [self authenticate];
 }

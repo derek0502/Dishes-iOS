@@ -14,6 +14,8 @@
 @property (nonatomic, weak) IBOutlet UILabel *productName;
 @property (nonatomic, weak) IBOutlet UILabel *productPrice;
 @property (nonatomic, weak) IBOutlet UILabel *productQuant;
+@property (nonatomic, weak) IBOutlet UIButton *ingredientButton;
+
 @property (nonatomic, strong) OrderDetail *product;
 
 -(void)setProduct:(OrderDetail *)product;
