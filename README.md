@@ -1,11 +1,7 @@
-MasterPass GadgetShop Demo
+Dishes-iOS
 ==========================
 
 ### Overview
-Repository for the MasterPass Gadget Shop demo application.
+a iOS project created during the MasterCard Masters of Code 2015: Hong Kong (2015/03/21-22)
 
-### Installation 
-- Install Cocoa Pods (` sudo gem install cocoapods`)
-- Run `pod install` to install dependancies 
-- Open `MasterPass.xcworkspace`
 
